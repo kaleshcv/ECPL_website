@@ -1,0 +1,80 @@
+
+    {% extends 'base.html' %}
+    {% block title %}Services{% endblock %}
+    {% block main %}
+    {% load static %}
+
+    <main>
+        <!--? Hero Start -->
+        <div class="slider-area2">
+            <div class="slider-height2 hero-overly2 d-flex align-items-center" style="max-height:200px;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="hero-cap hero-cap2 text-center">
+                                <h2>Services</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Hero End -->
+        <!-- Start Sample Area -->
+		<section class="sample-text-area">
+			<div class="container box_1170">
+				<h1>ExpertCallers: A Premier ISO Certified Call Center Service Provider</h1><br>
+				<p class="sample-text">
+					Quality is the cornerstone of our call center services and an ISO 9001: 2015 certificate is a testimony to this commitment. Taking this commitment forward, we have implementing well established QA standards across all facets of our call center operations, which has helped us to deliver robust, reliable and effective inbound and outbound call center services that deliver top-notch results.
+				</p>
+			</div>
+		</section>
+
+        <!------------sec----------->
+
+
+<!-----------sec------------->
+
+      <div class="categories-area" style="margin-bottom:50px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <!-- Section Tittle -->
+                    <div class="section-tittle mb-70">
+                        <span>One-Stop-Shop for All Your Call Center BPO Needs</span>
+                        <h2>Our Best Services</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+
+                {% for service in services %}
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="single-cat text-center mb-50" style="height:350px;">
+
+                        <div class="cat-cap">
+                            <h5>{{service.title}}</h5>
+                            <p>{{service.desc}}</p>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+
+            </div>
+        </div>
+    </div>
+
+<!---------------sec------------->
+
+          <div class="section-top-border" style="background:linear-gradient(45deg, #ef3737, transparent);">
+      <div class="container">
+          <h2 class="align-center">
+        ISO/IEC 27001:2013 ISMS (Information Security Management Systems) Certification - What it Tells About Us
+        </h2>
+      </div>
+  </div>
+
+
+ </main>
+
+    {% endblock %}

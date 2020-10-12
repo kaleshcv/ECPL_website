@@ -1,0 +1,67 @@
+
+    {% extends 'base.html' %}
+    {% block title %}Careers{% endblock %}
+    {% block main %}
+    {% load static %}
+
+    <main>
+        <!--? Hero Start -->
+        <div class="slider-area2">
+            <div class="slider-height2 hero-overly2 d-flex align-items-center" style="max-height:200px;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="hero-cap hero-cap2 text-center">
+                                <h2>Careers</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Hero End -->
+        <!-- Start Sample Area -->
+		<section class="sample-text-area">
+			<div class="container box_1170">
+				<h1>Come work with us</h1><br>
+				<p class="sample-text">
+					We are always looking for talent with a “Yes, we can!” attitude. If you see yourself working with a team of experts that love nothing more than to provide customers with the most unforgettable customer experiences, you are at the right place.
+				</p>
+			</div>
+		</section>
+
+        <!------------sec----------->
+
+  <div class="section-top-border" style="background:linear-gradient(45deg, #ef3737, transparent);">
+      <div class="container">
+          <h2 class="align-center">
+        Current Openings
+        </h2>
+         </div>
+  </div>
+<!-----------sec------------->
+
+        <div class="section-top-border container">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">Designation</th>
+                </tr>
+              </thead>
+
+                {% for career in careers %}
+                      <tbody>
+                        <tr>
+                            <td><a href="career_view/{{career.id}}" style="color:darkgreen">{{ career.designation }}</a></td>
+                        </tr>
+                      </tbody>
+                {% endfor %}
+            </table>
+
+        </div>
+
+
+
+ </main>
+
+    {% endblock %}

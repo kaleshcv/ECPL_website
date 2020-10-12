@@ -1,0 +1,175 @@
+    {% extends 'base.html' %}
+    {% block title %}About Us{% endblock %}
+    {% block main %}
+    {% load static %}
+
+    <main>
+        <!--? Hero Start -->
+        <div class="slider-area2">
+            <div class="slider-height2 hero-overly2 d-flex align-items-center" style="max-height:200px;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="hero-cap hero-cap2 text-center">
+                                <h2>About Us</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Hero End -->
+        <div class="about-details" style="margin-top:70px;">
+            <div class="container">
+                <div class="row">
+                    <div class="offset-xl-1 col-lg-10">
+                        <div class="about-details-cap mb-50">
+                            <h4>Who We Are?</h4>
+                            <p>ExpertCallers, a Flatworld Solutions company, provides comprehensive customer relationship management services to companies across the globe.</p>
+                            <p> It was in 2002, that we started our operations with a handful of clients and staff, but with plenteous of commitment, rock-solid systems and knowledgeable resources. By 2008, our dedication paid off and took our client count to 100+ and staff strength to 2000. By the time we realized we were truly growing, we found our wings spread across 3 continents. Yes, we owe it to our processes and dedication, but we also believe it has got a lot to do with our ability to build and respect relationships. As a company, we strive to break free of the typical client-vendor relationship and build a partnership based on trust and value.</p>
+                        </div>
+
+                        <div class="about-details-cap mb-50">
+                            <h4>Why We Are Different</h4>
+                            <p>Working for our clients is an opportunity to go well and beyond our capabilities. That’s precisely why we always succeed in developing powerful and winning solutions to transform processes and take them to the next level. Having worked with many industry leaders, we have developed an instinctive understanding of the dynamics of the call center industry. Based on this understanding we develop and deploy a customized approach to service the specific needs of every client</p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-top-border">
+					<h3 class="mb-20">Our Service Features</h3>
+                    <div class="row" style="margin-top:50px">
+						<div class="col-md-4">
+
+							<div class="">
+								<ul class="unordered-list">
+									<li>Over 12 years of industry experience</li>
+									<li>Specific solutions for specific needs</li>
+									<li>Guaranteed savings of 40% through increased efficiency</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-md-4 mt-sm-30">
+
+							<div class="">
+								<ul class="unordered-list">
+									<li>24x7 services</li>
+									<li>Guaranteed data privacy.</li>
+									<li>Service from 8 global delivery centers to ensure time-bound delivery</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-md-4 mt-sm-30">
+
+							<div class="">
+								<ul class="unordered-list">
+									<li>You control your project</li>
+									<li>Innovate on existing solutions</li>
+									<li>Reduced costs by integrating and automating processes</li>
+                                </ul>
+							</div>
+						</div>
+					</div>
+				</div>
+            </div>
+        </div>
+
+        <!-- Team Start -->
+        <div class="team-area">
+        <div class="container">
+            <div class="row">
+                <div class="cl-xl-7 col-lg-8 col-md-10">
+                    <!-- Section Tittle -->
+                    <div class="section-tittle mb-70">
+                        <span>Our Professional members </span>
+                        <h2>Our Team Mambers</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <!-- single Tem -->
+
+                {% for team in teams %}
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-">
+                    <div class="single-team mb-30">
+                        <div class="team-img">
+                            <img src="{{team.image.url}}" alt="">
+                        </div>
+                        <div class="team-caption">
+                            <h3><a href="#">{{team.name}}</a></h3>
+                            <span>{{team.designation}}</span>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+
+            </div>
+        </div>
+        </div>
+
+
+        <!-- Team End -->
+
+        <!--? Testimonial Start -->
+    <div class="testimonial-area testimonial-padding" data-background="{% static 'assets/img/gallery/section_bg04.jpg' %}">
+        <div class="container ">
+            <div class="row d-flex justify-content-center">
+                <div class="col-xl-10 col-lg-10 col-md-9">
+                    <div class="h1-testimonial-active">
+
+                        {% for testi in testimonials %}
+
+                        <!-- Single Testimonial -->
+                        <div class="single-testimonial text-center">
+                            <!-- Testimonial Content -->
+                            <div class="testimonial-caption ">
+                                <div class="testimonial-top-cap">
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="67px" height="49px">
+                                    <path fill-rule="evenodd"  fill="rgb(240, 78, 60)"
+                                    d="M57.053,48.209 L42.790,48.209 L52.299,29.242 L38.036,29.242 L38.036,0.790 L66.562,0.790 L66.562,29.242 L57.053,48.209 ZM4.755,48.209 L14.263,29.242 L0.000,29.242 L0.000,0.790 L28.527,0.790 L28.527,29.242 L19.018,48.209 L4.755,48.209 Z"/>
+                                    </svg>
+                                    <p>{{testi.testi}}</p>
+                                </div>
+                                <!-- founder -->
+                                <div class="testimonial-founder d-flex align-items-center justify-content-center">
+                                    <div class="founder-img">
+                                        <!--<img src="{% static 'assets/img/gallery/Homepage_testi.png' %}" alt="">-->
+                                    </div>
+                                    <div class="founder-text">
+                                        <span>{{testi.name}}</span>
+                                        <p>{{testi.title}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        {% endfor %}
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+        <!-- Brand Area Start -->
+        <div class="brand-area pt-50 pb-50">
+            <div class="container">
+                <h2 style="margin-bottom: 60px;">Happy Clients</h2>
+                <div class="brand-active brand-border pb-40">
+
+                    {% for client in clients %}
+                    <div class="single-brand">
+                        <img src="{{client.image.url}}" alt="">
+                    </div>
+                    {% endfor %}
+
+                </div>
+            </div>
+        </div>
+        <!-- Brand Area End -->
+    </main>
+
+    {% endblock %}
