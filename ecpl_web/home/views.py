@@ -3,7 +3,7 @@ from .models import Services,Testimonials,Contactform,Team,Clients,Careers,Candi
 
 
 def index(request):
-    services = Services.objects.all()[:3]
+    services = Services.objects.all()
     testimonials=Testimonials.objects.all()
     clients = Clients.objects.all()
     data = {'services': services,'testimonials':testimonials,'clients':clients}

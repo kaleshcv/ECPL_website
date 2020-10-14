@@ -207,7 +207,6 @@ body {
 
 /* line 9, C:/Users/HP/Desktop/264.Business_HTML/HTML/assets/scss/_common.scss */
 h1,
-h2,
 h3,
 h4,
 h5,
@@ -222,8 +221,8 @@ h6 {
 
 /* line 23, C:/Users/HP/Desktop/264.Business_HTML/HTML/assets/scss/_common.scss */
 p {
-  font-family: "Poppins", sans-serif;
-  color: #10285d;
+  font-family:none;
+  color:#063666c9;
   font-size: 16px;
   line-height: 30px;
   margin-bottom: 15px;
@@ -3563,15 +3562,17 @@ hero-btn {
   background-image: url(../img/hero/hero2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+
 }
 
 /* line 37, C:/Users/HP/Desktop/264.Business_HTML/HTML/assets/scss/_h1-hero.scss */
 .slider-area {
   margin-top: -1px;
-  background-image: url(../img/hero/h1_hero.jpg);
+  background-image: url(../img/hero/h2_hero.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+  max-height:600px;
 }
 
 /* line 43, C:/Users/HP/Desktop/264.Business_HTML/HTML/assets/scss/_h1-hero.scss */
@@ -3588,12 +3589,12 @@ hero-btn {
 
 /* line 48, C:/Users/HP/Desktop/264.Business_HTML/HTML/assets/scss/_h1-hero.scss */
 .slider-area .hero__caption span {
-  font-size: 18px;
+  font-size: 20px;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   margin-bottom: 22px;
   text-transform: uppercase;
-  color: #eb566c;
+  color: black;
   display: inline-block;
   position: relative;
   padding-left: 100px;
@@ -4448,7 +4449,7 @@ hero-btn {
 
 /* line 1, C:/Users/HP/Desktop/264.Business_HTML/HTML/assets/scss/_testimonial.scss */
 .testimonial-area {
-  background: #121212;
+  background: #14435c;
   position: relative;
 }
 
@@ -7138,7 +7139,7 @@ del {
 /* line 185, C:/Users/HP/Desktop/264.Business_HTML/HTML/assets/scss/_elements.scss */
 .genric-btn.primary {
   color: #fff;
-  background: #1f2b7b;
+  background: #092c3f;
   border: 1px solid transparent;
 }
 
@@ -8256,4 +8257,73 @@ del {
   margin-bottom: 10px;
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# new Styles */
+
+
+.h2-new {
+    margin-bottom: 30px;
+    color: #374852;
+    font-family: 'Font Awesome 5 Brands';
+    font-weight:bold;
+}
+
+.iframe-container{
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+.iframe-container iframe{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+.slider-head-new {
+    margin-top: 185px;
+    margin-left: 30px;
+    padding-top: 40px;
+    padding-left: 20px;
+    color: lightgray;
+}
+
+
+.btn-head {
+    background: #d03333;
+    color: whitesmoke;
+    padding: 15px 30px;
+}
+.btn-head-c {
+    background: #d03333;
+    color: whitesmoke;
+    padding: 10px 30px;
+}
+
+.btn-head:hover {
+    background: white;
+    color: black;
+    padding: 15px 30px;
+}
+.btn-head-c:hover {
+    background: white;
+    color: black;
+    padding: 10px 30px;
+}
+
+
+.contact-new {
+
+    position: absolute;
+    right: -655px;
+    top: 30px;
+    padding: 10px;
+    background: #0000002e;
+}
+
+.li-contact{
+    padding:10px 10px;
+
+}

@@ -20,13 +20,11 @@
             </div>
         </div>
         <!-- Hero End -->
-                <div class="section-top-border container">
-					<h3 class="mb-20">{{careers.designation}}</h3>
-
-                    <div class="row" style="margin-top:50px">
-						<div class="col-md-7">
-
-							<div class="">
+        <div class="section-top-border container">
+            <h3 class="mb-20">{{careers.designation}}</h3>
+            <div class="row" style="margin-top:50px">
+                <div class="col-md-7">
+                    <div class="">
 								<p><b>Designation :</b>  {{careers.designation}}</p>
                                 <p><b>Project :</b>  {{careers.project}}</p>
                                 <p><b>Job Location :</b>  {{careers.job_location}}</p>
@@ -41,27 +39,25 @@
                                 <p><b>Interview Type :</b>  {{careers.interview_type}}</p>
                                 <p><b>Language :</b>  {{careers.language}}</p>
                                 <p><b>Others :</b>  {{careers.others}}</p>
+                    </div>
+                </div>
+                <div class="col-md-4" style="margin-left:50px;">
+                    <h1>Apply Now !</h1><br>
 
-
-							</div>
-						</div>
-                        <div class="col-md-4" style="margin-left:50px;">
-                            <h1>Apply Now !</h1><br>
-
-                            <form class="form-contact contact_form" action="" method="post" novalidate="novalidate" enctype="multipart/form-data">
+                    <form class="form-contact contact_form" action="" method="post" novalidate="novalidate" enctype="multipart/form-data">
                             {% csrf_token %}
-                            <div class="row">
+                        <div class="row">
 
-                                    <div class="col-sm-6">
-                                        <div class="form-group">
-                                            <input class="form-control valid" name="name" id="name" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'" placeholder="Enter your name">
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6">
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <input class="form-control valid" name="name" id="name" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'" placeholder="Enter your name">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
                                         <div class="form-group">
                                             <input class="form-control valid" name="email" id="email" type="email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'" placeholder="Email">
                                         </div>
-                                    </div>
+                            </div>
                                     <div class="col-12">
                                         <div class="form-group">
                                             <input class="form-control" name="phone" id="subject" type="tel" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Phone Number'" placeholder="Enter Phone Number">

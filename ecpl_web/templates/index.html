@@ -4,173 +4,142 @@
 {% load static %}
 <main>
     <!-- slider Area Start-->
-    <div class="slider-area ">
-        <div class="slider-active">
-            <!-- Single Slider -->
-            <div class="single-slider slider-height d-flex align-items-center">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xl-8 col-lg-7 col-md-8">
-                            <div class="hero__caption">
-                                <span data-animation="fadeInLeft" data-delay=".1s">Committed to success</span>
-                                <h1 data-animation="fadeInLeft" data-delay=".5s" >Expert Callers</h1>
-                                <p data-animation="fadeInLeft" data-delay=".9s">Being a leading provider of call center outsourcing services operating from India, we offer a range of call center BPO services</p>
-                                <!-- Hero-btn -->
-                                <div class="hero__btn" data-animation="fadeInLeft" data-delay="1.1s">
-                                    <a href="all_services" class="btn hero-btn">Our Services</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>          
+    <div class="slider-area hero-overly2">
+        <div class="conatiner">
+
+            <div class="row col-lg-6 d-flex align-items-center">
+                        <h2 class="slider-head-new"> " To minimize the impact of COVID-19, Our Business Continuity Plan is up and running to make Business as Usual for you "</h2>
+
+                <div class="contact-new">
+                    <h3 style="color: #d03333;padding-left:10px;padding-top:10px;">Quick Contact</h3>
+                    <!-- <form name="SmallForm" method="post" action="/forms/contact-us-submit.php" onsubmit="return validateForm(this)"  id="SmallForm" enctype="multipart/form-data"> -->
+                    <form name="contact-form" method="post" action="#" onsubmit="" id="contact-form" enctype="multipart/form-data" novalidate="novalidate">
+                        {% csrf_token %}
+                        <ul>
+                            <li class="li-contact"><input type="text" name="FirstName" placeholder="Name*" required="required"></li>
+                            <li class="li-contact"><input required="required" type="email" name="Email" placeholder="Email*"></li>
+                            <li class="li-contact"><input required="required" type="number" name="phone" placeholder="Contact Number*"></li>
+                            <li class="li-contact"><input type="text" name="Country" placeholder="Country*" required="required"></li>
+                            <li class="li-contact">
+                                <textarea required="required" class="li-contact" rows="4" cols="" placeholder="Enter your requirements*" name="description"></textarea></li>
+                        </ul>
+                        <!-- <a class="privacy-policy pull-left" href="/privacy-policy.php">Privacy Policy</a> -->
+                        <input type="hidden" name="action_value" value="homesmallform">
+                        <input type="hidden" name="currentpage_url" value="/">
+                        <li class="li-contact"><input type="submit" class="btn-head-c" name="submit" style="border: none;"></li>
+                        <p class="li-contact text-white" style="font-size: 12px;">
+                            We respect your privacy. <a href="#" target="_blank" class="text-white">Read our Policy</a>.
+                        </p>
+                    </form>
+                </div>
+
             </div>
-            <!-- Single Slider -->
-            <div class="single-slider slider-height d-flex align-items-center">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xl-8 col-lg-7 col-md-8">
-                            <div class="hero__caption">
-                                <span data-animation="fadeInLeft" data-delay=".1s">Committed to success</span>
-                                <h1 data-animation="fadeInLeft" data-delay=".5s" >We help to grow your business</h1>
-                                <p data-animation="fadeInLeft" data-delay=".9s">Call Center Outsourcing Services: Crafted to Convince and Connect</p>
-                                <!-- Hero-btn -->
-                                <div class="hero__btn" data-animation="fadeInLeft" data-delay="1.1s">
-                                    <a href="all_services" class="btn hero-btn">Our Services</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>          
+
+             <!-----------------for contact----form----->
+
+            <div class="col-lg-6" style="text-align:left;margin-top:50px;margin-left:50px;">
+                <a href="#" class="btn-head">Learn More</a>
             </div>
+
         </div>
+            <!-- Single Slider -->
+            <div class="single-slider slider-height d-flex align-items-center">
+                <div class="container">
+
+
+                </div>
+            </div>
+
     </div>
     <!-- slider Area End-->
 
-     <section class="wantToWork-area w-padding2 section-bg">
+    <div class="categories-area">
         <div class="container">
             <div class="row align-items-center justify-content-between">
-
-                    <div class="wantToWork-caption wantToWork-caption2">
-                        <h2 style="margin-bottom:30px; color:black;">Call Center Outsourcing Services</h2>
-                        <p>ExpertCallers, a Flatworld Solutions company, strives to help you build and nurture exceptional relationships with your customers. With over 12 years of experience in providing timely, reliable and efficient call center outsourcing services, we have perfected the art of transforming customer experiences into competitive advantages.</p>
-                        <p>We tap into this expertise to offer customized inbound and outbound call center outsourcing services to more than 300 clients of all sizes across geographies. We treat every phone call as an opportunity to create engrossing engagements that inspire customers. Be it generating leads, setting appointments, resolving issues or placing orders, we offer your business the experience, expertise, trust and value needed to augment reach and generate success.</p>
-                        <p>We combine highly experienced resources with streamlined processes, latest technology and stringent quality control mechanisms to make your inbound and outbound call center process more responsive and customer-centric. In the process, we help you deliver services that not only meet today’s needs but also overcome tomorrow’s challenges.</p>
-                        <br>
-                    </div>
-
-                    <a href="about" class="btn btn-black f-right">More About Us</a>
-            </div>
-        </div>
-    </section>
-
-
-    <!--? Categories Area Start -->
-    <div class="categories-area" style="margin-bottom:50px;">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <!-- Section Tittle -->
-                    <div class="section-tittle mb-70">
-                        <span>One-Stop-Shop for All Your Call Center BPO Needs</span>
-                        <h2>Our Best Services</h2>
-                    </div>
+                <div class="col-lg-12" style="margin-top:100px;">
+                    <h2 class="h2-new">Call Center Outsourcing Services</h2>
+                    <p>ExpertCallers, a Flatworld Solutions company, strives to help you build and nurture exceptional relationships with your customers. With over 12 years of experience in providing timely, reliable and efficient call center outsourcing services, we have perfected the art of transforming customer experiences into competitive advantages.</p>
+                    <p>We tap into this expertise to offer customized inbound and outbound call center outsourcing services to more than 300 clients of all sizes across geographies. We treat every phone call as an opportunity to create engrossing engagements that inspire customers. Be it generating leads, setting appointments, resolving issues or placing orders, we offer your business the experience, expertise, trust and value needed to augment reach and generate success.</p>
+                    <p>We combine highly experienced resources with streamlined processes, latest technology and stringent quality control mechanisms to make your inbound and outbound call center process more responsive and customer-centric. In the process, we help you deliver services that not only meet today’s needs but also overcome tomorrow’s challenges.</p>
+                    <br>
+                    <p><b><i>---   One-Stop-Shop for All Your Call Center BPO Needs   ---</i></b></p>
                 </div>
             </div>
-            <div class="row">
-
-                {% for service in services %}
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="single-cat text-center mb-50" style="height:350px;">
-
-                        <div class="cat-cap">
-                            <h5>{{service.title}}</h5>
-                            <p>{{service.desc}}</p>
-                        </div>
-                    </div>
-                </div>
-                {% endfor %}
-            <div class="container"><a href="all_services" class="btn btn-black f-right">All Services</a></div>
-                <br><br>
-            </div>
-
+            <!--       <a href="about" class="btn-head">More About Us</a> -->
         </div>
     </div>
-    <!-- Services Area End -->
-    <!--? About Area Start-->
-    <div class="support-company-area pt-100 pb-100 section-bg fix" data-background="{% static 'assets/img/gallery/sec_bg_1.jpg' %}">
+
+
+    <!--why outsource-->
+
+    <div class="categories-area pb-10 pt-60">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-xl-6 col-lg-6">
-                    <div class="support-location-img">
-                        <img src="{% static 'assets/img/gallery/about.png' %}" alt="">
-                    </div>
-                </div>
-                <div class="col-xl-6 col-lg-6">
-                    <div class="right-caption">
-                        <!-- Section Tittle -->
-                        <div class="section-tittle section-tittle2 mb-50">
-                            <h2>Why Outsource Call Center Services to Expert Callers?</h2>
-                        </div>
-                        <div class="support-caption">
-                            <p class="pera-top">Professional Representation</p>
-                            <p class="mb-65">We offer professional services yet in a friendly way and provide seamless experience to your customers.</p>
-                            <p class="pera-top">Security & Technological Excellence</p>
-                            <p class="mb-65">We are ISO 27001 certified, which is a proof that we ensure next level of security to all the information shared with us by our clients.</p>
-                            <p class="pera-top">Reduced Costs</p>
-                            <p class="mb-65">Leveraging our global deliver centers in India, Philippines, Columbia, Argentina and Bolivia, we offer 30% to 40% savings on operating cost per FTE.</p>
-                            <p class="pera-top">Multi-lingual Support</p>
-                            <p class="mb-65">We can provide seamless support in 40+ languages, which includes English, Hindi, Spanish, French, German, Mandarin and more.</p>
-
-                        </div>
-                    </div>
+                <div class="col-lg-12" style="margin-bottom:30px;">
+                    <h2 class="h2-new">Why Outsource Call Center Services to ExpertCallers?</h2>
                 </div>
 
-            </div>
+                    <div class="col-xl-6 col-lg-6">
+                        <div class="support-location-img">
+                            <img src="{% static 'assets/img/gallery/about_1.jpg' %}" alt="" style="max-width: 500px;max-height: 600px;">
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6" style="margin-top:30px;">
+                        <div class="right-caption">
+                            <!-- Section Tittle -->
+                            <div class="support-caption">
+                                <h6>Professional Representation</h6>
+                                <p class="mb-40"><i>We offer professional services yet in a friendly way and provide seamless experience to your customers.</i></p>
+                                <h6>Security & Technological Excellence</h6>
+                                <p class="mb-40"><i>We are ISO 27001 certified, which is a proof that we ensure next level of security to all the information shared with us by our clients.</i></p>
+                                <h6>Reduced Costs</h6>
+                                <p class="mb-40"><i>Leveraging our global deliver centers in India, Philippines, Columbia, Argentina and Bolivia, we offer 30% to 40% savings on operating cost per FTE.</i></p>
+                                <h6>Multi-lingual Support</h6>
+                                <p class="mb-40"><i>We can provide seamless support in 40+ languages, which includes English, Hindi, Spanish, French, German, Mandarin and more.</i></p>
+                                <a href="contact" class="btn-head">Contact Us</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
         </div>
     </div>
-    <!-- About Area End-->
-    <!--? Services Ara Start -->
-    <div class="services-area section-padding3">
+    <!-------------Video1-------------->
+    <div class="categories-area pb-10 pt-100">
         <div class="container">
-            <div class="row">
-                <div class="cl-xl-7 col-lg-8 col-md-10">
-                    <!-- Section Tittle -->
-                    <div class="section-tittle mb-70">
-                        <span>Our Success Stories</span>
-                        <h3>Accelerating Growth, Enhancing Operational Efficiency and Improving Bottom-Line</h3>
-                        <h2>View all case studies</h2>
-                    </div> 
+            <div class="row align-items-center">
+                <div class="col-lg-12" style="margin-bottom:20px;">
+                    <h2 class="h2-new">A few words from our customers</h2>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-10">
-                    <div class="single-services mb-100">
-                        <div class="services-img">
-                            <img src="{% static 'assets/img/gallery/services1.png' %}" alt="">
-                            </div>
-                            <div class="services-caption">
-                            <span>Strategy planing</span>
-                            <p><a href="#">Within the construction industry as their overdraft</a></p>
-                        </div>
+
+                <div class="col-xl-5 col-lg-5 col-md-5">
+                    <p style="text-align: center"><b>Fredrick Mirzakhanian, CEO of Medicare Advantage Broker</b></p>
+                    <div class="iframe-container">
+                        <iframe width="584" height="270" src="https://www.youtube.com/embed/3ntnKJrmzPY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
+                    <br><p style="text-align: center">Key Motives for Medicare Advantage Broker to Work with Expert Callers for 7 Years and Counting</p>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-10">
-                    <div class="single-services mb-100">
-                        <div class="services-img">
-                            <img src="{% static 'assets/img/gallery/services2.png' %}" alt="">
-                            </div>
-                            <div class="services-caption">
-                            <span>Strategy planing</span>
-                            <p><a href="#">Within the construction industry as their overdraft</a></p>
-                        </div>
+
+                <div class="col-xl-2 col-lg-2 col-md-2">
+                        <div style="text-align: center;"><br><a href="about" class="genric-btn primary small">More</a></div>
+                </div>
+
+                <div class="col-xl-5 col-lg-5 col-md-5">
+                    <p style="text-align: center"><b>Ishan Dhara, Aditya Birla Group</b></p>
+                    <div class="iframe-container">
+                        <iframe width="584" height="270" src="https://www.youtube.com/embed/PBERn8NEfFI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
+                    <br><p style="text-align: center">Why Would Aditya Birla Trust Expert Callers to Handle Their Business Requirements?</p>
                 </div>
+
             </div>
+
         </div>
     </div>
-    <!-- Services Ara End -->
+
     <!--? Testimonial Start -->
-    <div class="testimonial-area testimonial-padding" data-background="{% static 'assets/img/gallery/section_bg04.jpg' %}">
+
+
+    <div class="testimonial-area pt-50 pb-50">
         <div class="container">
             <div class="row d-flex justify-content-center">
                 <div class="col-xl-10 col-lg-10 col-md-9">
@@ -212,41 +181,74 @@
         </div>
     </div>
     <!-- Testimonial End -->
-            <div class="container">
-                <div class="section-top-border">
-					<h3 class="mb-30">A Message from Our CEO: Covid-19 Update</h3>
-					<div class="row">
-						<div class="col-lg-12">
-							<blockquote class="generic-blockquote">Amid these trying times, I personally wanted to convey my heartfelt support and solidarity with you, your families and your colleagues. These are hard times but together we will come through stronger.
 
-                                This is an unprecedented pandemic, one that took businesses and countries by surprise with its speed and intensity. Even though all our delivery centers are equipped with redundant high speed internet connections, UPS backed by generators, redundant facilities across cities and countries, the highly contagious nature and rapid global spread of the Covid-19 has resulted in governments having to impose curfew, lock downs and social distancing which meant that our teams could not work from these well-equipped facilities
-							</blockquote>
-
-						</div>
-					</div>
-				</div>
-            </div>
-
-
-
-
-
-    <!-- Brand Area Start -->
-    <div class="brand-area pb-140">
+    <div class="services-area pt-100 pb-40">
         <div class="container">
-            <div class="row" style="margin-top:50px;">
-                <div class="col-lg-12">
-                    <div class="section-tittle mb-100">
-                        <span>Clients</span>
-                        <h3>Who love to work with us</h3>
+            <div class="row">
+                <div class="cl-xl-7 col-lg-8 col-md-10">
+                    <!-- Section Tittle -->
+                    <div class="mb-30">
+                        <h2 class="h2-new">Our Success Stories</h2>
+                        <h6>Accelerating Growth, Enhancing Operational Efficiency and Improving Bottom-Line</h6><br>
                     </div>
                 </div>
             </div>
-            <div class="brand-active brand-border pb-40">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-10">
+                    <div class="single-services mb-20">
+                        <div class="services-img">
+                            <img src="{% static 'assets/img/gallery/service_4.png' %}" alt="">
+                            </div>
+                            <div class="services-caption">
+                            <span>Strategy planing</span>
+                            <p>Effective Inbound and Outbound Support for a UK-Based Safety Promotion Company</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-10">
+                    <div class="single-services mb-20">
+                        <div class="services-img">
+                            <img src="{% static 'assets/img/gallery/service_2.jpg' %}" alt="">
+                            </div>
+                            <div class="services-caption">
+                            <span>Strategy planing</span>
+                            <p>Our Lead Generation Service helped a Client Increase their Conversion Rate From 20% to 70%</p>
+                        </div>
+                    </div>
+                </div>
+                 <div class="col-lg-4 col-md-4 col-sm-10">
+                    <div class="single-services mb-20">
+                        <div class="services-img">
+                            <img src="{% static 'assets/img/gallery/service_3.png' %}" alt="">
+                            </div>
+                            <div class="services-caption">
+                            <span>Strategy planing</span>
+                            <p>How Our Expert Help Delivered Superior Quality Customer Support</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn-head">View all case studies</a>
+        </div>
+    </div>
+    <!-- Services Ara End -->
+
+    <!-- Brand Area Start -->
+    <div class="brand-area pt-20 pb-50">
+        <div class="container">
+            <div class="row" style="margin-top:50px;">
+                <div class="col-lg-12">
+                    <div class="mb-60" style="text-align: center">
+                        <h2 class="h2-new">Clients</h2>
+                        <h6> Who love to work with us</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="brand-active brand-border pb-40" style="background: #3748520a;padding: 20px;">
 
                      {% for client in clients %}
                     <div class="single-brand">
-                        <img src="{{client.image.url}}" alt="">
+                        <img src="{{client.image.url}}" alt="" style="max-width:150px;">
                     </div>
                     {% endfor %}
 
@@ -255,22 +257,6 @@
     </div>
     <!-- Brand Area End -->
 
-        <!-- Want To work -->
-    <section class="wantToWork-area w-padding2 section-bg" style="background:linear-gradient(45deg, #ef3737, transparent);">
-        <div class="container">
-            <div class="row align-items-center justify-content-between">
-                <div class="col-xl-7 col-lg-9 col-md-8">
-                    <div class="wantToWork-caption wantToWork-caption2">
-                        <h2>Are you Searching<br> For a First-Class Consultant?</h2>
-                    </div>
-                </div>
-                <div class="col-xl-2 col-lg-3 col-md-4">
-                    <a href="contact" class="btn btn-black f-right">Contact Us</a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Want To work End -->
 
 </main>
 {% endblock %}
