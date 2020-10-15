@@ -4,65 +4,46 @@
 {% load static %}
 <main>
     <!-- slider Area Start-->
-    <div class="slider-area hero-overly2">
-        <div class="conatiner">
 
-            <div class="row col-lg-6 d-flex align-items-center">
-                        <h2 class="slider-head-new"> " To minimize the impact of COVID-19, Our Business Continuity Plan is up and running to make Business as Usual for you "</h2>
-
-                <!--<div class="contact-new">
-                    <h3 style="color: #d03333;padding-left:10px;padding-top:10px;">Quick Contact</h3>
-
-                    <form name="contact-form" method="post" action="#" onsubmit="" id="contact-form" enctype="multipart/form-data" novalidate="novalidate">
-                        {% csrf_token %}
-                        <ul>
-                            <li class="li-contact"><input type="text" name="FirstName" placeholder="Name*" required="required"></li>
-                            <li class="li-contact"><input required="required" type="email" name="Email" placeholder="Email*"></li>
-                            <li class="li-contact"><input required="required" type="number" name="phone" placeholder="Contact Number*"></li>
-                            <li class="li-contact"><input type="text" name="Country" placeholder="Country*" required="required"></li>
-                            <li class="li-contact">
-                                <textarea required="required" class="li-contact" rows="4" cols="" placeholder="Enter your requirements*" name="description"></textarea></li>
-                        </ul>
-
-                        <input type="hidden" name="action_value" value="homesmallform">
-                        <input type="hidden" name="currentpage_url" value="/">
-                        <li class="li-contact"><input type="submit" class="btn-head-c" name="submit" style="border: none;"></li>
-                        <p class="li-contact text-white" style="font-size: 12px;">
-                            We respect your privacy. <a href="#" target="_blank" class="text-white">Read our Policy</a>.
-                        </p>
-                    </form>
-                </div>-->
-
-            </div>
-
-             <!-----------------for contact----form----->
-
-            <div class="col-lg-6" style="text-align:left;margin-top:50px;margin-left:50px;">
-                <a href="#" class="btn-head">Learn More</a>
-            </div>
-
-        </div>
-            <!-- Single Slider -->
-            <div class="single-slider slider-height d-flex align-items-center">
-                <div class="container">
-
-
+    <div class="slider-area hero-overly2" style="height: 555px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 col-md-7">
+                    <h2 class="slider-head-new" style="text-align:justify;">To minimize the impact of COVID-19, Our Business Continuity Plan is up and running to make Business as Usual for you</h2>
+                    <div style="margin-top:60px;margin-left:70px;"><a href="#" class="btn-head">Learn More</a></div>
                 </div>
             </div>
-
+        </div>
     </div>
+
+
+
     <!-- slider Area End-->
 
-    <div class="categories-area">
+    <div class="categories-area" >
         <div class="container">
             <div class="row align-items-center justify-content-between">
-                <div class="col-lg-12" style="margin-top:100px;">
+                <div class="col-lg-7" style="margin-top:100px;">
                     <h2 class="h2-new">Call Center Outsourcing Services</h2>
-                    <p>ExpertCallers, a Flatworld Solutions company, strives to help you build and nurture exceptional relationships with your customers. With over 12 years of experience in providing timely, reliable and efficient call center outsourcing services, we have perfected the art of transforming customer experiences into competitive advantages.</p>
-                    <p>We tap into this expertise to offer customized inbound and outbound call center outsourcing services to more than 300 clients of all sizes across geographies. We treat every phone call as an opportunity to create engrossing engagements that inspire customers. Be it generating leads, setting appointments, resolving issues or placing orders, we offer your business the experience, expertise, trust and value needed to augment reach and generate success.</p>
-                    <p>We combine highly experienced resources with streamlined processes, latest technology and stringent quality control mechanisms to make your inbound and outbound call center process more responsive and customer-centric. In the process, we help you deliver services that not only meet today’s needs but also overcome tomorrow’s challenges.</p>
+                    <p style="text-align: justify">ExpertCallers, a Flatworld Solutions company, strives to help you build and nurture exceptional relationships with your customers. With over 12 years of experience in providing timely, reliable and efficient call center outsourcing services, we have perfected the art of transforming customer experiences into competitive advantages.</p>
+                    <p style="text-align: justify">We tap into this expertise to offer customized inbound and outbound call center outsourcing services to more than 300 clients of all sizes across geographies. We treat every phone call as an opportunity to create engrossing engagements that inspire customers. Be it generating leads, setting appointments, resolving issues or placing orders, we offer your business the experience, expertise, trust and value needed to augment reach and generate success.</p>
+                    <p style="text-align: justify">We combine highly experienced resources with streamlined processes, latest technology and stringent quality control mechanisms to make your inbound and outbound call center process more responsive and customer-centric. In the process, we help you deliver services that not only meet today’s needs but also overcome tomorrow’s challenges.</p>
                     <br>
                     <p><b><i>One-Stop-Shop for All Your Call Center BPO Needs</i></b></p>
+                </div>
+                <div class="col-lg-1">
+
+                </div>
+                <div class="col-lg-4 col-md-4" style="background:#136fa0d6;margin-top: 50px;padding:30px;border-radius: 15px">
+                     {% load crispy_forms_tags %}
+
+                    <h3>Quick Contact</h3>
+                    <form action="create" method="POST" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    {{ form|crispy }}
+
+                    <input type="submit" value="Submit" class="genric-btn primary small">
+                    </form>
                 </div>
             </div>
             <!--       <a href="about" class="btn-head">More About Us</a> -->

@@ -6,7 +6,7 @@
     <main>
         <!--? Hero Start -->
         <div class="slider-area2">
-            <div class="slider-height2 hero-overly2 d-flex align-items-center" style="max-height:200px;">
+            <div class="slider-height2 hero-overly2 d-flex align-items-center" style="max-height:300px;">
                 <div class="container">
                     <div class="row">
                         <div class="col-xl-12">
@@ -19,77 +19,97 @@
             </div>
         </div>
         <!-- Hero End -->
-        <div class="about-details" style="margin-top:70px;">
+
+        <div class="categories-area">
             <div class="container">
-                <div class="row">
-                    <div class="offset-xl-1 col-lg-10">
-                        <div class="about-details-cap mb-50">
-                            <h4>Who We Are?</h4>
-                            <p>ExpertCallers, a Flatworld Solutions company, provides comprehensive customer relationship management services to companies across the globe.</p>
-                            <p> It was in 2002, that we started our operations with a handful of clients and staff, but with plenteous of commitment, rock-solid systems and knowledgeable resources. By 2008, our dedication paid off and took our client count to 100+ and staff strength to 2000. By the time we realized we were truly growing, we found our wings spread across 3 continents. Yes, we owe it to our processes and dedication, but we also believe it has got a lot to do with our ability to build and respect relationships. As a company, we strive to break free of the typical client-vendor relationship and build a partnership based on trust and value.</p>
+            <div class="row align-items-center justify-content-between">
+                <div class="col-lg-7 col-md-7" style="margin-top: 50px;padding:30px">
+                    <h2 class="h2-new">Who We Are?</h2>
+                    <p><b style="color:#ce2929;">ExpertCallers, a Flatworld Solutions company, provides comprehensive customer relationship management services to companies across the globe.</b></p>
+                    <p style="text-align: justify">It was in 2002, that we started our operations with a handful of clients and staff, but with plenteous of commitment, rock-solid systems and knowledgeable resources. By 2008, our dedication paid off and took our client count to 100+ and staff strength to 2000. By the time we realized we were truly growing, we found our wings spread across 3 continents. Yes, we owe it to our processes and dedication, but we also believe it has got a lot to do with our ability to build and respect relationships. As a company, we strive to break free of the typical client-vendor relationship and build a partnership based on trust and value</p>
+                    <p style="text-align: justify">We help you build trust by engaging in personal, meaningful, and productive interactions with your customers. We provide great support to a range of contact center requirements including inbound call services, outbound call services, technical support, telemarketing, CATI, Email Support, Chat Support etc.</p>
+                    <br>
+                </div>
+                <div class="col-lg-1 col-md-1"></div>
+                <div class="col-lg-4 col-md-4" style="background:#136fa0d6;margin-top: 50px;padding:30px;border-radius: 15px">
+                     {% load crispy_forms_tags %}
+
+                    <h3>Quick Contact</h3>
+                    <form action="create" method="POST" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    {{ form|crispy }}
+
+                    <input type="submit" value="Submit" class="genric-btn primary small">
+                    </form>
+                </div>
+            </div>
+            <!--       <a href="about" class="btn-head">More About Us</a> -->
+            </div>
+        </div>
+
+
+    <!---------------services------------->
+
+        <div class="categories-area">
+            <div class="container">
+                <div class="row align-items-center justify-content-between">
+                     <div class="col-lg-12 col-md-12" style="margin-top: 50px;padding:30px">
+                        <h2 class="h2-new">Why We Are Different</h2>
+                        <p>Working for our clients is an opportunity to go well and beyond our capabilities. That’s precisely why we always succeed in developing powerful and winning solutions to transform processes and take them to the next level. Having worked with many industry leaders, we have developed an instinctive understanding of the dynamics of the call center industry. Based on this understanding we develop and deploy a customized approach to service the specific needs of every client</p>
+                        <br>
+                    </div>
+                    <div class="col-xl-6 col-lg-6">
+                        <div class="support-location-img">
+                            <img src="{% static 'assets/img/gallery/about_2.jpg' %}" alt="" style="max-width: 500px;max-height: 600px;">
                         </div>
-
-                        <div class="about-details-cap mb-50">
-                            <h4>Why We Are Different</h4>
-                            <p>Working for our clients is an opportunity to go well and beyond our capabilities. That’s precisely why we always succeed in developing powerful and winning solutions to transform processes and take them to the next level. Having worked with many industry leaders, we have developed an instinctive understanding of the dynamics of the call center industry. Based on this understanding we develop and deploy a customized approach to service the specific needs of every client</p>
-
+                    </div>
+                    <div class="col-xl-6 col-lg-6" style="margin-top:30px;">
+                        <div class="right-caption">
+                            <!-- Section Tittle -->
+                            <div class="support-caption">
+                                <p class="mb-1"><i><b>Over 12 years of industry experience</b></i></p>
+                                <p class="mb-1"><i><b>Specific solutions for specific needs</b></i></p>
+                                <p class="mb-1"><i><b>Guaranteed savings of 40% through increased efficiency</b></i></p>
+                                <p class="mb-1"><i><b>24x7 services</b></i></p>
+                                <p class="mb-1"><i><b>Guaranteed data privacy</b></i></p>
+                                <p class="mb-1"><i><b>Service from 8 global delivery centers to ensure time-bound delivery</b></i></p>
+                                <br><a href="contact" class="btn-head">Contact Us</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-
-                <div class="section-top-border">
-					<h3 class="mb-20">Our Service Features</h3>
-                    <div class="row" style="margin-top:50px">
-						<div class="col-md-4">
-
-							<div class="">
-								<ul class="unordered-list">
-									<li>Over 12 years of industry experience</li>
-									<li>Specific solutions for specific needs</li>
-									<li>Guaranteed savings of 40% through increased efficiency</li>
-								</ul>
-							</div>
-						</div>
-						<div class="col-md-4 mt-sm-30">
-
-							<div class="">
-								<ul class="unordered-list">
-									<li>24x7 services</li>
-									<li>Guaranteed data privacy.</li>
-									<li>Service from 8 global delivery centers to ensure time-bound delivery</li>
-								</ul>
-							</div>
-						</div>
-						<div class="col-md-4 mt-sm-30">
-
-							<div class="">
-								<ul class="unordered-list">
-									<li>You control your project</li>
-									<li>Innovate on existing solutions</li>
-									<li>Reduced costs by integrating and automating processes</li>
-                                </ul>
-							</div>
-						</div>
-					</div>
-				</div>
+            </div>
+        </div>
+        <div class="categories-area pb-10 pt-100">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-xl-6 col-lg-6 col-md-6">
+                        <h5 style="text-align: center"><u>Expert Callers Bangalore Delivery Center</u></h5><br>
+                        <div class="iframe-container">
+                            <iframe width="526" height="280" src="https://www.youtube.com/embed/_Hg4aek2lFQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6">
+                        <h5 style="text-align: center"><u>Expert Callers Philippines Delivery Center</u></h5><br>
+                        <div class="iframe-container">
+                            <iframe width="526" height="280" src="https://www.youtube.com/embed/e0mfGimEGtI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
         <!-- Team Start -->
-        <div class="team-area">
+        <div class="team-area pb-10 pt-100">
             <div class="container">
                 <div class="row">
                     <div class="cl-xl-7 col-lg-8 col-md-10">
                         <!-- Section Tittle -->
-                        <div class="section-tittle mb-70">
-                            <span>Our Professional members </span>
-                            <h2>Our Team Mambers</h2>
-                        </div>
+                        <h2 class="h2-new">Meet Our Team</h2>
                     </div>
                 </div>
                 <div class="row">
                     <!-- single Tem -->
-
                     {% for team in teams %}
                     <div class="col-xl-4 col-lg-4 col-md-6 col-sm-">
                         <div class="single-team mb-30">
@@ -103,17 +123,14 @@
                         </div>
                     </div>
                     {% endfor %}
-
                 </div>
             </div>
         </div>
-
-
         <!-- Team End -->
+         <!--? Testimonial Start -->
 
-        <!--? Testimonial Start -->
-        <div class="testimonial-area testimonial-padding" data-background="{% static 'assets/img/gallery/section_bg04.jpg' %}">
-            <div class="container ">
+        <div class="testimonial-area pt-50 pb-50">
+            <div class="container">
                 <div class="row d-flex justify-content-center">
                     <div class="col-xl-10 col-lg-10 col-md-9">
                         <div class="h1-testimonial-active">
@@ -153,24 +170,34 @@
                 </div>
             </div>
         </div>
-    <!-- Testimonial End -->
-
-        <!-- Brand Area Start -->
-        <div class="brand-area pt-50 pb-50">
+        <!-- Testimonial End -->
+         <!-- Brand Area Start -->
+        <div class="brand-area pt-20 pb-50">
             <div class="container">
-                <h2 style="margin-bottom: 60px;">Happy Clients</h2>
-                <div class="brand-active brand-border pb-40">
-
-                    {% for client in clients %}
-                    <div class="single-brand">
-                        <img src="{{client.image.url}}" alt="">
+                <div class="row" style="margin-top:50px;">
+                    <div class="col-lg-12">
+                        <div class="mb-60" style="text-align: center">
+                            <h2 class="h2-new">Clients</h2>
+                            <h6> Who love to work with us</h6>
+                        </div>
                     </div>
-                    {% endfor %}
+                </div>
+                <div class="brand-active brand-border pb-40" style="background: #3748520a;padding: 20px;">
+
+                         {% for client in clients %}
+                        <div class="single-brand">
+                            <img src="{{client.image.url}}" alt="" style="max-width:150px;">
+                        </div>
+                        {% endfor %}
 
                 </div>
             </div>
         </div>
         <!-- Brand Area End -->
+
+
+
+
 
 
     </main>

@@ -1,12 +1,13 @@
 from django.shortcuts import render
 from .models import Services,Testimonials,Contactform,Team,Clients,Careers,Candidate
-
+from . import forms
 
 def index(request):
     services = Services.objects.all()
     testimonials=Testimonials.objects.all()
     clients = Clients.objects.all()
-    data = {'services': services,'testimonials':testimonials,'clients':clients}
+    form=forms.QuickContact()
+    data = {'services': services,'testimonials':testimonials,'clients':clients,'form':form}
     return render(request,'index.html',data)
 
 def contact(request):
@@ -16,7 +17,8 @@ def aboutus(request):
     team=Team.objects.all()
     testimonials = Testimonials.objects.all()
     clients=Clients.objects.all()
-    data={'teams':team,'testimonials':testimonials,'clients':clients}
+    form = forms.QuickContact()
+    data={'teams':team,'testimonials':testimonials,'clients':clients,'form':form}
     return render(request,'about.html',data)
 
 def add_message(request):

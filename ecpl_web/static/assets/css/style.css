@@ -3559,7 +3559,7 @@ hero-btn {
 
 /* line 31, C:/Users/HP/Desktop/264.Business_HTML/HTML/assets/scss/_h1-hero.scss */
 .slider-area2 {
-  background-image: url(../img/hero/hero2.jpg);
+  background-image: url(../img/hero/about.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -8283,10 +8283,9 @@ del {
 
 
 .slider-head-new {
-    margin-top: 185px;
-    margin-left: 30px;
+    margin-top: 200px;
+    margin-left: 0px;
     padding-top: 40px;
-    padding-left: 20px;
     color: lightgray;
 }
 

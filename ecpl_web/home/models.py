@@ -49,3 +49,11 @@ class Candidate(models.Model):
     email=models.EmailField()
     phone=models.IntegerField()
     resume=models.FileField(upload_to='static/Resume')
+
+
+class QuickContact(models.Model):
+    name = models.CharField(max_length=100)
+    email=models.EmailField()
+    phone=models.IntegerField()
+    message = models.CharField(max_length=250)
+    date = models.DateTimeField(auto_now_add=True)

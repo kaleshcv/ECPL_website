@@ -26,7 +26,7 @@ SECRET_KEY = 'd1*r%b=3#fxjaz0u9%h)ft0pwczz=2)fmfxmlj^!d3=9l@r@+)'
 DEBUG = True
 
 ALLOWED_HOSTS = ['ec2-3-20-204-50.us-east-2.compute.amazonaws.com','0.0.0.0']
-
+#ALLOWED_HOSTS = []
 
 # Application definition
 
@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'home',
+    'crispy_forms',
 ]
 
 MIDDLEWARE = [
@@ -122,3 +123,6 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
    os.path.join(BASE_DIR, "static")
 ]
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
