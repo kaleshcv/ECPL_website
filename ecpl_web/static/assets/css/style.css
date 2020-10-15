@@ -227,6 +227,7 @@ p {
   line-height: 30px;
   margin-bottom: 15px;
   font-weight: normal;
+  text-align:justify;
 }
 
 /* line 34, C:/Users/HP/Desktop/264.Business_HTML/HTML/assets/scss/_common.scss */
@@ -3564,6 +3565,14 @@ hero-btn {
   background-size: cover;
 
 }
+.slider-ordertaking {
+  background-image: url(../img/hero/order-taking.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+
 
 /* line 37, C:/Users/HP/Desktop/264.Business_HTML/HTML/assets/scss/_h1-hero.scss */
 .slider-area {
@@ -8325,4 +8334,7 @@ del {
 .li-contact{
     padding:10px 10px;
 
+}
+.ul-new{
+    font-family:none;
 }
