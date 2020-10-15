@@ -1,6 +1,7 @@
-from django.shortcuts import render
+from django.shortcuts import render,redirect
 from .models import Services,Testimonials,Contactform,Team,Clients,Careers,Candidate
 from . import forms
+from django.contrib import messages
 
 def index(request):
     services = Services.objects.all()
@@ -66,3 +67,13 @@ def all_services(request):
     services = Services.objects.all()
     data = {'services': services}
     return render(request,'services.html',data)
+
+def addcontact(request):
+    form=forms.QuickContact(request.POST)
+    if form.is_valid():
+        #saving
+        instance=form.save(commit=False)
+        instance.save()
+        messages.info(request,'Contact Added')
+        print('Saved')
+    return redirect('/')

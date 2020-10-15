@@ -38,12 +38,17 @@
                      {% load crispy_forms_tags %}
 
                     <h3>Quick Contact</h3>
-                    <form action="create" method="POST" enctype="multipart/form-data">
+                    <form action="addcontact" method="POST" enctype="multipart/form-data">
                     {% csrf_token %}
                     {{ form|crispy }}
 
                     <input type="submit" value="Submit" class="genric-btn primary small">
                     </form>
+
+                    {% for message in messages %}
+                    <br><h6>{{message}}</h6>
+                    {% endfor %}
+
                 </div>
             </div>
             <!--       <a href="about" class="btn-head">More About Us</a> -->
