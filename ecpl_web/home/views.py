@@ -69,11 +69,16 @@ def all_services(request):
     return render(request,'services.html',data)
 
 def addcontact(request):
-    form=forms.QuickContact(request.POST)
-    if form.is_valid():
-        #saving
-        instance=form.save(commit=False)
-        instance.save()
-        messages.info(request,'Contact Added')
-        print('Saved')
-    return redirect('/')
+    if request.method == 'POST':
+        form=forms.QuickContact(request.POST)
+        if form.is_valid():
+            #saving
+            instance=form.save(commit=False)
+            instance.save()
+            messages.info(request,'Contact Added')
+            print('Saved')
+        return redirect('/')
+    else:
+        form = forms.QuickContact()
+        return render(request,'index.html', {'form': form})
+
