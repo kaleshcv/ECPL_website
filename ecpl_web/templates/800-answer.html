@@ -1,0 +1,386 @@
+    {% extends 'base.html' %}
+    {% block title %}800 Answering Services{% endblock %}
+    {% block main %}
+    {% load static %}
+
+    <main>
+        <!--? Hero Start -->
+        <div class="slider-area2">
+            <div class="slider-height2 hero-overly2 d-flex align-items-center" style="max-height:300px;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="text-center">
+                                <h2 style="color: #c19d9d;font-family: fantasy">800 Answering Services</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Hero End -->
+
+
+        <div class="categories-area pb-30">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-lg-7" style="margin-top:100px;">
+                    <h2 class="h2-new">Assisting Beyond the Call</h2>
+                    <p style="text-align: justify">ExpertCallers has extensive experience in handling offshore 800 answering service. Having partnered with several global conglomerates, we know what it takes to build trust with your customers and give you a leg up in the market.</p>
+                    <p style="text-align: justify">The hallmark of our outsourced 800 answering service is professionalism and cost-effectiveness. Our services offer you an affordable toll free local number, answered by a professional representing your business. Our professionals are highly experienced in the art of dealing with callers. They can either answer the call on your behalf or forward the call to you or route to a state of the art messaging service.</p>
+                </div>
+                <div class="col-lg-1">
+
+                </div>
+                <div class="col-lg-4 col-md-4" style="background:#136fa0d6;margin-top: 50px;padding:30px;border-radius: 15px">
+                     {% load crispy_forms_tags %}
+
+                    <h3>Quick Contact</h3>
+                    <form action="addcontact" method="POST" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    {{ form|crispy }}
+
+                    <input type="submit" value="Submit" class="genric-btn primary small">
+                    </form>
+
+                    {% for message in messages %}
+                    <br><h6>{{message}}</h6>
+                    {% endfor %}
+
+                </div>
+            </div>
+            <!--       <a href="about" class="btn-head">More About Us</a> -->
+        </div>
+    </div>
+
+    <!------------------------------>
+
+        <section class="pt-50 pb-50">
+      <div class="container">
+        <h5 class="h5-new">Types of 800 Phone Answering Services We Handle</h5>
+        <p class="text-center">
+          <strong>Companies have benefitted by outsourcing following 800 answering services to ExpertCallers: </strong>
+        </p>
+        <div class="row">
+          <div class="col-md-4">
+            <ul class="unordered-list ul-new">
+              <li>24x7x365 Live Call Answering</li>
+              <li>Call Entry</li>
+              <li>Operator Dispatch</li>
+              <li>Emergency Dispatching</li>
+              <li>Enquiry handling</li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <ul class="unordered-list ul-new">
+              <li>After-hours coverage</li>
+              <li>Toll-free answering</li>
+              <li>Order taking and fulfilment services</li>
+              <li>Reservation and schedule management </li>
+              <li>Overflow handling</li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <ul class="unordered-list ul-new">
+              <li>Holiday and temporary support</li>
+              <li>Auto attendant and IVR </li>
+              <li>Voice Mail and Call Back Systems</li>
+              <li>Event scheduling</li>
+              <li>Emergency response and many more</li>
+            </ul>
+          </div>
+        </div>
+        <!--         <div class="col-md-12">
+          <div class="quote-message">
+            60% of customers expect more from customer service <br>now than they did 1 year ago.
+          </div>
+        </div> -->
+      </div>
+    </section>
+
+
+        <!-------------------------->
+        <section class="pt-50 categories-area">
+      <div class="container">
+
+          <h5 class="h5-new">How ExpertCallers’ 800 Answering Services Work for You</h5>
+          <div class="row">
+          <div class="col-md-3 text-center">
+            <img src="{% static 'other/800-1.jpg' %}" alt="call Setting Up">
+            <h4 class="text-center h5-new">Setting Up</h4>
+            <p>
+              Unlike other <strong>offshore 800 answering companies</strong>, signing up with us is hassle-free and consumes just a few minutes of your valuable time. Once this is done, you can then use our online portal to share every minute details about your business.
+            </p>
+          </div>
+          <div class="col-md-3 text-center">
+            <img src="{% static 'other/800-2.jpg' %}" alt="call Setting Up">
+            <h4 class="text-center h5-new">Divert Your Phone</h4>
+            <p>
+              Once you sign-up with us, we will issue a toll-free number via which all your landline and/or mobile call will be handled.
+            </p>
+          </div>
+          <div class="col-md-3 text-center">
+            <img src="{% static 'other/800-3.jpg' %}" alt="call Setting Up">
+            <h4 class="text-center h5-new">Answering</h4>
+            <p>
+              Our trained and experienced team of 800 answering experts will act as your brand ambassadors and take it open themselves to answer every call in the most professional manner, following your pre-set call answering instructions.
+            </p>
+          </div>
+          <div class="col-md-3 text-center">
+            <img src="{% static 'other/800-4.jpg' %}" alt="call Setting Up">
+            <h4 class="text-center h5-new">Message</h4>
+            <p>
+              Finally, our team will capture and share all the details of the calls in the format and type of your choice via SMS or email. This information can also be viewed on the portal.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+        <!------------------>
+
+     <section class="pt-50 pb-50 categories-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="row">
+              <img src="{% static 'other/800-big.jpg' %}" alt="outsource 800 Answering Services" class="img-fluid">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <h2 class="h2-new">Unique Features of Our 800 Answering Services</h2>
+            <p>
+              <strong>
+              Some of the premium features that you get access to when you outsource 800 answering services to ExpertCallers include:
+              </strong>
+            </p>
+            <h5 class="h5-new">Round-the-clock Virtual Reception</h5>
+            <p>
+              Our team of reliable and professional virtual receptionist answers your customer’s calls 24X7. They work like an extension of your in-house receptionists with 100% dedication and zero percent lag time.
+            </p>
+            <h5 class="h5-new">Call Transfer and Routing</h5>
+            <p>
+              All the toll-free phone calls will be routed to the right department, right person and at right time. The calls will be transferred and routed as per the pre-determined flow rules set by you.
+            </p>
+            <h5 class="h5-new">Multi-lingual Customer Support</h5>
+            <p>
+              To make the customer’s journey comfortable and easier, we have trained our team of 800 answering agents across languages such as English, Spanish, French, German, Meridian and so on, to offer <strong>multi-lingual customer support</strong> to your business.
+            </p>
+            <h5 class="h5-new">Order Management</h5>
+            <p>
+              Your customers can reach out to our team if they face any issues before checkout. This ability will go a long way in managing orders, reducing the numbers of shopping carts and increasing average order values.
+            </p>
+            <h5 class="h5-new">Appointment Scheduling</h5>
+            <p>
+              Leverage our <a href="/inbound-call-center/toll-free-customer-support-services.php">toll-free phone answering services</a> to fill your calendar with new appointments whenever customers call your business line.
+            </p>
+            <h5 class="h5-new">Web Chat</h5>
+            <p>
+              Our <a href="/chat-support-services.php">online chat support services</a> will compliment your 800 answering efforts and help you meet the growing needs of your customers.
+            </p>
+            <h5 class="h5-new">Urgent Call Handling</h5>
+            <p>
+              We let you float customized rules to handle urgent calls, thereby ensuring that the most important customer support call is routed to the right person at the right time.
+            </p>
+            <h5 class="h5-new">Client Web Access</h5>
+            <p>
+              Our clients can access the data, script or other important documents, monitor calls and even pay bills from anywhere across the globe with easy access to ExpertCallers account through our online portal.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--------------------->
+        <section class="pt-50 pb-50">
+      <div class="container">
+
+          <h2 class="h2-new">Other prominent features of our outsourced 800 answering services: </h2>
+          <div class="row">
+            <div class="col-md-6">
+
+                <ul class="unordered-list ul-new">
+                  <li>Transfer Existing 800 Number</li>
+                  <li>Your Own New 800 Number</li>
+                  <li>Complex Outside Phone Dialling Rules</li>
+                  <li>Optional Professional Voice Prompts</li>
+                  <li>Online Reports with Real-time Update</li>
+
+                </ul>
+
+            </div>
+            <div class="col-md-6">
+
+                <ul class="unordered-list ul-new">
+                  <li>Call Monitoring and Recording Service</li>
+                  <li>Text to Speech Data Conversion</li>
+                  <li>Website and Server Data Access</li>
+                  <li>Database Access and Update</li>
+                  <li>Unlimited Menu Selections by Caller and much more</li>
+                </ul>
+
+            </div>
+          </div>
+        </div>
+
+    </section>
+
+    <!----------------------------->
+        <section class="pt-50 pb-50 categories-area">
+      <div class="container">
+
+          <h2 class="h2-new">Being an Expert 800 Answering Company, We Can Serve Diverse Industries</h2>
+          <p class="align-center">
+            With us as your third-party 800 answering service provider, you can serve customers across industries, including:
+          </p>
+            <div class="row">
+
+            <div class="col-md-4">
+              <ul class="ul-new">
+                <li>Aerospace &amp; Defence</li>
+                <li>Automotive</li>
+                <li>Automobiles</li>
+                <li>Banking &amp; Financial Services</li>
+                <li>Capital Markets</li>
+                <li>Communications</li>
+                <li>Consumer Goods and Services</li>
+                <li>Customs Brokerage</li>
+                <li>Consumer Packaged Goods</li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <ul class="ul-new">
+                <li>Energy and Utilities</li>
+                <li>Education</li>
+                <li>Healthcare</li>
+                <li>Logistics</li>
+                <li>Manufacturing</li>
+                <li>Market Research</li>
+                <li>Media and Entertainment</li>
+                <li>Medical Devices</li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <ul class="ul-new">
+                <li>Network Equipment Providers</li>
+                <li>Oil &amp; Gas</li>
+                <li>Pharmaceutical &amp; Life Sciences</li>
+                <li>Platforms &amp; Software Products</li>
+                <li>Public Sector / Government</li>
+                <li>Retail &amp; Ecommerce</li>
+                <li>Securities &amp; Capital Markets</li>
+                <li>Telecommunications</li>
+                <li>Securities &amp; Capital Markets</li>
+              </ul>
+            </div>
+
+        </div>
+      </div>
+
+
+    </section>
+
+     <!------------------------>
+        <section class="categories-area pt-50 pb-50">
+      <div class="container">
+
+        <h2 class="h2-new">Key Differentiators</h2>
+          <div class="row">
+        <div class="col-md-4 box">
+          <div class="img"> </div>
+          <h5 class="h5-new">Highly Trained Executives</h5>
+          <p>
+            As a premier <strong>800 answering company</strong>, our phone lines are handled by executives specially trained in attending customer service calls. So, you can be assured about courteous and professional handling. For niche services like medical answering services, we provide HIPAA-trained professionals.
+          </p>
+        </div>
+        <div class="col-md-4 box">
+          <div class="img agent"> </div>
+          <h5 class="h5-new">Positive Impact on Bottom Line</h5>
+          <p>
+            Our professional handling will help your business get better call volumes, quality leads, and increased sales opportunities. Together, these will significantly improve your bottom line.
+          </p>
+        </div>
+        <div class="col-md-4 box">
+          <div class="img fo_val_cus"> </div>
+          <h5 class="h5-new">Highly Scalable</h5>
+          <p>
+            Our <strong>outsourced 800 phone answering service</strong> is flexible. This is one of the key differentiator that sets us apart from other <strong>800 answering companies</strong>. To meet changing needs, you can scale up or ramp down agents handling your requirements. In other words, you can customize the services as per your needs.
+          </p>
+        </div>
+      </div>
+      </div>
+    </section>
+    <!----------------------->
+
+
+		   <div class="categories-area pb-50 pt-50">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-xl-7 col-lg-7 col-md-7">
+                        <h2 class="h2-new" style="font-size: 18px;">Here’s How Companies Have Benefitted by Outsourcing 800 Answering Services to ExpertCallers</h2>
+                        <p>Our offshore 800 answering services helped a leading telecom provider to provide seamless customer support to over 50000 retailers and 5 million subscribers every day</p>
+                        <p>Our 800 answering services helpdesk team enhanced the first call resolution rate of an IT applications company by a whopping 40%</p>
+                    </div>
+                    <div class="col-xl-5 col-lg-5 col-md-5">
+                        <div class="iframe-container">
+                            <iframe width="434" height="200" src="https://www.youtube.com/embed/DAxovcKhOFQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+     <!--------------------->
+
+        <section class="pt-50 pb-50">
+      <div class="container">
+        <div class="col-md-12">
+          <h2 class="h2-new">Why Outsource 800 Answering Services to ExpertCallers?</h2>
+          <p>
+            <strong>By outsourcing 800 answering services to an expert 800 answering company like ExpertCallers, you’ll benefit in following ways: </strong>
+          </p>
+          <div class="row">
+          <div class="col-md-6">
+            <ul class="unordered-list ul-new">
+              <li>30% increase in customer retention</li>
+              <li>Enhanced customer satisfaction</li>
+              <li>Up-time of 99.5% to provide uninterrupted support</li>
+              <li>Average call handling within 1.43 rings</li>
+              <li>CTQ parameters strictly followed</li>
+              <li>ISO 27001 certified and PCI compliant</li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <ul class="unordered-list ul-new">
+              <li>Response to phone calls is made instantly, zero wait time</li>
+              <li>Operational scalability to meet seasonal uplift or spike in sales</li>
+              <li>Complete flexibility</li>
+              <li>24 x 7 multi-lingual support</li>
+              <li>Seamlessly integrated technology</li>
+              <li>Highly cost-effective services</li>
+            </ul>
+          </div>
+        </div>
+        <!--         <div class="col-md-5">
+          <div class="quote-message">
+
+            47% of customers consider quick response as ‘vital element in overall customer experience.
+          </div>
+        </div> -->
+      </div>
+      </div>
+
+    </section>
+
+     <!--------------------->
+
+        <section class="sample-text-area">
+			<div class="container">
+				<p style="text-align: justify">
+					When you outsource 800 answering services to ExpertCallers, you’ll partner with an 800 answering company that excels in providing professional, friendly, and upbeat toll-free customer service that will impress your callers and deliver the messages that you want to send across, day-in and day-out.
+				</p>
+            </div>
+		</section>
+
+    </main>
+
+    {% endblock %}
+

@@ -1,0 +1,248 @@
+    {% extends 'base.html' %}
+    {% block title %}claim processing{% endblock %}
+    {% block main %}
+    {% load static %}
+
+    <main>
+        <!--? Hero Start -->
+        <div class="slider-area2">
+            <div class="slider-height2 hero-overly2 d-flex align-items-center" style="max-height:300px;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="text-center">
+                                <h2 style="color: #c19d9d;font-family: fantasy">Outsource Up-Selling and Cross-Selling Services</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Hero End -->
+
+        <div class="categories-area" >
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-lg-7" style="margin-top:100px;">
+                    <h2 class="h2-new">Cross-Selling Made Easy and Effortless</h2>
+                    <p style="text-align: justify">ExpertCallers specializes in cross-selling and up-selling services to help you generate more revenue. We rely on an advanced research-based approach to develop customized cross-selling and up-selling strategies for optimal results</p>
+                    <p style="text-align: justify">We convince first and cross-sell next. If you want your customers to fall for your product, pitch the value proposition in clear and concise terms. Our approach is to choose the right customer, wait for the right time and establish the proposition using the right communication channel. So, it takes us little to drive home the usefulness of your next line of product.</p>
+                    <p style="text-align: justify">We create, monitor, and measure effective up-selling and cross-selling programs and ensure our employees implement them in the most effective way for you</p>
+                    <br>
+                    <p><b>Our up-selling and cross-selling services will help you to:</b></p>
+                    <p>Formulate a database with important customer information</p>
+                    <p>Implement personalized marketing strategies that emphasize on one-to-one communication</p>
+                    <p>Deliver appropriate message to the target audience</p>
+                </div>
+                <div class="col-lg-1">
+
+                </div>
+                <div class="col-lg-4 col-md-4" style="background:#136fa0d6;margin-top: 50px;padding:30px;border-radius: 15px">
+                     {% load crispy_forms_tags %}
+
+                    <h3>Quick Contact</h3>
+                    <form action="addcontact" method="POST" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    {{ form|crispy }}
+
+                    <input type="submit" value="Submit" class="genric-btn primary small">
+                    </form>
+
+                    {% for message in messages %}
+                    <br><h6>{{message}}</h6>
+                    {% endfor %}
+
+                </div>
+            </div>
+            <!--       <a href="about" class="btn-head">More About Us</a> -->
+        </div>
+    </div>
+        <!-- Start Sample Area -->
+
+        <section class="pt-50">
+			<div class="container">
+				<h2 class="h2-new text-center">We Provide a Range of Cross-selling And Up-selling Services</h2>
+				<p class="text-center">
+				<strong>	We leverage our over 12 years of experience in the industry to help you design a customized up-selling and cross-selling program around your customer growth goals and industry best practices.Turn to ExpertCallers to help you:</strong>
+				</p>
+
+				<div class="row">
+					<div class="col-md-4">
+						<h5 class="h5-new">Cultivate Future Opportunities and Referral Selling</h5>
+						<p>
+							Our up-selling and cross-selling services helps you stay at the forefront of your customers’ minds and leverage opportunities to provide them with additional services.
+						</p>
+					</div>
+					<div class="col-md-4">
+						<h5 class="h5-new">Broaden Relationships and Increase Customer Loyalty</h5>
+						<p>
+							We combine proven cross-selling and up-selling techniques with highly skilled and experienced sales experts to help you reach new contacts within existing clients, identify their needs and present your products or solutions that address those needs.
+						</p>
+					</div>
+					<div class="col-md-4">
+						<h5 class="h5-new">Generate Follow-on Sales</h5>
+						<p>
+							Our comprehensive up-selling and cross-selling services helps you to find additional sales opportunities, cultivate them with unique lead nurturing techniques and pass sales-ready customers to your sales team.
+						</p>
+					</div>
+				</div>
+				<div class="col-md-12">
+
+					<div style="margin-top: 0">
+						<p><b>60% of customers who’ve committed to a sale will make another last-minute purchase when offered.</b></p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- End Sample Area -->
+
+        <section class="categories-area pt-50">
+			<div class="container">
+
+					<h2 class="h2-new" style="font-size: 18px;">Industries We Serve</h2>
+					<p class="align-center">
+						<strong>Companies from across industries outsource up-selling and cross-selling services to us. This includes:</strong>
+					</p>
+					<div class="row">
+
+						<div class="col-md-4">
+							<ul class="ul-new">
+								<li>Aerospace &amp; Defence</li>
+								<li>Automotive</li>
+								<li>Automobiles</li>
+								<li>Banking &amp; Financial Services</li>
+								<li>Capital Markets</li>
+								<li>Communications</li>
+								<li>Consumer Goods and Services</li>
+								<li>Customs Brokerage</li>
+								<li>Consumer Packaged Goods</li>
+							</ul>
+						</div>
+						<div class="col-md-4">
+							<ul class="ul-new">
+								<li>Energy and Utilities</li>
+								<li>Education</li>
+								<li>Healthcare</li>
+								<li>Logistics</li>
+								<li>Manufacturing</li>
+								<li>Market Research</li>
+								<li>Media and Entertainment</li>
+								<li>Medical Devices</li>
+							</ul>
+						</div>
+						<div class="col-md-4">
+							<ul class="ul-new">
+								<li>Network Equipment Providers</li>
+								<li>Oil &amp; Gas</li>
+								<li>Pharmaceutical &amp; Life Sciences</li>
+								<li>Platforms &amp; Software Products</li>
+								<li>Public Sector / Government</li>
+								<li>Retail &amp; Ecommerce</li>
+								<li>Securities &amp; Capital Markets</li>
+								<li>Telecommunications</li>
+								<li>Securities &amp; Capital Markets</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+    <!---------------------------------------->
+        <section class="pt-50">
+			<div class="container">
+
+				<h2 class="h2-new" style="font-size: 18px;">We are Different; Here's Why</h2>
+                <div class="row">
+				<div class="col-md-4 box">
+					<div class="img fo_val_cus"> </div>
+					<h5 class="h5-new">Focus on Value to Customer</h5>
+					<p>
+						We up-sell or cross-sell by demonstrating value to the customer. We go all out to make sure the customer gets to see increased value in the form of convenience, prestige and something more. This guarantees you higher up-selling rate.
+					</p>
+				</div>
+				<div class="col-md-4 box">
+					<div class="img up_don_sell"> </div>
+                    <h5 class="h5-new">Comprehensive Cross-Selling/Upselling Service: </h5>
+					<p>
+						Being a leading up-selling and cross-selling company, we work with you not just to process sales. We help you to determine up-selling and cross-selling items and tactics, so that we can work together towards a common goal.
+					</p>
+				</div>
+				<div class="col-md-4 box">
+					<div class="img prasen"> </div>
+					<h5 class="h5-new">Professional Representation </h5>
+					<p>
+						Unlike other <strong> up-selling and cross-selling companies</strong>, we strictly follow your procedures and protocols to give your business a professional image. This ensures your brand identity is maintained at all costs.
+					</p>
+				</div>
+                </div>
+			</div>
+		</section>
+
+    <!------------------------>
+
+
+		   <div class="categories-area pb-50 pt-50">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-xl-7 col-lg-7 col-md-7">
+                        <h2 class="h2-new" style="font-size: 18px;">Here’s How Companies Have Benefited by Outsourcing Up-selling and Cross-selling Services to ExpertCallers?</h2>
+                        <p>Our up-selling and cross-selling services helped a UK based client increase the sale of their mobile applications and improve business revenue by 25%</p>
+                        <p>We helped an insurance company up-sell a new policy to existing customers and increase sales by 10%</p>
+                    </div>
+                    <div class="col-xl-5 col-lg-5 col-md-5">
+                        <div class="iframe-container">
+                            <iframe width="434" height="200" src="https://www.youtube.com/embed/DAxovcKhOFQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!--------------------------------->
+        <section class="pt-50">
+			<div class="container">
+				<div class="col-md-12">
+					<h5 class="h5-new">Why Outsource Up-selling and Cross-selling Services to an Expert Up-selling and Cross-selling Company like ExpertCallers?</h5>
+					<p>
+						<strong>Here are some of the unique features of our outsourced up-selling and cross-selling services:</strong>
+					</p>
+					<ul class="unordered-list ul-new">
+						<li>System prompts identify appropriate opportunities within a conversation to up-sell</li>
+						<li>Objection handling prompts are automatically included to help our agents increase take up</li>
+						<li>We work with your training staff to ensure that the approach across our team and yours is seamless</li>
+						<li>Dynamic dashboards show targets and achievements for individuals and the team as a whole throughout the day</li>
+						<li>Reward schemes are designed for both teams and individuals to drive up conversion rates</li>
+						<li>We establish ‘buddy’ systems and an environment of competition to ensure that agents remain keen to reach their full potential</li>
+					</ul>
+					<p>
+						<strong>All this means that with us as your outsourcing partner, you can benefit in following ways:</strong>
+					</p>
+					<ul class="unordered-list ul-new">
+						<li>24x7x365 service</li>
+						<li>Highly experienced bilingual staff</li>
+						<li>Increased productivity</li>
+						<li>Reduced operating expenses</li>
+						<li>Increased productivity</li>
+						<li>30% increase in sales</li>
+						<li>Best-of-breed technology and infrastructure</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+
+     <!------------------------>
+
+        <section class="sample-text-area">
+			<div class="container">
+				<p style="text-align: justify">
+					When you outsource up-selling and cross-selling services to ExpertCallers, you’ll partner with a up-selling and cross-selling company that is extremely skilled in truly getting to grips with your business needs and increase the ARPU (Average Revenue per User) for your products and brands.
+				</p>
+            </div>
+		</section>
+
+    </main>
+
+    {% endblock %}
+

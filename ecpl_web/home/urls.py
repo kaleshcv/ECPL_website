@@ -1,7 +1,8 @@
 
 from django.urls import path
 from .views import index,contact,add_message,aboutus,claim_processing,pi_request,order_taking,certification
-from .views import infra,careers,career_view,add_candidate,all_services,addcontact
+from .views import infra,careers,career_view,add_candidate,all_services,addcontact,virtual,upselling,tollfree,answer800
+from .views import ivrservice
 urlpatterns = [
     path('',index),
     path('contact',contact),
@@ -10,6 +11,11 @@ urlpatterns = [
     path('claim_processing',claim_processing),
     path('pi_request',pi_request),
     path('order_taking',order_taking),
+    path('virtual',virtual),
+    path('upselling',upselling),
+    path('tollfree',tollfree),
+    path('800answer',answer800),
+    path('ivrservices',ivrservice),
     path('certification',certification),
     path('infra',infra),
     path('careers',careers),

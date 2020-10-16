@@ -1,19 +1,40 @@
-
     {% extends 'base.html' %}
-    {% block title %}Infrastructure{% endblock %}
+    {% block title %}800 Answering Services{% endblock %}
     {% block main %}
     {% load static %}
 
     <main>
         <!--? Hero Start -->
         <div class="slider-area2">
-            <div class="slider-height2 hero-overly2 d-flex align-items-center" style="max-height:200px;">
+            <div class="slider-height2 hero-overly2 d-flex align-items-center" style="max-height:300px;">
                 <div class="container">
                     <div class="row">
                         <div class="col-xl-12">
-                            <div class="hero-cap hero-cap2 text-center">
-                                <h2>Infrastructure</h2>
+                            <div class="text-center">
+                                <h2 style="color: #c19d9d;font-family: fantasy">Infrastructure</h2>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Hero End -->
+
+        <div class="categories-area pb-100 pt-100">
+            <div class="container">
+                <h2 style="text-align: center">Here's a sneak peek of some of our Delivery Centers</h2>
+                <p style="text-align: center">Our robust infrastructural setup consists of state-of-the-art communication, IT security and fool-proof physical security systems.</p>
+                <div class="row align-items-center">
+                    <div class="col-xl-6 col-lg-6 col-md-6">
+                        <h5 style="text-align: center"><u>Expert Callers Bangalore Delivery Center</u></h5><br>
+                        <div class="iframe-container">
+                            <iframe width="526" height="280" src="https://www.youtube.com/embed/_Hg4aek2lFQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6">
+                        <h5 style="text-align: center"><u>Expert Callers Philippines Delivery Center</u></h5><br>
+                        <div class="iframe-container">
+                            <iframe width="526" height="280" src="https://www.youtube.com/embed/e0mfGimEGtI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                     </div>
                 </div>
@@ -21,22 +42,15 @@
         </div>
 
 
-        <!------------sec----------->
+        <!--------------------------->
 
-  <div class="section-top-border" style="background:linear-gradient(45deg, #ef3737, transparent);">
-      <div class="container">
-          <h2 class="align-center">
-       Our robust infrastructural setup consists of state-of-the-art communication, IT security and fool-proof physical security systems.
-        </h2>
-      </div>
-  </div>
-<!-----------sec------------->
-<section class="section-top-border container">
+        <section class="container-fluid infra">
       <div class="row">
 
         <div class="col-md-6 infra-data">
-          <h2>Highlights</h2><br>
-          <ul class="unordered-list">
+            <br><br>
+          <h2>Highlights</h2>
+          <ul>
             <li>2-tier network architecture</li>
             <li>Redundant L3 core design with servers terminating into the core through redundant connectivity</li>
             <li>Independent Internet Leased Circuits from multiple ISPs installed for data access and redundancy</li>
@@ -48,47 +62,47 @@
         </div>
         <div class="col-md-6 infra-img">
           <div class="row">
-            <img src="{% static 'other/infra1.jpg' %}" alt="network architecture">
+            <img class="img-res" src="{% static 'other/infra1.jpg' %}" alt="network architecture">
           </div>
         </div>
       </div>
     </section>
 
-    <section class="container">
+        <section class="container-fluid infra">
       <div class="row">
-
+        <div class="col-md-6 infra-img">
+          <div class="row align-middle">
+            <img class="img-res" src="{% static 'other/infra2.jpg' %}" alt="network architecture">
+          </div>
+        </div>
         <div class="col-md-6 infra-data">
+            <br><br>
           <h2>Power</h2>
-            <p><b>Primary source of power</b></p>
-          <ul class="unordered-list">
+          <h4>Primary source of power </h4>
+          <ul>
             <li>Available 125 KVA</li>
             <li>Facility Load 70 KVA</li>
           </ul>
-            <p><b>Generator Backup </b></p>
-          <ul class="unordered-list">
+          <h4>Generator Backup </h4>
+          <ul>
             <li>125 KVA generator with fuel storage for 24 hours’ operation onsite with arrangements to sustain</li>
           </ul>
-            <p><b>UPS Network Center – 1x 60 KVA (Redundant) </b></p>
-          <ul class="unordered-list">
+          <h4>UPS Network Center – 1x 60 KVA (Redundant) </h4>
+          <ul>
             <li>UPS Overall –  2 x 60 KVA (Online Synchronized)</li>
           </ul>
         </div>
-        <div class="col-md-6 infra-img">
-          <div class="row align-middle">
-            <img src="{% static 'other/infra2.jpg' %}" alt="network architecture">
-          </div>
-        </div>
 
       </div>
-    </section>
-
-    <section class="container">
+        </section>
+        <section class="container-fluid infra">
       <div class="row">
         <div class="col-md-6 infra-data">
+            <br><br>
           <h2>Witness System</h2>
           <!--   <strong>                We run our operations with an application suite created by Witness. The features include:</strong> -->
-          <h3>Voice &amp; Screen Capture</h3>
-          <ul class="unordered-list">
+          <h4>Voice &amp; Screen Capture</h4>
+          <ul>
             <li>100% customer interaction capture capability</li>
             <li>Capture and Access based on customer sign off and authentication only</li>
             <li>Both side energy envelope display</li>
@@ -97,8 +111,8 @@
             <li>Query based search option</li>
             <li>Option to download the file</li>
           </ul>
-          <h3>Quality System</h3>
-          <ul class="unordered-list">
+          <h4>Quality System</h4>
+          <ul>
             <li>Multiple Selection plan for Quality System</li>
             <li>Multiple Scoring plans</li>
             <li>Capability to change selection plans online</li>
@@ -107,47 +121,45 @@
         </div>
         <div class="col-md-6 infra-img">
           <div class="row  align-middle">
-            <img src="{% static 'other/infra3.jpg' %}" alt="network architecture">
+            <img class="img-res" src="{% static 'other/infra3.jpg' %}" alt="network architecture">
           </div>
         </div>
       </div>
     </section>
-
-
-    <section class="section-top-border container">
+    <section class="container-fluid infra">
       <div class="row">
-
+        <div class="col-md-6 infra-img">
+          <div class="row  align-middle">
+            <img class="img-res" src="{% static 'other/infra4.jpg' %}" alt="network architecture">
+          </div>
+        </div>
         <div class="col-md-6 infra-data">
+            <br><br>
           <h2>Internet Connectivity</h2>
-          <strong>Our internet connectivity which use following cables:</strong>
-          <ul class="unordered-list">
+          <h4>Our internet connectivity which use following cables:</h4>
+          <ul>
             <li>Marine Fiber Optic Cable </li>
             <li>Fire-wall protected VPN system</li>
             <li>Intrusion detection technology</li>
             <li>MPLS/IPLC connectivity to multiple Locations</li>
           </ul>
         </div>
-        <div class="col-md-6 infra-img">
-          <div class="row">
-            <img src="{% static 'other/infra4.jpg' %}" alt="network architecture">
-          </div>
-        </div>
       </div>
     </section>
-
-    <section class="container">
+    <section class="container-fluid infra">
       <div class="row">
         <div class="col-md-6 infra-data">
+            <br><br>
           <h2>Secured VPN &amp; Network Security</h2>
           <!--   <strong>                We run our operations with an application suite created by Witness. The features include:</strong> -->
-          <h3>Secured VPN</h3>
-          <ul class="unordered-list">
+          <h4>Secured VPN</h4>
+          <ul>
             <li> Total secured VPN Tunnel to Client, which blocks peers</li>
             <li>Secured Intelligent switches and Network Assistant optimized for LAN</li>
             <li>Advanced Firewall which blocks all ports for HTTP, FTP, TCP/IP, UDP and ICMP</li>
           </ul>
-          <h3>Network Security</h3>
-          <ul class="unordered-list">
+          <h4>Network Security</h4>
+          <ul>
             <li>256-bit SSL encryption for all our systems</li>
             <li>Multi-level password protected network</li>
             <li>Tiered security system for authorized data access</li>
@@ -155,18 +167,21 @@
         </div>
         <div class="col-md-6 infra-img">
           <div class="row  align-middle">
-            <img src="{% static 'other/infra5.jpg' %}" alt="network architecture">
+            <img class="img-res" src="{% static 'other/infra5.jpg' %}" alt="network architecture">
           </div>
         </div>
       </div>
     </section>
 
-
-<!---------------sec------------->
-      <div class="section-top-border container">
-            <p> <a href="contact" class="btn btn-primary">Contact us</a> to know more about our security standards and infrastructure</p>
+    <!-------------------------------->
+    <section class="pt-50">
+      <div class="container-fluid">
+          <h2 style="text-align: center">Seating Capacity</h2>
+          <img src="{% static 'other/expertcallers-map.jpg' %}" alt="world map expertcallers" class="img-fluid">
       </div>
+    </section>
 
- </main>
+    </main>
 
     {% endblock %}
+

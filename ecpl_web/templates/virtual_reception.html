@@ -1,0 +1,411 @@
+
+    {% extends 'base.html' %}
+    {% block title %}Order Taking Services{% endblock %}
+    {% block main %}
+    {% load static %}
+
+    <main>
+        <!--? Hero Start -->
+           <div class="slider-ordertaking">
+            <div class="slider-height2 hero-overly2 d-flex align-items-center" style="max-height:300px;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="text-center">
+                                <h2 style="color: #c19d9d;font-family: fantasy">Virtual Receptionist Services</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Hero End -->
+
+        <div class="categories-area" >
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-lg-7" style="margin-top:100px;">
+                    <h2 class="h2-new">We Help Build Relationships and Trust</h2>
+                    <p style="text-align: justify">ExpertCallers has wide experience in empowering businesses with professional offshore virtual receptionist services. We have built our reputation around providing custom virtual receptionist, trained specifically to meet your exact requirements.</p>
+                    <p style="text-align: justify">We don’t hire and train everybody as a virtual receptionist. We only cherry pick candidates who have a flair for the job. Those having a personable nature and exuding high confidence are our natural picks. We hire and train them on a range of business related functions – from answering calls to managing mails; from secretarial support to front-desk requirements – to ensure your business gets an ambassador in the truest sense.</p>
+                    <br>
+                </div>
+                <div class="col-lg-1">
+
+                </div>
+                <div class="col-lg-4 col-md-4" style="background:#136fa0d6;margin-top: 50px;padding:30px;border-radius: 15px">
+                     {% load crispy_forms_tags %}
+
+                    <h3>Quick Contact</h3>
+                    <form action="addcontact" method="POST" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    {{ form|crispy }}
+
+                    <input type="submit" value="Submit" class="genric-btn primary small">
+                    </form>
+
+                    {% for message in messages %}
+                    <br><h6>{{message}}</h6>
+                    {% endfor %}
+
+                </div>
+            </div>
+            <!--       <a href="about" class="btn-head">More About Us</a> -->
+        </div>
+    </div>
+
+
+        <!-------------------------->
+
+
+        <div class="categories-area pt-100 pb-20" >
+			<div class="container">
+				<h2 class="h2-new text-center" style="font-size: 18px;">Our End-to-End Virtual Receptionists Services </h2>
+				<p>
+					Companies can bank on us to provide following outsourced virtual receptionist services:
+				</p>
+				<div class="row">
+
+                    <div class="col-md-6"><img src="{% static 'other/vr-2.jpg' %}" alt="" class="img-fluid"></div>
+					<div class="col-md-6">
+						<ul class="ul-new unordered-list" style="margin-left:30px">
+							<br><br>
+							<li>Live Call Answering</li>
+							<li>Call Routing</li>
+							<li>Outbound Calling</li>
+							<li>Message Taking</li>
+							<li>Order Processing</li>
+							<li>Administrative tasks</li>
+							<li>Appointment Reminders</li>
+							<li>Multi-Conferencing</li>
+							<li>Multi-lingual support</li>
+						</ul>
+					</div>
+
+
+				</div>
+				<div class="col-md-12">
+                    <br>
+                    <p><b><i>7 out of 10 Americans will hang up if not given a chance to speak with a live agent. - <span>American Express Survey</span></i></b></p>
+
+				</div>
+			</div>
+        </div>
+
+
+        <!-------------------------->
+
+        <section class="pt-50">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-2"></div>
+
+					<div class="col-md-8 pt-5 pb-0">
+						<h5 class="h5-new">Unique Features of Our Proficient</h5>
+						<h2 class="h2-new" style="font-size: 24px;"> Virtual Receptionist Services</h2>
+						<p>
+							<strong>
+							Some of the distinctive attributes of our accomplished offshore virtual receptionist services are as follows:
+							</strong>
+						</p>
+						<div class="clearfix"></div>
+						<div class="row">
+							<div class="col-md-6">
+								<h5 class="h5-new">Customary Greetings</h5>
+								<p>
+									Customer interaction is an experience and correctly greeting the customer will shape the first impression about your company. At ExpertCallers, we record customized greetings to ensure the customer is treated professionally and routed to the point of contact at the earliest.
+								</p>
+							</div>
+							<div class="col-md-6">
+								<h5 class="h5-new">Expedient Extension Menus</h5>
+								<p>
+									To make the process more effortless, many relevant extensions can be created, and the information stored during the call can be sent directly to the respective department heads or concerned authority via massages or voice mails.
+								</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6">
+								<h5 class="h5-new">Your Way of Call Routing</h5>
+								<p>
+									We can route each call the way you want. We believe, treating every call uniquely is important. That’s why we enable the companies to set rules to route the customer according to type of caller, time of calling and many other criteria. And, all this can be updated as and when required on the dashboards.
+								</p>
+							</div>
+							<div class="col-md-6">
+								<h5 class="h5-new">Tailored Greetings for After Business Hours</h5>
+								<p>
+									We design specific greetings for the callers who reach out to us after business hours. These messages can be recorded by us as per your company’s norms and work culture.
+								</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6">
+								<h5 class="h5-new">Refined Call Screening</h5>
+								<p>
+									This feature helps you to avoid those intruding unwelcomed calls, as we screen the calls on the basis of specific time and route calls or voicemails to precise departments and people.
+								</p>
+							</div>
+							<div class="col-md-6">
+								<h5 class="h5-new">Transcription of Voicemail</h5>
+								<p>
+									Leveraging the feature to transcribe voicemails, every voicemail can be converted to text and sent via emails to the relevant authorities.
+								</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6">
+								<h5 class="h5-new">Instant Connection</h5>
+								<p>
+									Our click-to-call feature, provides rapid and easy web to phone connection within no time, thereby providing a better avenue for customer to connect.
+								</p>
+							</div>
+							<div class="col-md-6">
+								<h5 class="h5-new">Smooth CRM integration</h5>
+								<p>
+									We enable the companies to integrate with CRM and accelerate the operations by providing the required assistance.
+								</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6">
+								<h5 class="h5-new">Automatic Call Recording</h5>
+								<p>
+									Every call will be recorded effectively and can be used for quality, training and compliance purposes in future.
+								</p>
+							</div>
+							<div class="col-md-6">
+								<h5 class="h5-new">Unified Management</h5>
+								<p>
+									We diligently take over call mechanisms to fine-tune your business phone system.
+								</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6">
+								<h5 class="h5-new">Effective Multi-level IVR</h5>
+								<p>
+									We provide round-the-clock IVR, which provides limited prompts and enable customer to reach the desired person quickly.
+								</p>
+							</div>
+							<div class="col-md-6">
+								<h5 class="h5-new">Advanced Security by Multi-agent Access</h5>
+								<p>
+									Your business data is protected 24X7 with multi-agent access and chances of security breaches are completely removed.
+								</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6">
+								<h5 class="h5-new">Real-time Analysis and Report generation</h5>
+								<p>
+									We empower the companies with real-time data and encourage them to analyse it to streamline the operations.
+								</p>
+							</div>
+						</div>
+				<div class="pt-50">
+						<h2 class="h2-new" style="font-size: 24px;">In addition to these, you can also reap in the benefits of <br>other premium features such as</h2>
+				<div class="row">
+					<div class="col-md-4">
+						<ul class="ul-new unordered-list">
+							<li>Auto Attendant</li>
+							<li>Call Blocking</li>
+							<li>Call Forwarding</li>
+							<li>Call Logs</li>
+							<li>Call Notification</li>
+							<li>Call Queuing</li>
+							<li>Call Routing</li>
+							<li>Call Scheduling</li>
+							<li>Call Transfer</li>
+							<li>Caller ID</li>
+							<li>Conference Calling</li>
+							<li>Dial-by-Name Directory</li>
+							<li>Direct Dial Numbers</li>
+						</ul>
+					</div>
+					<div class="col-md-4">
+						<ul class="ul-new unordered-list">
+							<li>Do Not Disturb</li>
+							<li>Extensions</li>
+							<li>Hold Music</li>
+							<li>Hosted PBX</li>
+							<li>International Forwarding</li>
+							<li>Local Phone Numbers</li>
+							<li>Number Porting</li>
+							<li>Online Faxing</li>
+							<li>Outbound Calling</li>
+							<li>Second Phone Line</li>
+							<li>Sequential Ring</li>
+							<li>Simultaneous Ring</li>
+						</ul>
+					</div>
+					<div class="col-md-4">
+						<ul class="ul-new unordered-list">
+							<li>Toll Free Numbers</li>
+							<li>Virtual PBX Phone System</li>
+							<li>Voicemail</li>
+							<li>Voicemail for Mobile</li>
+							<li>Voicemail to Email</li>
+							<li>Voicemail to Text (V2T)</li>
+							<li>Business Texting</li>
+							<li>International Numbers</li>
+							<li>Live Receptionist</li>
+							<li>Vanity Phone Numbers</li>
+							<li>Web Conferencing</li>
+							<li>Video Conferencing</li>
+						</ul>
+					</div>
+				</div>
+				</div>
+			</div>
+			<div class="col-md-2"></div>
+			</div>
+			</div>
+		</section>
+
+<!------------------------------------>
+
+	<!--------------------------------->
+
+		<section class="categories-area pt-50">
+			<div class="container">
+				<h2 class="h2-new" style="font-size: 24px;">We are Different; Here's Why</h2>
+				<div class="row">
+				<div class="col-md-4 box">
+					<div class="img com_training"> </div>
+					<h5 class="h5-new">Comprehensive Training</h5>
+					<p>
+						We train our receptionists to imbibe those traits that would help your business project a truly professional image. Our live virtual receptionists know how to manage time, meet expectations, instill confidence, add value, take initiative and bring ideas to the table.
+					</p>
+				</div>
+				<div class="col-md-4 box">
+					<div class="img spl_per"> </div>
+					<h5 class="h5-new">Specialized Personnel</h5>
+					<p>
+						We assign receptionist based on their experience in your business’s area of focus. Our virtual telephone receptionists are trained in various fields, such as legal, real estate, medical etc. and so can meet your specific requirements precisely.
+					</p>
+				</div>
+				<div class="col-md-4 box">
+					<div class="img cost_sav"> </div>
+					<h5 class="h5-new">Cost savings</h5>
+					<p>
+						We have a transparent billing model for our full time virtual receptionists. We bill you for 160 hours a month.  Our pricing plans are designed for all - the small, mid-sized and enterprise businesses.
+					</p>
+				</div>
+				</div>
+			</div>
+		</section>
+
+	<!------------------------------->
+		<section class="pt-50 pb-50">
+			<div class="container">
+
+					<h2 class="h2-new" style="font-size: 24px;">In addition to these, you can also reap in the benefits of <br>other premium features such as</h2>
+					<div class="row">
+					<div class="col-md-4">
+						<ul class="ul-new">
+							<li>Aerospace &amp; Defence</li>
+							<li>Automotive</li>
+							<li>Automobiles</li>
+							<li>Banking &amp; Financial Services</li>
+							<li>Capital Markets</li>
+							<li>Communications</li>
+							<li>Consumer Goods and Services</li>
+							<li>Customs Brokerage</li>
+							<li>Consumer Packaged Goods</li>
+							<li>Energy and Utilities</li>
+						</ul>
+					</div>
+					<div class="col-md-4">
+						<ul class="ul-new">
+							<li>Education</li>
+							<li>Healthcare</li>
+							<li>Insurance</li>
+							<li>Logistics</li>
+							<li>Manufacturing</li>
+							<li>Market Research</li>
+							<li>Media and Entertainment</li>
+							<li>Medical Devices</li>
+							<li>Network Equipment Providers</li>
+							<li>Oil &amp; Gas</li>
+						</ul>
+					</div>
+					<div class="col-md-4">
+						<ul class="ul-new">
+							<li>						Pharmaceutical &amp; Life Sciences</li>
+							<li>Platforms &amp; Software Products</li>
+							<li>Public Sector / Government</li>
+							<li>Real Estate </li>
+							<li>Retail &amp; Ecommerce</li>
+							<li>Securities &amp; Capital Markets</li>
+							<li>Telecommunications</li>
+							<li>Securities &amp; Capital Markets</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!------------------------>
+
+		   <div class="categories-area pb-10 pt-20">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-xl-7 col-lg-7 col-md-7">
+                        <h2 class="h2-new" style="font-size: 18px;">Here’s How Companies Have Benefitted by Outsourcing Virtual Receptionist Services to Us</h2>
+                        <p>Our virtual receptionist services helped a renowned interior design company answer the queries of its prospects satisfactorily and double its business in quick time.</p>
+                        <p>We helped a real estate company cut down on the costs of running an in-house team of answering agents by providing cost-effective virtual support</p>
+                    </div>
+                    <div class="col-xl-5 col-lg-5 col-md-5">
+                        <div class="iframe-container">
+                            <iframe width="434" height="200" src="https://www.youtube.com/embed/DAxovcKhOFQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+	<!-------------------------------->
+
+		<section class="pt-50 pb-20">
+			<div class="container">
+				<div class="col-md-12">
+					<h2 class="h2-new" style="font-size: 18px;">Why Outsource Virtual Receptionist Services to ExpertCallers?</h2>
+					<p>
+						<strong>
+						When companies outsource virtual receptionist services to us, they can benefit from the following:
+						</strong>
+					</p>
+					<div class="row">
+					<div class="col-md-6">
+						<ul class="ul-new unordered-list">
+							<li>Experienced and specialized virtual receptionists</li>
+							<li>Multi-lingual receptionist services</li>
+							<li>Assured cost savings of 40% – 50%</li>
+							<li>90% of calls answered in 3 rings – Not too sure about this, need to check with operations</li>
+						</ul>
+					</div>
+					<div class="col-md-6">
+						<ul class="ul-new unordered-list">
+							<li>Well defined and real-time reporting facilities</li>
+							<li>Comprehensive quality monitoring</li>
+							<li>Live call transfers to your team in real time</li>
+							<li>Up-time of 99.5% to provide uninterrupted support</li>
+							<li>Flexible, scalable services</li>
+						</ul>
+					</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	<!--------------->
+
+		<section class="sample-text-area">
+			<div class="container">
+				<p style="text-align: justify">
+					When you outsource virtual receptionist services to ExpertCallers, you will partner with a virtual receptionist outsourcing company that is extremely skilled in helping you stay connected with your current and prospective business customers via telephone, e-mail or chat.
+				</p>
+            </div>
+		</section>
+
+ </main>
+
+    {% endblock %}

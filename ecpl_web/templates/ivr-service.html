@@ -1,0 +1,279 @@
+    {% extends 'base.html' %}
+    {% block title %}IVR Services{% endblock %}
+    {% block main %}
+    {% load static %}
+
+    <main>
+        <!--? Hero Start -->
+        <div class="slider-area2">
+            <div class="slider-height2 hero-overly2 d-flex align-items-center" style="max-height:300px;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="text-center">
+                                <h2 style="color: #c19d9d;font-family: fantasy">IVR Services</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Hero End -->
+
+
+        <div class="categories-area pb-30">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-lg-7" style="margin-top:100px;">
+                    <h2 class="h2-new">Helping You Customize Customer Experience</h2>
+                    <p style="text-align: justify">ExpertCallers’ offshore Interactive Voice Response (IVR) service has helped many companies provide a seamless and consistent experience touchpoint to their customers. We build interactive voice-menu suiting your specific needs and in the language of your choice.</p>
+                    <p style="text-align: justify">Our IVR services are designed to significantly reduce the cost of common phone calls to and from your company. At the same time, we give your business the combined power of a client support and complete marketing solution. You can leverage our outsourced IVR services to get access to database access, customize call flow, make call-backs, facilitate scalability and web integration</p>
+                    <p><b>Robust IVR Services Customized to Your Need</b></p>
+                    <p>Our outsourced IVR services are meticulously designed to provide personalized customer experience while boosting IVR containment. Single tier pricing makes it extremely cost-efficient with regards to operational cost, and a highly flexible user interface that can be customized as per the needs business completely eliminates the need for expensive and laborious IT intervention</p>
+                </div>
+                <div class="col-lg-1">
+
+                </div>
+                <div class="col-lg-4 col-md-4" style="background:#136fa0d6;margin-top: 50px;padding:30px;border-radius: 15px">
+                     {% load crispy_forms_tags %}
+
+                    <h3>Quick Contact</h3>
+                    <form action="addcontact" method="POST" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    {{ form|crispy }}
+
+                    <input type="submit" value="Submit" class="genric-btn primary small">
+                    </form>
+
+                    {% for message in messages %}
+                    <br><h6>{{message}}</h6>
+                    {% endfor %}
+
+                </div>
+            </div>
+            <!--       <a href="about" class="btn-head">More About Us</a> -->
+        </div>
+    </div>
+
+    <!------------------------------>
+
+        <section class="pt-50 pb-50">
+      <div class="container">
+        <h5 class="h5-new">Our customized IVR services comes with all the tools necessary to make every customer interaction meaningful. All this means that when you outsource IVR services, you will be able to:</h5>
+        <br>
+        <div class="row">
+
+          <div class="col-md-6">
+            <ul class="unordered-list ul-new">
+              <li>Preserve context across channels</li>
+              <li>Proactive outreach for notifications and reminders</li>
+              <li>Adapt to each caller's experience level</li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <ul class="unordered-list ul-new">
+              <li>In-queue self-service and call back</li>
+              <li>Predict call intent based on recent transactions</li>
+              <li>Visual IVR and Text2IVR for ease of use</li>
+            </ul>
+          </div>
+
+
+        <div class="col-md-12">
+
+              <br>
+              <p><b>A chat with a live agent can cost $6-12 per interaction, while an automated interaction on the IVR can cost as little as 25 cents – <span>Forrester</span></b></p>
+
+        </div>
+      </div>
+      </div>
+
+    </section>
+
+        <!------------------------>
+
+     <section class="categories-area pt-50 pb-50">
+      <div class="container">
+
+
+          <h2 class="h2-new">Salient Features of ExpertCallers’ Interactive Voice Response Services</h2>
+          <p>
+            Our automatic call distributor works on the rule of ‘right call to right agent.’ Our system routes every call based on the specific needs of the customer and ensures that the best service is provided to the caller every single time.
+          </p>
+          <p class="text-center">
+            <strong>Here are some of the unique features that differentiates our IVR services from those provided by other IVR service providers:</strong>
+          </p>
+          <div class="tab">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active a-new" id="ct-tab" data-toggle="tab" href="#ct" role="tab" aria-controls="ct" aria-selected="true" aria-expanded="true"> Web Based Solution</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link a-new" id="lc-tab" data-toggle="tab" href="#lc" role="tab" aria-controls="lc" aria-selected="false" aria-expanded="false">Easy to Configure Messages</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link a-new" id="ns-tab" data-toggle="tab" href="#ns" role="tab" aria-controls="ns" aria-selected="false" aria-expanded="false">Multi-level IVR Technology</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link a-new" id="ashs-tab" data-toggle="tab" href="#ashs" role="tab" aria-controls="ashs" aria-selected="false" aria-expanded="false">Mobility</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link a-new" id="eva-tab" data-toggle="tab" href="#eva" role="tab" aria-controls="eva" aria-selected="false" aria-expanded="false">Reports and Analytics</a>
+              </li>
+            </ul>
+
+            <div class="tab-content" id="myTabContent">
+              <div class="tab-pane fade show active in" id="ct" role="tabpanel" aria-labelledby="ct-tab" aria-expanded="true">
+                <p style="padding:20px">
+                  ExpertCallers’ IVR services can be accessed anywhere with any browser and across time-zones. To get on board and provide <strong>customized IVR services</strong>, the client just needs an internet connection and can start with the IVR setup.
+                </p>
+              </div>
+              <div class="tab-pane fade" id="lc" role="tabpanel" aria-labelledby="lc-tab" aria-expanded="false">
+                <p style="padding:20px">
+                  Our text-to-speech conversion software easily converts calls to massages in no time. This can rapidly change IVR massages as and when required to customize customer’s experience
+                </p>
+              </div>
+              <div class="tab-pane fade" id="ns" role="tabpanel" aria-labelledby="ns-tab" aria-expanded="false">
+                <p style="padding:20px">
+                  We offer multiple levels in IVR setup to give specific information to the customers. For instance, the caller who wants to make payment, he will be first asked to select ‘1’ for “Payment Issue.” Once he selects the options, he will be routed to another IVR which prompts him to select 1 for “Pre-paid” or 2 for ‘Post-Paid.” This kind of arrangement minimizes errors and maximizes customer satisfaction.
+                </p>
+              </div>
+              <div class="tab-pane fade" id="ashs" role="tabpanel" aria-labelledby="ashs-tab" aria-expanded="false">
+                <p style="padding:20px">
+                  ExpertCallers’ IVR services can be deployed anywhere whether its landline or mobile phones. This makes it easy for the clients to forward relevant calls to sales department employees working in the field anywhere across the globe.
+                </p>
+              </div>
+              <div class="tab-pane fade" id="eva" role="tabpanel" aria-labelledby="eva-tab" aria-expanded="false">
+                <p style="padding:20px">
+                  Every relevant call report, be it information regarding number of call missed, number of call dropped on IVR, live analytics and dashboards, will be shared with the client to promote better business decision-making.
+                </p>
+                <br>
+                <h5 class="h5-new">Other prominent features of our IVR services:</h5>
+                <div class="row">
+                  <div class="col-md-6">
+                    <ul class="ul-new">
+                      <li>Customized services to meet specific objectives</li>
+                      <li>Profitable call rates</li>
+                      <li>Professional voice recording services</li>
+                      <li>Multiple phone lines to ensures no customer is waiting</li>
+                      <li>Compact and robust software applications</li>
+
+                    </ul>
+                  </div>
+                  <div class="col-md-6">
+                    <ul class="ul-new">
+                      <li>Guaranteed quality and clarity of calls</li>
+                      <li>High-end database storage that captures every minute details of the customers</li>
+                      <li>Meticulous design of the automated service that helps customers to access the required information or resolve the issue within a few clicks</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    </section>
+
+     <!----------------------->
+
+        <section class="pt-50 pb-50">
+      <div class="container">
+
+        <h2 class="h2-new">We are Different; Here's Why</h2>
+          <div class="row">
+        <div class="col-md-4 box">
+          <div class="img prasen"> </div>
+          <h5 class="h5-new">Great Customer Experience</h5>
+          <p>
+            As one of the <strong>leading IVR service provider</strong> in the industry, we create great experiences by simplifying and streamlining your business processes to reduce customer effort throughout a call.
+          </p>
+        </div>
+        <div class="col-md-4 box">
+          <div class="img prioritize"> </div>
+          <h5 class="h5-new">Prioritize Calls Based on Value</h5>
+          <p>
+            We prioritize calls to ensure your team never loses a high-value customer due to bad customer service or a tardy response. This is one of the key differentiator that sets us apart from other IVR service providers.
+          </p>
+        </div>
+        <div class="col-md-4 box">
+          <div class="img setting1"> </div>
+          <h5 class="h5-new">Boost Your Company’s Image</h5>
+          <p>
+            We have devised our <strong>third-party IVR services</strong> to provide better clarity, quality and speed, which goes a long way in creating the right impression about your professionalism with regards to the customer.
+          </p>
+        </div>
+      </div>
+      </div>
+    </section>
+
+     <!------------------------->
+
+
+		   <div class="categories-area pb-50 pt-50">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-xl-7 col-lg-7 col-md-7">
+                        <h2 class="h2-new" style="font-size: 18px;">Here’s How Companies Have Benefitted by Outsourcing IVR Services to ExpertCallers</h2>
+                        <p>We helped an ecommerce giant reduce operational costs by a whopping 60% with our customized IVR self-service session.</p>
+                        <p>A renowned airline leveraged our IVR services to design its IVR, choose the right persona, voice and on-hold experience, to deliver the right brand experience.</p>
+                    </div>
+                    <div class="col-xl-5 col-lg-5 col-md-5">
+                        <div class="iframe-container">
+                            <iframe width="434" height="200" src="https://www.youtube.com/embed/DAxovcKhOFQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+     <!-------------------------->
+
+        <section class="pt-50 pb-50">
+      <div class="container">
+        <div class="col-md-12">
+          <h2 class="h2-new">Why Outsource IVR Services to ExpertCallers?</h2>
+          <p>
+            <strong>When you outsource IVR services to expert IVR service provider like ExpertCallers, you can reap the benefits of following:</strong>
+          </p>
+            <div class="row">
+                  <div class="col-md-6">
+                    <ul class="unordered-list ul-new">
+                      <li>40% increase in first contact resolution</li>
+                      <li>Increase in customer service efficiency</li>
+                      <li>Multi language support</li>
+                      <li>Fully automated and easy to use</li>
+                      <li>30% reduction on costs</li>
+                      <li>High call quality</li>
+                    </ul>
+                  </div>
+                  <div class="col-md-6">
+                    <ul class="unordered-list ul-new">
+                      <li>More professional approach</li>
+                      <li>Guaranteed increase in customer satisfaction</li>
+                      <li>Gain competitive advantage</li>
+                      <li>Customized call log report</li>
+                      <li>100% secure and trusted solutions</li>
+                    </ul>
+                  </div>
+            </div>
+        </div>
+      </div>
+
+    </section>
+
+
+     <!--------------------->
+
+        <section class="sample-text-area">
+			<div class="container">
+				<p style="text-align: justify">
+					When you outsource IVR services to ExpertCallers, you’ll partner with an IVR service provider that is focused on providing customized IVR services that engages and informs callers, rather than confusing or frustrating them.
+				</p>
+            </div>
+		</section>
+
+    </main>
+
+    {% endblock %}
+

@@ -38,6 +38,22 @@ def pi_request(request):
     return render(request,'PI_request.html')
 def order_taking(request):
     return render(request,'order_taking_service.html')
+def virtual(request):
+    form = forms.QuickContact()
+    return render(request,'virtual_reception.html',{'form':form})
+def upselling(request):
+    form = forms.QuickContact()
+    return render(request,'upselling.html',{'form':form})
+def tollfree(request):
+    form = forms.QuickContact()
+    return render(request,'toll-free.html',{'form':form})
+def answer800(request):
+    form = forms.QuickContact()
+    return render(request,'800-answer.html',{'form':form})
+def ivrservice(request):
+    form = forms.QuickContact()
+    return render(request,'ivr-service.html',{'form':form})
+
 def certification(request):
     return render(request,'certification.html')
 def infra(request):

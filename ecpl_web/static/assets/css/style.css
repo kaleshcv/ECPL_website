@@ -3346,8 +3346,9 @@ hero-btn {
 
 /* line 109, C:/Users/HP/Desktop/264.Business_HTML/HTML/assets/scss/_headerMenu.scss */
 .main-header .main-menu ul ul.submenu {
+  width: max-content;
   position: absolute;
-  width: 170px;
+
   background: #0d2d3e;
   left: 0;
   top: 90%;
@@ -3567,6 +3568,12 @@ hero-btn {
 }
 .slider-ordertaking {
   background-image: url(../img/hero/order-taking.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.slider-ocontact {
+  background-image: url(../img/hero/contact-head.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -7016,7 +7023,7 @@ sup,
 sub,
 u,
 del {
-  color: #1f2b7b;
+  color:#374852;
 }
 
 /* line 95, C:/Users/HP/Desktop/264.Business_HTML/HTML/assets/scss/_elements.scss */
@@ -8337,4 +8344,37 @@ del {
 }
 .ul-new{
     font-family:none;
+}
+.h5-new{
+    font-family:none;
+}
+.a-new{
+    color:black;
+}
+.infra-data{
+    background:#3267831a;
+    padding: 30px;
+
+
+}
+.img-res{
+    width:100%;
+    height:auto;
+}
+
+h2 {
+    margin-bottom: 30px;
+    color: #374852;
+    font-family: 'Font Awesome 5 Brands';
+    font-weight:bold;
+}
+h2,h3,h4,h5,h6 {
+
+    color: #374852;
+    font-family: 'Font Awesome 5 Brands';
+}
+
+
+ul{
+   font-family:none;
 }
