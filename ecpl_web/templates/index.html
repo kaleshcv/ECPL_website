@@ -3,13 +3,15 @@
 {% block main %}
 {% load static %}
 <main>
+
     <!-- slider Area Start-->
     <div class="slider-area hero-overly2" style="height: 600px;">
         <div class="container">
             <div class="row">
-                <div class="col-lg-7 col-md-7">
+                <div class="col-lg-6 col-md-6"></div>
+                <div class="col-lg-6 col-md-6">
                     <h2 class="slider-head-new" style="text-align:justify;">To minimize the impact of COVID-19, Our Business Continuity Plan is up and running to make Business as Usual for you</h2>
-                    <div style="margin-top:60px;margin-left:70px;"><a href="#" class="btn-head">Learn More</a></div>
+                    <div style="margin-top:60px;margin-left:3px;"><a href="#" class="btn-head">Learn More</a></div>
                 </div>
             </div>
         </div>
@@ -30,7 +32,8 @@
                 <div class="col-lg-1">
 
                 </div>
-                <div class="col-lg-4 col-md-4" style="background:#136fa0d6;margin-top: 50px;padding:30px;border-radius: 15px">
+
+                <div class="shadow-new col-lg-4 col-md-4" style="background:#136fa0d6;margin-top: 50px;padding:30px;border-radius: 15px">
                      {% load crispy_forms_tags %}
 
                     <h3>Quick Contact</h3>
@@ -47,6 +50,7 @@
 
                 </div>
             </div>
+
             <!--       <a href="about" class="btn-head">More About Us</a> -->
         </div>
     </div>
@@ -63,7 +67,7 @@
 
                     <div class="col-xl-6 col-lg-6">
                         <div class="support-location-img">
-                            <img src="{% static 'assets/img/gallery/about_1.jpg' %}" alt="" style="max-width: 500px;max-height: 600px;">
+                            <img class="shadow-new" src="{% static 'assets/img/gallery/about_1.jpg' %}" alt="" style="max-width: 500px;max-height: 600px;">
                         </div>
                     </div>
                     <div class="col-xl-6 col-lg-6" style="margin-top:30px;">
@@ -137,7 +141,7 @@
                                     <svg xmlns="http://www.w3.org/2000/svg"
                                     xmlns:xlink="http://www.w3.org/1999/xlink"
                                     width="67px" height="49px">
-                                    <path fill-rule="evenodd"  fill="rgb(240, 78, 60)"
+                                    <path fill-rule="evenodd"  fill="grey"
                                     d="M57.053,48.209 L42.790,48.209 L52.299,29.242 L38.036,29.242 L38.036,0.790 L66.562,0.790 L66.562,29.242 L57.053,48.209 ZM4.755,48.209 L14.263,29.242 L0.000,29.242 L0.000,0.790 L28.527,0.790 L28.527,29.242 L19.018,48.209 L4.755,48.209 Z"/>
                                     </svg>
                                     <p>{{testi.testi}}</p>
@@ -148,7 +152,7 @@
                                         <!--<img src="{% static 'assets/img/gallery/Homepage_testi.png' %}" alt="">-->
                                     </div>
                                     <div class="founder-text">
-                                        <span>{{testi.name}}</span>
+                                        <span style="color:grey;">{{testi.name}}</span>
                                         <p>{{testi.title}}</p>
                                     </div>
                                 </div>
@@ -164,7 +168,38 @@
     </div>
     <!-- Testimonial End -->
 
-    <div class="services-area pt-100 pb-40">
+    <!------------------------->
+    <div class="categories-area" style="margin-left:20px">
+    <div class="container pt-100 pb-50">
+        <h2 class="h2-new">One-Stop-Shop for All Your Call Center BPO Needs</h2>
+        <h5 style="text-align:justify">Being a leading provider of call center outsourcing services operating from India, we offer a range of call center BPO services, including:</h5>
+        <br>
+        <div class="row align-items-center">
+
+
+            {% for service in services %}
+
+            <div class="col-lg-4 col-md-4 pt-10 pb-10">
+                <div class="card shadow-new-small" style="width: 24rem;height:220px;border-radius: 10px;border-color:white;">
+                  <div class="card-body">
+                    <h5 class="card-title" style="text-align:center;">{{service.title}}</h5>
+                      <p class="card-text">{{service.desc}}</p>
+                  </div>
+                </div>
+            </div>
+
+            {% endfor %}
+        </div>
+
+    </div>
+    </div>
+
+
+    <!---------------->
+
+    <!---------------------->
+
+    <div class="services-area pt-50 pb-40">
         <div class="container">
             <div class="row">
                 <div class="cl-xl-7 col-lg-8 col-md-10">
@@ -177,7 +212,7 @@
             </div>
             <div class="row">
                 <div class="col-lg-4 col-md-4 col-sm-10">
-                    <div class="single-services mb-20">
+                    <div class="shadow-new-small single-services mb-20">
                         <div class="services-img">
                             <img src="{% static 'assets/img/gallery/service_4.png' %}" alt="">
                             </div>
@@ -188,7 +223,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-10">
-                    <div class="single-services mb-20">
+                    <div class="shadow-new-small single-services mb-20">
                         <div class="services-img">
                             <img src="{% static 'assets/img/gallery/service_2.jpg' %}" alt="">
                             </div>
@@ -199,13 +234,14 @@
                     </div>
                 </div>
                  <div class="col-lg-4 col-md-4 col-sm-10">
-                    <div class="single-services mb-20">
+                    <div class="shadow-new-small single-services mb-20">
                         <div class="services-img">
                             <img src="{% static 'assets/img/gallery/service_3.png' %}" alt="">
                             </div>
                             <div class="services-caption">
                             <span>Strategy planing</span>
                             <p>How Our Expert Help Delivered Superior Quality Customer Support</p>
+                                <br>
                         </div>
                     </div>
                 </div>

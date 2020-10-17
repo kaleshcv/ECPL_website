@@ -12,14 +12,6 @@ class Testimonials(models.Model):
     title = models.CharField(max_length=200)
     testi=models.TextField()
 
-class Contactform(models.Model):
-    message = models.TextField()
-    name=models.CharField(max_length=100)
-    email=models.EmailField()
-    subject=models.CharField(max_length=200)
-
-    def __str__(self):
-        return self.subject
 
 class Team(models.Model):
     name = models.CharField(max_length=100)
@@ -57,3 +49,13 @@ class QuickContact(models.Model):
     phone=models.IntegerField()
     message = models.CharField(max_length=250)
     date = models.DateTimeField(auto_now_add=True)
+
+class Contactform(models.Model):
+    message = models.CharField(max_length=200)
+    name=models.CharField(max_length=100)
+    email=models.EmailField()
+    subject=models.CharField(max_length=200)
+    is_inbound=models.BooleanField('inbound',default=False)
+    is_outbound = models.BooleanField('outbound', default=False)
+    def __str__(self):
+        return self.subject

@@ -12,7 +12,8 @@ def index(request):
     return render(request,'index.html',data)
 
 def contact(request):
-    return render(request,'contact.html')
+    form = forms.Contactform()
+    return render(request,'contact.html',{'form':form})
 
 def aboutus(request):
     team=Team.objects.all()

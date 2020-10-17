@@ -20,6 +20,106 @@
         </div>
         <!-- Hero End -->
 
+        <!---------------------->
+
+        <div class="container pt-50">
+
+        <div class="col-lg-6 col-md-6 col-sm-6">
+			<div class="contact-form-new">
+				<form name="GeneralForm" class="cnt_pg_form" method="post" action="/forms/contact-us-submit.php" onsubmit="return validateForm(this)" id="GeneralForm" enctype="multipart/form-data">
+					<h2 style="color:#fff;font-size:20px;font-weight: bolder;margin-top: 5px;">Please fill in the form below</h2>
+					<p style="color:#f6f7a5;font-size:11px;margin-top: 5px;">* Fields marked with an asterisk are mandatory</p>
+					<ul>
+						<li><input required="required" type="text" class="form-control tx-field-01" value="" name="FirstName" placeholder="Name*"></li>
+						<li><input required="required" type="text" class="form-control tx-field-01" value="" name="Email" placeholder="Email* "></li>
+						<li><input type="Number" class="form-control tx-field-01" value="" name="phone" placeholder="Phone Number"></li>
+						<li><input type="text" class="form-control tx-field-01" value="" name="Company" placeholder="Company"></li>
+                        <li>
+                            <select required="required" class="selectpicker list-01" placeholder="Country" name="country">
+								<option></option>
+								<option selected="selected" value="0001USA">USA</option>
+
+							</select>
+						</li>
+
+                    </ul>
+                    <br>
+                    <br>
+
+						<div class="check-box-block pt-20">
+							<h2 class="pb-xs" style="color: white;">Enquiry Details</h2>
+							<p>What Call Center services would you like to outsource?</p>
+                            <div class="row">
+							<div class="col-md-6">
+								<div style="color:#fff;font-size:14px;" class="services">
+									<input class="check-box" name="service1" type="checkbox" value="0100Inbound Call Center Services"> Inbound Call Center
+								</div>
+								<div style="color:#fff;font-size:14px;" class="services">
+									<input class="check-box" name="service2" type="checkbox" value="0101Outbound Technical Support"> Outbound Technical
+								</div>
+								<div style="color:#fff;font-size:14px;" class="services">
+									<input class="check-box" name="service3" type="checkbox" value="0102Technical Helpdesk Services"> Technical Helpdesk
+								</div>
+								<div style="color:#fff;font-size:14px;" class="services">
+									<input class="check-box" name="service8" type="checkbox" value="0104Disaster Recovery Services">  Disaster Recovery
+								</div>
+								<div style="color:#fff;font-size:14px;" class="services">
+									<input class="check-box" name="service5" type="checkbox" value="0103CATI Services"> CATI Services
+								</div>
+								<div style="color:#fff;font-size:14px;" class="services">
+									<input class="check-box" name="service11" type="checkbox" value="0105Email and Chat Support">  Email and Chat Support
+								</div>
+							</div>
+							<div class="col-md-6">
+
+								<div style="color:#fff;font-size:14px;" class="services">
+									<input class="check-box" name="service7" type="checkbox" value="0381	Outbound Call Center Services">  Outbound Call Center
+								</div>
+								<div style="color:#fff;font-size:14px;" class="services">
+									<input class="check-box" name="service6" type="checkbox" value="0382Telemarketing Services">  Telemarketing
+								</div>
+								<div style="color:#fff;font-size:14px;" class="services">
+									<input class="check-box" name="service6" type="checkbox" value="0383Technical Support Services"> Technical Support
+								</div>
+								<div style="color:#fff;font-size:14px;" class="services">
+									<input class="check-box" name="service6" type="checkbox" value="0384Email Support Services"> Email Support
+								</div>
+								<div style="color:#fff;font-size:14px;" class="services">
+									<input class="check-box" name="service6" type="checkbox" value="0385Chat Support Services"> Chat Support
+								</div>
+								<div style="color:#fff;font-size:14px;" class="services">
+									<input class="check-box" name="service6" type="checkbox" value="0106Others"> Others
+								</div>
+							</div>
+                            </div>
+
+						</div><br>
+						<br>
+						<div class="check-box-block mt-xs">
+							<textarea name="description" required="required" class="form-control txt-area" placeholder="Detailed description of your requirements *"></textarea>
+						</div>
+						<div class="check-box-block ts1 mt-xs">
+							<span style="color:#fff;">If you have a document to share, please upload here (Less than 2 MB)</span>
+							<input type="hidden" readonly="" class="form-control brows_label_inp" placeholder="No file selected...">
+							<input type="file" id="inputFile" multiple="">
+						</div>
+
+						<button type="submit" class="submit-button"><span style="font-size:28px;color:#fff;">Submit</span>
+					</button>
+					<p class="text-white" style="font-size: 12px;">
+						At Flatworld Solutions, we take your privacy seriously and use your personal information only to provide customized services and a great site experience. <a href="/privacy.php" target="_blank" class="text-white">Read our Privacy Policy</a>.
+					</p>
+				</form></div>
+			</div>
+        </div>
+
+
+
+        <!---------------------------->
+
+
+
+
 
 
     </main>

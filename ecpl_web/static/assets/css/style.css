@@ -211,17 +211,18 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Roboto", sans-serif;
-  color: #092c3f;
+  font-family:calibri;
+  color:#092c3fc9 !important;
   margin-top: 0px;
   font-style: normal;
   font-weight: 500;
   text-transform: normal;
 }
 
+
 /* line 23, C:/Users/HP/Desktop/264.Business_HTML/HTML/assets/scss/_common.scss */
 p {
-  font-family:none;
+  font-family:calibri;
   color:#063666c9;
   font-size: 16px;
   line-height: 30px;
@@ -3584,7 +3585,7 @@ hero-btn {
 /* line 37, C:/Users/HP/Desktop/264.Business_HTML/HTML/assets/scss/_h1-hero.scss */
 .slider-area {
   margin-top: -1px;
-  background-image: url(../img/hero/h2_hero.jpg);
+  background-image: url(../img/hero/hero3.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -8276,12 +8277,7 @@ del {
 /*# new Styles */
 
 
-.h2-new {
-    margin-bottom: 30px;
-    color: #374852;
-    font-family: 'Font Awesome 5 Brands';
-    font-weight:bold;
-}
+
 
 .iframe-container{
   position: relative;
@@ -8302,7 +8298,8 @@ del {
     margin-top: 200px;
     margin-left: 0px;
     padding-top: 40px;
-    color: lightgray;
+    color: #d3d3d3a6;
+    font-weight: bold;
 }
 
 
@@ -8362,19 +8359,41 @@ del {
     height:auto;
 }
 
-h2 {
-    margin-bottom: 30px;
-    color: #374852;
-    font-family: 'Font Awesome 5 Brands';
-    font-weight:bold;
-}
-h2,h3,h4,h5,h6 {
-
-    color: #374852;
-    font-family: 'Font Awesome 5 Brands';
-}
-
 
 ul{
    font-family:none;
+}
+
+.contact-form-new{
+    background:#212529;
+    padding:20px;
+}
+.contact-form-new li{
+
+    padding:10px;
+}
+.shadow-new{
+    box-shadow: 20px 20px 20px grey !important;
+}
+.shadow-new-small{
+   box-shadow: 5px 5px 5px rgb(0 0 0 / 10%);
+}
+.h2-new{
+    color:#092c3fc9;
+}
+.h5-new{
+    color:#092c3fc9;
+}
+.card:hover{
+    background:#6495ed38;
+    border-color:#6495ed38;
+    border:none;
+
+}
+
+.submenu li{
+    font-family:calibri;
+}
+.main-menu li{
+    font-family:calibri;
 }
