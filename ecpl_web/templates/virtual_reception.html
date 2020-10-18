@@ -1,6 +1,6 @@
 
     {% extends 'base.html' %}
-    {% block title %}Order Taking Services{% endblock %}
+    {% block title %}Virtual Receptionist Services{% endblock %}
     {% block main %}
     {% load static %}
 
@@ -33,7 +33,8 @@
                 <div class="col-lg-1">
 
                 </div>
-                <div class="col-lg-4 col-md-4" style="background:#136fa0d6;margin-top: 50px;padding:30px;border-radius: 15px">
+                <div class=" col-lg-4 col-md-4" style="padding:30px">
+                <div class="shadow-new" style="background:#136fa0d6;margin-top: 50px;padding:30px;border-radius: 15px">
                      {% load crispy_forms_tags %}
 
                     <h3>Quick Contact</h3>
@@ -47,6 +48,7 @@
                     {% for message in messages %}
                     <br><h6>{{message}}</h6>
                     {% endfor %}
+                </div>
 
                 </div>
             </div>
@@ -60,13 +62,14 @@
 
         <div class="categories-area pt-100 pb-20" >
 			<div class="container">
-				<h2 class="h2-new text-center" style="font-size: 18px;">Our End-to-End Virtual Receptionists Services </h2>
+				<h2 class="h2-new">Our End-to-End Virtual Receptionists Services </h2>
 				<p>
 					Companies can bank on us to provide following outsourced virtual receptionist services:
 				</p>
 				<div class="row">
 
-                    <div class="col-md-6"><img src="{% static 'other/vr-2.jpg' %}" alt="" class="img-fluid"></div>
+                    <div class="col-md-5"><img src="{% static 'other/vr-2.jpg' %}" alt="" class="shadow-new img-fluid"></div>
+					<div class="col-md-1"></div>
 					<div class="col-md-6">
 						<ul class="ul-new unordered-list" style="margin-left:30px">
 							<br><br>
@@ -95,14 +98,14 @@
 
         <!-------------------------->
 
-        <section class="pt-50">
+        <section class="pt-50 pb-50">
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col-md-2"></div>
 
 					<div class="col-md-8 pt-5 pb-0">
-						<h5 class="h5-new">Unique Features of Our Proficient</h5>
-						<h2 class="h2-new" style="font-size: 24px;"> Virtual Receptionist Services</h2>
+						<h5>Unique Features of Our Proficient</h5>
+						<h2 class="h2-new"> Virtual Receptionist Services</h2>
 						<p>
 							<strong>
 							Some of the distinctive attributes of our accomplished offshore virtual receptionist services are as follows:
@@ -111,13 +114,13 @@
 						<div class="clearfix"></div>
 						<div class="row">
 							<div class="col-md-6">
-								<h5 class="h5-new">Customary Greetings</h5>
+								<h5>Customary Greetings</h5>
 								<p>
 									Customer interaction is an experience and correctly greeting the customer will shape the first impression about your company. At ExpertCallers, we record customized greetings to ensure the customer is treated professionally and routed to the point of contact at the earliest.
 								</p>
 							</div>
 							<div class="col-md-6">
-								<h5 class="h5-new">Expedient Extension Menus</h5>
+								<h5>Expedient Extension Menus</h5>
 								<p>
 									To make the process more effortless, many relevant extensions can be created, and the information stored during the call can be sent directly to the respective department heads or concerned authority via massages or voice mails.
 								</p>
@@ -125,13 +128,13 @@
 						</div>
 						<div class="row">
 							<div class="col-md-6">
-								<h5 class="h5-new">Your Way of Call Routing</h5>
+								<h5>Your Way of Call Routing</h5>
 								<p>
 									We can route each call the way you want. We believe, treating every call uniquely is important. That’s why we enable the companies to set rules to route the customer according to type of caller, time of calling and many other criteria. And, all this can be updated as and when required on the dashboards.
 								</p>
 							</div>
 							<div class="col-md-6">
-								<h5 class="h5-new">Tailored Greetings for After Business Hours</h5>
+								<h5>Tailored Greetings for After Business Hours</h5>
 								<p>
 									We design specific greetings for the callers who reach out to us after business hours. These messages can be recorded by us as per your company’s norms and work culture.
 								</p>
@@ -139,13 +142,13 @@
 						</div>
 						<div class="row">
 							<div class="col-md-6">
-								<h5 class="h5-new">Refined Call Screening</h5>
+								<h5>Refined Call Screening</h5>
 								<p>
 									This feature helps you to avoid those intruding unwelcomed calls, as we screen the calls on the basis of specific time and route calls or voicemails to precise departments and people.
 								</p>
 							</div>
 							<div class="col-md-6">
-								<h5 class="h5-new">Transcription of Voicemail</h5>
+								<h5>Transcription of Voicemail</h5>
 								<p>
 									Leveraging the feature to transcribe voicemails, every voicemail can be converted to text and sent via emails to the relevant authorities.
 								</p>
@@ -153,13 +156,13 @@
 						</div>
 						<div class="row">
 							<div class="col-md-6">
-								<h5 class="h5-new">Instant Connection</h5>
+								<h5>Instant Connection</h5>
 								<p>
 									Our click-to-call feature, provides rapid and easy web to phone connection within no time, thereby providing a better avenue for customer to connect.
 								</p>
 							</div>
 							<div class="col-md-6">
-								<h5 class="h5-new">Smooth CRM integration</h5>
+								<h5>Smooth CRM integration</h5>
 								<p>
 									We enable the companies to integrate with CRM and accelerate the operations by providing the required assistance.
 								</p>
@@ -167,13 +170,13 @@
 						</div>
 						<div class="row">
 							<div class="col-md-6">
-								<h5 class="h5-new">Automatic Call Recording</h5>
+								<h5>Automatic Call Recording</h5>
 								<p>
 									Every call will be recorded effectively and can be used for quality, training and compliance purposes in future.
 								</p>
 							</div>
 							<div class="col-md-6">
-								<h5 class="h5-new">Unified Management</h5>
+								<h5>Unified Management</h5>
 								<p>
 									We diligently take over call mechanisms to fine-tune your business phone system.
 								</p>
@@ -181,13 +184,13 @@
 						</div>
 						<div class="row">
 							<div class="col-md-6">
-								<h5 class="h5-new">Effective Multi-level IVR</h5>
+								<h5>Effective Multi-level IVR</h5>
 								<p>
 									We provide round-the-clock IVR, which provides limited prompts and enable customer to reach the desired person quickly.
 								</p>
 							</div>
 							<div class="col-md-6">
-								<h5 class="h5-new">Advanced Security by Multi-agent Access</h5>
+								<h5>Advanced Security by Multi-agent Access</h5>
 								<p>
 									Your business data is protected 24X7 with multi-agent access and chances of security breaches are completely removed.
 								</p>
@@ -195,14 +198,14 @@
 						</div>
 						<div class="row">
 							<div class="col-md-6">
-								<h5 class="h5-new">Real-time Analysis and Report generation</h5>
+								<h5>Real-time Analysis and Report generation</h5>
 								<p>
 									We empower the companies with real-time data and encourage them to analyse it to streamline the operations.
 								</p>
 							</div>
 						</div>
 				<div class="pt-50">
-						<h2 class="h2-new" style="font-size: 24px;">In addition to these, you can also reap in the benefits of <br>other premium features such as</h2>
+						<h2 class="h2-new">In addition to these, you can also reap in the benefits of <br>other premium features such as</h2>
 				<div class="row">
 					<div class="col-md-4">
 						<ul class="ul-new unordered-list">
@@ -265,27 +268,27 @@
 
 	<!--------------------------------->
 
-		<section class="categories-area pt-50">
+		<section class="categories-area pt-50 pb-50">
 			<div class="container">
-				<h2 class="h2-new" style="font-size: 24px;">We are Different; Here's Why</h2>
+				<h2 class="h2-new">We are Different; Here's Why</h2><br>
 				<div class="row">
 				<div class="col-md-4 box">
 					<div class="img com_training"> </div>
-					<h5 class="h5-new">Comprehensive Training</h5>
+					<h5>Comprehensive Training</h5>
 					<p>
 						We train our receptionists to imbibe those traits that would help your business project a truly professional image. Our live virtual receptionists know how to manage time, meet expectations, instill confidence, add value, take initiative and bring ideas to the table.
 					</p>
 				</div>
 				<div class="col-md-4 box">
 					<div class="img spl_per"> </div>
-					<h5 class="h5-new">Specialized Personnel</h5>
+					<h5>Specialized Personnel</h5>
 					<p>
 						We assign receptionist based on their experience in your business’s area of focus. Our virtual telephone receptionists are trained in various fields, such as legal, real estate, medical etc. and so can meet your specific requirements precisely.
 					</p>
 				</div>
 				<div class="col-md-4 box">
 					<div class="img cost_sav"> </div>
-					<h5 class="h5-new">Cost savings</h5>
+					<h5>Cost savings</h5>
 					<p>
 						We have a transparent billing model for our full time virtual receptionists. We bill you for 160 hours a month.  Our pricing plans are designed for all - the small, mid-sized and enterprise businesses.
 					</p>
@@ -346,7 +349,7 @@
 
 		<!------------------------>
 
-		   <div class="categories-area pb-10 pt-20">
+		   <div class="categories-area pb-50 pt-50">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-xl-7 col-lg-7 col-md-7">
@@ -400,10 +403,11 @@
 
 		<section class="sample-text-area">
 			<div class="container">
+				<div class="shadow-new-small" style="padding:20px 20px;">
 				<p style="text-align: justify">
 					When you outsource virtual receptionist services to ExpertCallers, you will partner with a virtual receptionist outsourcing company that is extremely skilled in helping you stay connected with your current and prospective business customers via telephone, e-mail or chat.
 				</p>
-            </div>
+				</div></div>
 		</section>
 
  </main>

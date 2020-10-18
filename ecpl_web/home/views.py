@@ -55,6 +55,10 @@ def ivrservice(request):
     form = forms.QuickContact()
     return render(request,'ivr-service.html',{'form':form})
 
+def outbound(request):
+
+    return render(request,'outbound.html')
+
 def certification(request):
     return render(request,'certification.html')
 def infra(request):

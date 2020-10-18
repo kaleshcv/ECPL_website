@@ -25,13 +25,18 @@
             <div class="row align-items-center justify-content-between">
                 <div class="col-lg-7 col-md-7" style="margin-top: 50px;padding:30px">
                     <h2 class="h2-new">Who We Are?</h2>
-                    <p><b style="color:#ce2929;text-align:justify;">ExpertCallers, a Flatworld Solutions company, provides comprehensive customer relationship management services to companies across the globe.</b></p>
+
+                    <br>
                     <p style="text-align: justify">It was in 2002, that we started our operations with a handful of clients and staff, but with plenteous of commitment, rock-solid systems and knowledgeable resources. By 2008, our dedication paid off and took our client count to 100+ and staff strength to 2000. By the time we realized we were truly growing, we found our wings spread across 3 continents. Yes, we owe it to our processes and dedication, but we also believe it has got a lot to do with our ability to build and respect relationships. As a company, we strive to break free of the typical client-vendor relationship and build a partnership based on trust and value</p>
                     <p style="text-align: justify">We help you build trust by engaging in personal, meaningful, and productive interactions with your customers. We provide great support to a range of contact center requirements including inbound call services, outbound call services, technical support, telemarketing, CATI, Email Support, Chat Support etc.</p>
                     <br>
+                     <div class="shadow-new-small" style="padding:20px 20px;">
+                        <p><b style="text-align:justify;">ExpertCallers, a Flatworld Solutions company, provides comprehensive customer relationship management services to companies across the globe.</b></p>
+                    </div>
                 </div>
                 <div class="col-lg-1 col-md-1"></div>
-                <div class="col-lg-4 col-md-4" style="background:#136fa0d6;margin-top: 50px;padding:30px;border-radius: 15px">
+                <div class=" col-lg-4 col-md-4" style="padding:30px">
+                <div class="shadow-new" style="background:#136fa0d6;margin-top: 50px;padding:30px;border-radius: 15px">
                      {% load crispy_forms_tags %}
 
                     <h3>Quick Contact</h3>
@@ -41,9 +46,12 @@
 
                     <input type="submit" value="Submit" class="genric-btn primary small">
                     </form>
+
                     {% for message in messages %}
                     <br><h6>{{message}}</h6>
                     {% endfor %}
+                </div>
+
                 </div>
             </div>
             <!--       <a href="about" class="btn-head">More About Us</a> -->
@@ -63,7 +71,7 @@
                     </div>
                     <div class="col-lg-6 col-md-4">
                         <div class="support-location-img">
-                            <img src="{% static 'assets/img/gallery/about_2.jpg' %}" alt="" style="max-width:400px;max-height: 600px;">
+                            <img class="shadow-new" src="{% static 'assets/img/gallery/about_2.jpg' %}" alt="" style="max-width:400px;max-height: 600px;">
                         </div>
                     </div>
                     <div class="col-xl-6 col-lg-6" style="margin-top:30px;">
@@ -109,13 +117,14 @@
                     <div class="cl-xl-7 col-lg-8 col-md-10">
                         <!-- Section Tittle -->
                         <h2 class="h2-new">Meet Our Team</h2>
+                        <br>
                     </div>
                 </div>
                 <div class="row">
                     <!-- single Tem -->
                     {% for team in teams %}
                     <div class="col-xl-4 col-lg-4 col-md-6 col-sm-">
-                        <div class="single-team mb-30">
+                        <div class="shadow-new-small single-team mb-30">
                             <div class="team-img">
                                 <img src="{{team.image.url}}" alt="">
                             </div>
@@ -130,50 +139,53 @@
             </div>
         </div>
         <!-- Team End -->
-         <!--? Testimonial Start -->
+        <!--? Testimonial Start -->
 
-        <div class="testimonial-area pt-50 pb-50">
-            <div class="container">
-                <div class="row d-flex justify-content-center">
-                    <div class="col-xl-10 col-lg-10 col-md-9">
-                        <div class="h1-testimonial-active">
 
-                            {% for testi in testimonials %}
+    <div class="testimonial-area pt-50 pb-50">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-xl-10 col-lg-10 col-md-9">
+                    <div class="h1-testimonial-active">
 
-                            <!-- Single Testimonial -->
-                            <div class="single-testimonial text-center">
-                                <!-- Testimonial Content -->
-                                <div class="testimonial-caption ">
-                                    <div class="testimonial-top-cap">
-                                        <svg xmlns="http://www.w3.org/2000/svg"
-                                        xmlns:xlink="http://www.w3.org/1999/xlink"
-                                        width="67px" height="49px">
-                                        <path fill-rule="evenodd"  fill="rgb(240, 78, 60)"
-                                        d="M57.053,48.209 L42.790,48.209 L52.299,29.242 L38.036,29.242 L38.036,0.790 L66.562,0.790 L66.562,29.242 L57.053,48.209 ZM4.755,48.209 L14.263,29.242 L0.000,29.242 L0.000,0.790 L28.527,0.790 L28.527,29.242 L19.018,48.209 L4.755,48.209 Z"/>
-                                        </svg>
-                                        <p>{{testi.testi}}</p>
+                        {% for testi in testimonials %}
+
+                        <!-- Single Testimonial -->
+                        <div class="single-testimonial text-center">
+                            <!-- Testimonial Content -->
+                            <div class="testimonial-caption ">
+                                <div class="testimonial-top-cap">
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="67px" height="49px">
+                                    <path fill-rule="evenodd"  fill="grey"
+                                    d="M57.053,48.209 L42.790,48.209 L52.299,29.242 L38.036,29.242 L38.036,0.790 L66.562,0.790 L66.562,29.242 L57.053,48.209 ZM4.755,48.209 L14.263,29.242 L0.000,29.242 L0.000,0.790 L28.527,0.790 L28.527,29.242 L19.018,48.209 L4.755,48.209 Z"/>
+                                    </svg>
+                                    <p>{{testi.testi}}</p>
+                                </div>
+                                <!-- founder -->
+                                <div class="testimonial-founder d-flex align-items-center justify-content-center">
+                                    <div class="founder-img">
+                                        <!--<img src="{% static 'assets/img/gallery/Homepage_testi.png' %}" alt="">-->
                                     </div>
-                                    <!-- founder -->
-                                    <div class="testimonial-founder d-flex align-items-center justify-content-center">
-                                        <div class="founder-img">
-                                            <!--<img src="{% static 'assets/img/gallery/Homepage_testi.png' %}" alt="">-->
-                                        </div>
-                                        <div class="founder-text">
-                                            <span>{{testi.name}}</span>
-                                            <p>{{testi.title}}</p>
-                                        </div>
+                                    <div class="founder-text">
+                                        <span style="color:grey;">{{testi.name}}</span>
+                                        <p>{{testi.title}}</p>
                                     </div>
                                 </div>
                             </div>
-
-                            {% endfor %}
-
                         </div>
+
+                        {% endfor %}
+
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Testimonial End -->
+    </div>
+    <!-- Testimonial End -->
+
+
          <!-- Brand Area Start -->
         <div class="brand-area pt-20 pb-50">
             <div class="container">
