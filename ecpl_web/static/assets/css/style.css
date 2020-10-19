@@ -519,7 +519,7 @@ hr {
 
 /* line 253, C:/Users/HP/Desktop/264.Business_HTML/HTML/assets/scss/_common.scss */
 .btn {
-  background: #ff2143;
+  background: #495057;
   padding: 27px 44px;
   text-transform: uppercase;
   font-family: "Roboto", sans-serif;
@@ -3576,7 +3576,7 @@ hero-btn {
 
 }
 .slider-ocontact {
-  background-image: url(../img/hero/contact-head.jpg);
+  background-image: url(../img/hero/contact-new.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -8367,8 +8367,9 @@ ul{
 }
 
 .contact-form-new{
-    background:#212529;
-    padding:20px;
+    background: #136fa0d6;
+    padding: 20px;
+    border-radius: 10px;
 }
 .contact-form-new li{
 
@@ -8410,4 +8411,10 @@ ul{
    text-align:center;
 
 }
+html{
+    scroll-behavior:smooth;
+}
 
+.fas{
+    margin-left: 25px;
+}

@@ -55,6 +55,12 @@ def ivrservice(request):
     form = forms.QuickContact()
     return render(request,'ivr-service.html',{'form':form})
 
+def medicalanswering(request):
+    return render(request,'medical-answering.html')
+
+def phoneanswering(request):
+    return render(request,'phone-answering.html')
+
 def outbound(request):
 
     return render(request,'outbound.html')
