@@ -62,8 +62,26 @@ def phoneanswering(request):
     return render(request,'phone-answering.html')
 
 def outbound(request):
-
     return render(request,'outbound.html')
+
+def socialmedia(request):
+    form = forms.QuickContact()
+    return render(request,'customer-support-sm.html',{'form':form})
+
+def csr(request):
+    form = forms.QuickContact()
+    return render(request,'csr.html',{'form':form})
+
+def customersupport(request):
+    form = forms.QuickContact()
+    return render(request,'customer-support.html',{'form':form})
+
+def emailsupport(request):
+    form = forms.QuickContact()
+    return render(request,'email-support.html',{'form':form})
+def techsupport(request):
+    form = forms.QuickContact()
+    return render(request,'tech-support.html',{'form':form})
 
 def certification(request):
     return render(request,'certification.html')

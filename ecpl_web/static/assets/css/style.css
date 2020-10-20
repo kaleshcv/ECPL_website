@@ -223,7 +223,7 @@ h6 {
 /* line 23, C:/Users/HP/Desktop/264.Business_HTML/HTML/assets/scss/_common.scss */
 p {
   font-family:calibri;
-  color:#063666c9;
+  color:#0b2533;
   font-size: 16px;
   line-height: 30px;
   margin-bottom: 15px;
@@ -4214,10 +4214,11 @@ hero-btn {
 /* line 15, C:/Users/HP/Desktop/264.Business_HTML/HTML/assets/scss/_services_section.scss */
 .services-area .single-services .services-caption {
   position: relative;
-  background: #fff;
-  width: 80%;
+  opacity:40%;
+  background: black;
+  width: 100%;
   padding: 33px 46px 16px 32px;
-  margin-top: -50px;
+  margin-top: 10px;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -8300,7 +8301,7 @@ del {
     margin-top: 200px;
     margin-left: 0px;
     padding-top: 40px;
-    color: #d3d3d3a6;
+    color: #white !important;
     font-weight: bold;
 }
 
@@ -8383,13 +8384,19 @@ ul{
 }
 .h2-new{
     color:#092c3fc9;
+    font-weight: bold;
 }
 .h5-new{
     color:#092c3fc9;
 }
+.card{
+    transition: all .5s linear;
+}
+
+
 .card:hover{
-    background:#6495ed38;
-    border-color:#6495ed38;
+    background:#136fa0;
+    border-color:#136fa0;
     border:none;
 
 }
@@ -8417,4 +8424,17 @@ html{
 
 .fas{
     margin-left: 25px;
+}
+.card1,.card3,.card5,.card7,.card9{
+    /*background:#136fa0;*/
+    background:#136fa0;
+}
+.card2,.card4,.card6,.card8 {
+    background:#136fa0;
+}
+
+.bg-new {
+    background-image: url(../img/hero/bg-new-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }

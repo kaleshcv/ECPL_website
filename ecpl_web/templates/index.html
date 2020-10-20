@@ -10,7 +10,7 @@
             <div class="row">
                 <div class="col-lg-6 col-md-6"></div>
                 <div class="col-lg-6 col-md-6">
-                    <h2 class="slider-head-new" style="text-align:justify;">To minimize the impact of COVID-19, Our Business Continuity Plan is up and running to make Business as Usual for you</h2>
+                    <h2 class="slider-head-new" style="text-align:justify;color:white !important">To minimize the impact of COVID-19, Our Business Continuity Plan is up and running to make Business as Usual for you</h2>
                     <div style="margin-top:60px;margin-left:3px;"><a href="#" class="btn-head">Learn More</a></div>
                 </div>
             </div>
@@ -27,8 +27,8 @@
                     <p style="text-align: justify">We tap into this expertise to offer customized inbound and outbound call center outsourcing services to more than 300 clients of all sizes across geographies. We treat every phone call as an opportunity to create engrossing engagements that inspire customers. Be it generating leads, setting appointments, resolving issues or placing orders, we offer your business the experience, expertise, trust and value needed to augment reach and generate success.</p>
                     <p style="text-align: justify">We combine highly experienced resources with streamlined processes, latest technology and stringent quality control mechanisms to make your inbound and outbound call center process more responsive and customer-centric. In the process, we help you deliver services that not only meet today’s needs but also overcome tomorrow’s challenges.</p>
                     <br>
-                    <div class="shadow-new-small" style="padding:20px 20px;">
-                    <p style="text-align:center;"><b>One-Stop-Shop for All Your Call Center BPO Needs</i></b></p>
+                    <div class="shadow-new-small" style="padding:20px 20px;background:#d03333;">
+                    <p style="text-align:center;"><b style="color:White;">One-Stop-Shop for All Your Call Center BPO Needs</i></b></p>
                     </div>
                 </div>
                 <div class="col-lg-1">
@@ -77,13 +77,13 @@
                         <div class="right-caption">
                             <!-- Section Tittle -->
                             <div class="support-caption">
-                                <h6>Professional Representation</h6>
+                                <h4>Professional Representation</h4>
                                 <p class="mb-40"><i>We offer professional services yet in a friendly way and provide seamless experience to your customers.</i></p>
-                                <h6>Security & Technological Excellence</h6>
+                                <h4>Security & Technological Excellence</h4>
                                 <p class="mb-40"><i>We are ISO 27001 certified, which is a proof that we ensure next level of security to all the information shared with us by our clients.</i></p>
-                                <h6>Reduced Costs</h6>
+                                <h4>Reduced Costs</h4>
                                 <p class="mb-40"><i>Leveraging our global deliver centers in India, Philippines, Columbia, Argentina and Bolivia, we offer 30% to 40% savings on operating cost per FTE.</i></p>
-                                <h6>Multi-lingual Support</h6>
+                                <h4>Multi-lingual Support</h4>
                                 <p class="mb-40"><i>We can provide seamless support in 40+ languages, which includes English, Hindi, Spanish, French, German, Mandarin and more.</i></p>
                                 <a href="contact" class="btn-head">Contact Us</a>
                             </div>
@@ -171,45 +171,77 @@
     </div>
     <!-- Testimonial End -->
 
-    <!------------------------->
-    <div class="categories-area" style="padding-left:10px;">
-    <div class="container pt-100 pb-50">
+    <div class="categories-area pt-100 pb-100">
+        <div class="container">
         <h2 class="h2-new">One-Stop-Shop for All Your Call Center BPO Needs</h2>
-        <h5 style="text-align:justify">Being a leading provider of call center outsourcing services operating from India, we offer a range of call center BPO services, including:</h5>
+            <br>
         <br>
-        <div class="row align-items-center">
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-5">
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active" data-interval="500" style="width: 24rem;height:220px;border-radius: 10px;border-color:white;background:#374852;">
 
+                        <p style="margin-top:45px; margin-left:10px;color:White;padding:20px;">Being a leading provider of call center outsourcing services operating from India, we offer a range of call center BPO services</p>
+                    </div>
+                      {% for service in services %}
 
-            {% for service in services %}
+                        <div class="carousel-item" data-interval="500">
 
-            <div class="col-lg-4 col-md-4 pt-10 pb-10">
-                <div class="card shadow-new-small" style="width: 24rem;height:220px;border-radius: 10px;border-color:white;">
-                  <div class="card-body">
-                    <h5 class="card-title" style="text-align:center;">{{service.title}}</h5>
-                      <p class="card-text">{{service.desc}}</p>
+                            <div class="card shadow-new-small card{{service.id}}" style="width: 24rem;height:220px;border-radius: 10px;border-color:white;">
+                              <div class="card-body">
+                                <h5 style="text-align:center;"><b style="color:white !important;">{{service.title}}</b></h5><br>
+                                  <p class="card-text" style="color:#91b3c5 !important;"><i>{{service.desc}}</i></p>
+                              </div>
+                            </div>
+
+                        </div>
+
+                       {% endfor %}
+
                   </div>
                 </div>
             </div>
-
-            {% endfor %}
+            <div class="col-md-5">
+                <div class="right-caption">
+                            <!-- Section Tittle -->
+                            <div class="support-caption">
+                                <br>
+                                <p class="mb-1"><i><b>Over 12 years of industry experience</b></i></p>
+                                <p class="mb-1"><i><b>Specific solutions for specific needs</b></i></p>
+                                <p class="mb-1"><i><b>Guaranteed savings of 40% through increased efficiency</b></i></p>
+                                <p class="mb-1"><i><b>24x7 services</b></i></p>
+                                <p class="mb-1"><i><b>Guaranteed data privacy</b></i></p>
+                                <p class="mb-1"><i><b>Service from 8 global delivery centers to ensure time-bound delivery</b></i></p>
+                                <br><a href="contact" class="btn-head">Contact Us</a>
+                            </div>
+                        </div>
+            </div>
         </div>
-
+             <div class="shadow-new-small" style="padding:20px 20px;margin-top:70px">
+                        <p><b style="text-align:center;">ExpertCallers, a Flatworld Solutions company, provides comprehensive customer relationship management services to companies across the globe.</b></p>
+             </div>
+        </div>
     </div>
-    </div>
 
+
+
+
+    <!------------------------->
 
     <!---------------->
 
     <!---------------------->
 
-    <div class="services-area pt-50 pb-40">
+    <div class="services-area pt-50 pb-40 bg-new hero-overly2">
         <div class="container">
             <div class="row">
                 <div class="cl-xl-7 col-lg-8 col-md-10">
                     <!-- Section Tittle -->
                     <div class="mb-30">
-                        <h2 class="h2-new">Our Success Stories</h2>
-                        <h6>Accelerating Growth, Enhancing Operational Efficiency and Improving Bottom-Line</h6><br>
+                        <h2 style="color:white;">Our Success Stories</h2>
+                        <h3 style="color:white !important;">Accelerating Growth, Enhancing Operational Efficiency and Improving Bottom-Line</h3><br>
                     </div>
                 </div>
             </div>
@@ -220,8 +252,8 @@
                             <img src="{% static 'assets/img/gallery/service-4.jpg' %}" alt="">
                             </div>
                             <div class="services-caption">
-                            <span>Strategy planing</span>
-                            <p>Effective Inbound and Outbound Support for a UK-Based Safety Promotion Company</p>
+
+                            <p style="color:white;">Effective Inbound and Outbound Support for a UK-Based Safety Promotion Company</p>
                         </div>
                     </div>
                 </div>
@@ -231,8 +263,8 @@
                             <img src="{% static 'assets/img/gallery/service_2.jpg' %}" alt="">
                             </div>
                             <div class="services-caption">
-                            <span>Strategy planing</span>
-                            <p>Our Lead Generation Service helped a Client Increase their Conversion Rate From 20% to 70%</p>
+
+                            <p style="color:white;">Our Lead Generation Service helped a Client Increase their Conversion Rate From 20% to 70%</p>
                         </div>
                     </div>
                 </div>
@@ -242,8 +274,8 @@
                             <img src="{% static 'assets/img/gallery/service-5.jpg' %}" alt="">
                             </div>
                             <div class="services-caption">
-                            <span>Strategy planing</span>
-                            <p>How Our Expert Help Delivered Superior Quality Customer Support</p>
+
+                            <p style="color:white;">How Our Expert Help Delivered Superior Quality Customer Support</p>
                                 <br>
                         </div>
                     </div>

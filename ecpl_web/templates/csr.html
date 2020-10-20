@@ -1,0 +1,343 @@
+
+    {% extends 'base.html' %}
+    {% block title %}Customer Service Representative (CSR) Services{% endblock %}
+    {% block main %}
+    {% load static %}
+
+    <main>
+        <!--? Hero Start -->
+           <div class="slider-ordertaking">
+            <div class="slider-height2 hero-overly2 d-flex align-items-center" style="max-height:300px;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="text-center">
+                                <h2 style="color: #c19d9d;font-family: fantasy">Customer Service Representative (CSR) Services</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Hero End -->
+
+        <div class="categories-area pb-50">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-lg-7" style="margin-top:100px;">
+                    <h2 class="h2-new">Better Customer Relations. Faster Sales</h2>
+                    <p style="text-align: justify">ExpertCallers has over 12 years of experience in providing offshore customer service representative services to companies around the world. Our comprehensive CSR services aim to reorganize your call center operations to make it more efficient, quick and adaptable. We combine the power of our team, experience, knowledge, process and technology to break free of the typical client-vendor relationship and build a partnership based on trust and value.</p>
+                    <br>
+                </div>
+                <div class="col-lg-1">
+
+                </div>
+                <div class=" col-lg-4 col-md-4" style="padding:30px">
+                <div class="shadow-new" style="background:#136fa0d6;margin-top: 50px;padding:30px;border-radius: 15px">
+                     {% load crispy_forms_tags %}
+
+                    <h3>Quick Contact</h3>
+                    <form action="addcontact" method="POST" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    {{ form|crispy }}
+
+                    <input type="submit" value="Submit" class="genric-btn primary small">
+                    </form>
+
+                    {% for message in messages %}
+                    <br><h6>{{message}}</h6>
+                    {% endfor %}
+                </div>
+
+                </div>
+            </div>
+            <!--       <a href="about" class="btn-head">More About Us</a> -->
+        </div>
+    </div>
+
+
+        <!-------------------------->
+
+        <section class="categories-area pt-50 pb-100">
+			<div class="container">
+
+					<h2 class="h2-new">We Provide a Wide Range of Outsourced Customer Service Representative (CSR) Services</h2>
+					<p>
+						<strong>The outsourced customer service representative services that we provide include most of the inbound and outbound call services such as:</strong>
+					</p>
+
+				<div class="row">
+					<div class="col-md-6">
+						<h3>Inbound Services</h3>
+						<h4>Customer Support Service</h4>
+						<p>
+							Leveraging our years of experience in the industry, we offer best in the class customer support services that will make your customer support smooth and instantaneous.
+						</p>
+						<h4>Phone Answering Services</h4>
+						<p>
+							Our knowledgeable and solution-focused phone support agents help you to deliver top class phone support services that will increase your brand visibility and maximize your revenue.
+						</p>
+						<h4>Helpdesk Support</h4>
+						<p>
+							By combining our knowledge and experience, we offer robust and flexible helpdesk support that is customized as per the unique needs of your business.
+						</p>
+						<h4>Email Support</h4>
+						<p>
+							We are prepared to handle all levels of support queries via email. The thing that differentiates our services from other email support companies is the level of customization that we offer.
+						</p>
+						<h4>Chat Support</h4>
+						<p>
+							ExpertCallers boasts of a rich experience in offering streamlined live chat support services to global clientele operating across diverse industries.
+						</p>
+						<p>
+							<strong>Other Inbound Services Includes:</strong>
+						</p>
+						<div class="row">
+							<div class="col-md-6">
+								<ul>
+									<li>Order Entry Services</li>
+									<li>Payment Collection Services</li>
+									<li>Inbound Sales Services</li>
+									<li>Sales Support Services</li>
+									<li>Technical Support Services</li>
+									<li>Billing Support Services</li>
+									<li>Online Support Services</li>
+									<li>Reservation Booking Services</li>
+									<li>Cross Selling and Up-selling Services</li>
+									<li>Product and Service Promotion Services</li>
+									<li>Insurance Claiming Processing Services</li>
+								</ul>
+							</div>
+							<div class="col-md-6">
+								<ul>
+									<li>Medical Answering Services</li>
+									<li>Virtual Receptionist Services</li>
+									<li>Inquiry Handling Services</li>
+									<li>Email Management Services</li>
+									<li>Subscription Services</li>
+									<li>Toll Free Services</li>
+									<li>Technical Support Services</li>
+									<li>Warranty Registration Services</li>
+									<li>Rebate Processing Services</li>
+									<li>Job Dispatch Services</li>
+									<li>Product Information Request Services</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="row" style="padding:20px;margin-top:50px;">
+							<br>
+							<img src="{% static 'other/csr.jpg' %}" class="shadow-new img-fluid" alt="outsource Customer Service Representative services">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container pt-50">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="row" style="padding:20px;margin-top:50px">
+
+							<img src="{% static 'other/csr1.jpg' %}" class="shadow-new img-fluid" alt="Customer Service Representative (CSR) Services">
+						</div>
+					</div>
+					<div class="col-md-6 pt-4">
+						<div class="row">
+							<div class="pl-3 pr-3">
+								<h3>Outbound Services</h3>
+								<h4>Cold Calling</h4>
+								<p>
+									Learning from our rich haul of experience, we have built a robust, efficient and reliable cold calling process that will help our clients find new prospects in the shortest possible time.
+								</p>
+								<h4 class="mb-1">Appointment Setting Services</h4>
+								<p>
+									Driven by a team of seasoned and skilled professionals, our strategic appointment setting services are designed to carry out highly targeted and professional campaigns to acquire new customers thick and fast.
+								</p>
+								<h4 class="mb-1">Lead Generation Services</h4>
+								<p>
+									Our cost-effective lead generation services will help you boost your sales by providing qualified and sales ready leads. We approach customers keeping in mind the changing trends, objective of your business, and also short and long-term goals of your organisation.
+								</p>
+								<h4 class="mb-1">Telemarketing Services</h4>
+								<p>
+									We are perfectly positioned to handle requests for telemarketing services of all types. Professionally trained agents are at your disposal to supervise and setup campaigns and ensure that clients get the most out of their investment.
+								</p>
+								<p>
+									<strong>Other Outbound Services Includes</strong>
+								</p>
+								<div class="row">
+									<div class="col-md-6">
+										<li>Direct Sales Services</li>
+										<li>Sales Lead Follow-up Services</li>
+										<li>Customer Loyalty Services</li>
+										<li>Customer Follow-Up Services</li>
+										<li>Sales Verification Services</li>
+										<li>Product/Service Promotion Services</li>
+										<li>Outbound Sales Services</li>
+										<li>Reactivating Dormant Customer Services</li>
+										<li>B2C &amp; B2B Customer Acquisition Services</li>
+									</div>
+									<div class="col-md-6">
+										<ul>
+											<li>Market Research Services</li>
+											<li>Customer Loyalty Program Services</li>
+											<li>Direct Mail Follow-up Services</li>
+											<li>Subscription Renewal Services</li>
+											<li>Data Validation Services</li>
+											<li>Disaster Recovery Services</li>
+											<li>Debt Collection Services</li>
+											<li>Service Satisfaction Follow-up Services</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+        <!------------------------------>
+		<section class="categories-area pt-50 pb-50">
+			<div class="container">
+				<h2 class="h2-new">Industries We Serve</h2>
+				<br>
+				<div class="row">
+					<div class="col-md-4">
+						<ul>
+							<li>Aerospace &amp; Defence</li>
+							<li>Automotive</li>
+							<li>Automobiles</li>
+							<li>Banking &amp; Financial Services</li>
+							<li>Capital Markets</li>
+							<li>Communications</li>
+							<li>Consumer Goods and Services</li>
+							<li>Customs Brokerage</li>
+							<li>Consumer Packaged Goods</li>
+						</ul>
+					</div>
+					<div class="col-md-4">
+						<ul>
+							<li>Energy and Utilities</li>
+							<li>Education</li>
+							<li>Healthcare</li>
+							<li>Logistics</li>
+							<li>Manufacturing</li>
+							<li>Market Research</li>
+							<li>Media and Entertainment</li>
+							<li>Medical Devices</li>
+						</ul>
+					</div>
+					<div class="col-md-4">
+						<ul>
+							<li>Network Equipment Providers</li>
+							<li>Oil &amp; Gas</li>
+							<li>Pharmaceutical &amp; Life Sciences</li>
+							<li>Platforms &amp; Software Products</li>
+							<li>Public Sector / Government</li>
+							<li>Retail &amp; Ecommerce</li>
+							<li>Securities &amp; Capital Markets</li>
+							<li>Telecommunications</li>
+							<li>Securities &amp; Capital Markets</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!------------------------------>
+		<section class="categories-area">
+			<div class="container">
+				<h2 class="align-center h2-new">We are Different; Here's Why</h2><br>
+				<div class="row">
+				<div class="col-md-4 box">
+					<div class="img chart"> </div>
+					<h3>Affordability</h3>
+					<p>
+						To make our services cost effective, we offer convenient monthly plans with all-inclusive rates or pay-as-you-go options. So, you get a range of flexible options to test your services with.
+					</p>
+				</div>
+				<div class="col-md-4 box">
+					<div class="img spl_per1"> </div>
+					<h3>Positive Impact on Bottom Line</h3>
+					<p>
+						We handle calls keeping in mind the need to help you grow your business. So, our services help you get better call volumes and quality leads. As a result, your sales opportunities will witness a sharp rise.
+					</p>
+				</div>
+				<div class="col-md-4 box">
+					<div class="img ideas"> </div>
+					<h3>Highly Trained Executives</h3>
+					<p>
+						Being a leading CSR company, we only hire agents who have prior experience in industry. So, you can rest assured about courteous and professional handling of your customers.
+					</p>
+				</div>
+				</div>
+			</div>
+		</section>
+
+		<!------------------------------->
+
+
+		   <div class="categories-area pb-50 pt-100">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-xl-7 col-lg-7 col-md-7">
+                        <h2 class="h2-new" style="font-size: 18px;">Here’s How Companies Have Benefitted by Outsourcing Call Center BPO Services to ExpertCallers</h2>
+                        <p>An internationally acclaimed talent scouting company leveraged our outsourced multi-lingual CSR services to increase new talent count from a paltry 34% to 90%</p>
+                        <p>Our outsourced customer service representative services helped a precision instruments manufacturer to seamlessly reach out to 60,000 contacts, comprising existing customers and prospects, on a quarterly basis</p>
+						<p>A UK-based roofing solutions company leveraged our outbound CSR services to increase appointment settings by 50%</p>
+                    </div>
+                    <div class="col-xl-5 col-lg-5 col-md-5">
+                        <div class="iframe-container">
+                            <iframe width="358" height="200" src="https://www.youtube.com/embed/DAxovcKhOFQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--------------------->
+		<section class="categories-area pt-50 pb-50">
+			<div class="container">
+				<div class="col-md-12">
+					<h2 class="h2-new">Why Outsource Customer Service Representative (CSR) Services to ExpertCallers?</h2>
+					<p>
+						<strong>When you outsource customer service representative services to an expert CSR company like ExpertCallers, you’ll gain the following benefits:</strong>
+					</p>
+					<div class="row">
+						<div class="col-md-6">
+							<ul>
+								<li>Skilled call answering support</li>
+								<li>Latest voice and data communication systems</li>
+								<li>Quality checks done by 100% call recordings</li>
+								<li>Transparency in operations</li>
+								<li>24 x 7 customer support</li>
+								<li>Multi-channel support</li>
+							</ul>
+						</div>
+						<div class="col-md-6">
+							<ul>
+								<li>Trained and skilled professionals</li>
+								<li>50% reduction in operation cost</li>
+								<li>Equipped to manage large volume of calls</li>
+								<li>Highest standards of quality</li>
+								<li>Enhanced market coverage</li>
+								<li>Providing testimonials</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+        <!----------------------->
+        <section class="categories-area pb-50">
+			<div class="container">
+				<div class="shadow-new-small" style="padding:20px 20px;">
+				<p style="text-align: justify">
+					When you outsource customer service representative services to ExpertCallers, you’ll partner with customer service representative outsourcing company that offers quality customer services to deliver seamless and efficient marketing and customer service experience. We have wide experience in providing excellent customer services to various organisations across different industry verticals.
+				</p>
+				</div></div>
+		</section>
+
+ </main>
+
+    {% endblock %}

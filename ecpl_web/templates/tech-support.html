@@ -1,0 +1,287 @@
+
+    {% extends 'base.html' %}
+    {% block title %}Customer support{% endblock %}
+    {% block main %}
+    {% load static %}
+
+    <main>
+        <!--? Hero Start -->
+           <div class="slider-ordertaking">
+            <div class="slider-height2 hero-overly2 d-flex align-items-center" style="max-height:300px;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="text-center">
+                                <h2 style="color: #c19d9d;font-family: fantasy">Customer Support Services</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Hero End -->
+
+
+        <!-------------------------->
+
+        <div class="categories-area" >
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-lg-7" style="margin-top:100px;">
+                    <h2 class="h2-new">Quality Resolutions with Reduced Overhead Costs</h2>
+                    <p style="text-align: justify">ExpertCallers has wide experience in providing high quality third-party technical support services to companies worldwide. Our innovative solutions have armed our clients with a range of benefits - from minimizing customer downtime to addressing issues rapidly; from accelerating company-wide adoption to improving overall user experience</p>
+                    <p style="text-align: justify">We rely on state-of-the-art technology and highly experienced staff to deliver consistent and reliable technical support services. Our technical support specialists, trained and certified in a wide range of hardware and software solutions, leverage their experience to provide sound first contact solutions to your customers. Additionally, our customized offshore technical helpdesk support packages give our customers the flexibility they need to run their operations in a smooth and profitable way.</p>
+                    <br>
+                </div>
+                <div class="col-lg-1">
+
+                </div>
+                <div class=" col-lg-4 col-md-4" style="padding:30px">
+                <div class="shadow-new" style="background:#136fa0d6;margin-top: 50px;padding:30px;border-radius: 15px">
+                     {% load crispy_forms_tags %}
+
+                    <h3>Quick Contact</h3>
+                    <form action="addcontact" method="POST" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    {{ form|crispy }}
+
+                    <input type="submit" value="Submit" class="genric-btn primary small">
+                    </form>
+
+                    {% for message in messages %}
+                    <br><h6>{{message}}</h6>
+                    {% endfor %}
+                </div>
+
+                </div>
+            </div>
+            <!--       <a href="about" class="btn-head">More About Us</a> -->
+         </div>
+         </div>
+
+        <!------------------------------->
+            <section class="categories-area pt-50 pb-50">
+			<div class="container">
+				<h2 class="h2-new">We Provide a Range of Helpdesk Support Services</h2>
+				<p>
+					Being a premium technical support company, we are well-versed managing the needs of variety of outsourced technical support services, including:
+				</p>
+                <div class="row">
+				<div class="col-md-4">
+					<strong>Customer Sales and Support Services</strong>
+					<ul>
+						<li>Payment Support</li>
+						<li>Billing Support</li>
+						<li>Order Processing / Provisioning</li>
+						<li>Sales Support</li>
+					</ul>
+				</div>
+				<div class="col-md-4">
+					<strong>Pre-sales Support Services</strong>
+					<ul>
+						<li>Lead Generation and Qualification</li>
+						<li>Information Provision</li>
+						<li>Order Management</li>
+						<li>Customer Analysis</li>
+					</ul>
+				</div>
+				<div class="col-md-4">
+					<strong>Enterprise Technical Helpdesk Services</strong>
+					<ul>
+						<li>Software &amp; Application Support</li>
+						<li>Knowledge &amp; Trouble Ticket Management</li>
+						<li>Issue Resolution</li>
+						<li>Reporting and Decision Support</li>
+					</ul>
+				</div>
+				<div class="clearfix"></div> <br>
+				<div class="col-md-4">
+					<strong>Post-sales Support Services</strong>
+					<ul>
+						<li>Product Registration/Activation</li>
+						<li>Network and Broadband Support</li>
+						<li>Remote IT and Diagnostic Services</li>
+					</ul>
+				</div>
+				<div class="col-md-4">
+					<strong>Managed Technical Support Services</strong>
+					<ul>
+						<li>Onsite and Remote Network Support</li>
+						<li>Remote Server Services</li>
+						<li>Remote Infrastructure Support</li>
+					</ul>
+				</div>
+				<div class="col-md-4">
+					<strong>IT Support Services</strong>
+					<ul>
+						<li>App Support</li>
+						<li>System Management</li>
+						<li>Accounts &amp; Inventory Management</li>
+					</ul>
+				</div>
+				<div class="clearfix"></div> <br>
+				<div class="col-md-4">
+					<strong>Technical Support Services (Level 1 &amp; 2)</strong>
+					<ul>
+						<li>L1, L1.5 and L2 Tech Support Services</li>
+						<li>Remote Diagnostic Services</li>
+						<li>Set-up and Configuration</li>
+						<li>Product Testing, Bug Fixing, and patch Management</li>
+						<li>Triage Support</li>
+						<li>Service Pack and Database Upgrades</li>
+						<li>Warranty Management/ RMA</li>
+						<li>Engineer Dispatch Management</li>
+					</ul>
+				</div>
+				<div class="col-md-4">
+					<strong>Hardware and Software Application Support</strong>
+					<ul>
+						<li>Database Upgrades</li>
+						<li>Installation/Configuration Support</li>
+						<li>Technical Problem Resolution for Level 1,2,3</li>
+						<li>Warranty Management</li>
+						<li>Product Testing, Bug Fixing, and Patch Management</li>
+					</ul>
+				</div>
+			</div>
+            </div>
+		</section>
+        <!------------------------>
+
+        <section class="categories-area pt-50 pb-50">
+			<div class="container">
+				<div class="row">
+				</div>
+				<div class="row">
+					<div class="col-md-5">
+						<div class="row">
+							<img src="{% static 'other/ts.jpg' %}" alt="Outsource Technical Support Services" class="shadow-new img-fluid">
+						</div>
+					</div>
+					<div class="col-md-1"></div>
+					<div class="col-md-6">
+						<div class="col-md-12">
+							<div class="row">
+								<h2 class="align-left pt-3 pb-2">Key Features of ExpertCallers’ Technical Support Services</h2>
+								<h3>Highly Trained Agents</h3>
+								<p>
+									Agents employed on team are put through rigorous training, and are required to pass several levels of tests including voice based and written before they are assigned to a process. Once included in a process the agent is completely familiar with the products/services they handle and are able to resolve queries quickly and efficiently.
+								</p>
+								<h3>Unlimited Scalability and Flexibility</h3>
+								<p>
+									No contractual changes need to be done or extra charges has to be paid to add new products or make any changes. New products that are launched will be automatically added in our database he first time a customer call. Also, we do not mandate any “per-agent” fees and our clients are not restricted to a fixed number of agents.
+								</p>
+								<h3>Expert Level of Assistance</h3>
+								<p>
+									Our technical support executives are trained to have an expert level of understanding of the products or services that they handle and are well-equipped to answer every kind of questions. Callers can also escalate questions to a Lead Agent or an Operations Manager if needed.
+								</p>
+								<h3>Detailed Reporting </h3>
+								<p>
+									Our comprehensive reporting mechanism provides continuous and real-time insights into customer issues, which can be very helpful in making reliable product improvements.
+								</p>
+								<h5>Other Differentiating Value Offerings</h5>
+								<p>
+									Our comprehensive reporting mechanism provides continuous and real-time insights into customer issues, which can be very helpful in making reliable product improvements.
+								</p>
+								<ul class="bullet pl-0">
+									<li><strong>Centralized shared service:</strong> A comprehensive customer relationship management process, spanning multilile business towers</li>
+									<li><strong>Cutting Edge Technology Tools and Platforms:</strong>
+										<ul class="bullet pl-0">
+											<li>Process automation solutions for automating identified redundant tasks</li>
+											<li>Unified desktop solutions and intelligent agent support applications</li>
+										</ul>
+									</li>
+									<li><strong>Lean approach/standardized industry best practices:</strong> Increased first-time resolution and reduced waste</li>
+									<li><strong>Scalable processes:</strong> 80 million technical support calls and 1 million chat sessions annually</li>
+									<li>Integrated business management system for comprehensive operations management</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!------------------------>
+		<section class="categories-area pt-50 pb-50">
+			<div class="container">
+				<h2 class="h2-new">We are Different; Here's Why</h2><br>
+				<div class="row">
+
+				<div class="col-md-4 box">
+
+					<h3>24-Hour Support</h3><br>
+
+					<p>
+						We provide round-the-clock IT support services to ensure the needs of customers are properly attended to across time zones. Further, we go out of our way to make sure your customers get personalized assistance of the highest order.
+					</p>
+				</div>
+				<div class="col-md-4 box">
+
+					<h3>Enhanced Training for Quick Response</h3>
+					<p>
+						We strive to provide first-contact resolution for most remote tech support requests and so train our staff to develop deep and precise product/service knowledge. This guarantees reduced average call times, lesser follow-up support, and speedy resolutions.
+					</p>
+				</div>
+				<div class="col-md-4 box">
+
+					<h3>Multi-Language and Multi-Channel Support</h3>
+					<p>
+						We provide online technical support in a variety of languages to cater to the needs of different countries. To facilitate matters, we offer technical support via emails, voice calls, live chat and even mobile SMS/text.
+					</p>
+				</div>
+				</div></div>
+		</section>
+		<!----------------------->
+
+		   <div class="categories-area pb-50 pt-50">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-xl-7 col-lg-7 col-md-7">
+                        <h2 class="h2-new" style="font-size: 18px;">Here are Some of the Ways Companies Have Benefitted by Outsourcing Technical Support Services to ExpertCallers</h2>
+                        <p>Our technical support team helped an aviation industry giant achieve higher first-call resolution rates. with tier-1 technical support for Windows and iPad.</p>
+                        <p>We helped a US based primary network security information management company improve the quality of support operation with a high-class management information system</p>
+                    </div>
+                    <div class="col-xl-5 col-lg-5 col-md-5">
+                        <div class="iframe-container">
+                            <iframe width="358" height="200" src="https://www.youtube.com/embed/DAxovcKhOFQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+		<!----------------------->
+
+	<section class="categories-area pt-50 pb-50">
+	<div class="container">
+		<div class="col-md-12">
+			<h2>Why Outsource Technical Support Services to ExpertCallers</h2>
+			<p><strong>Here are some of the benefits of outsourcing technical support services to an expert technical support company such as ExpertCallers:</strong></p>
+			<div class="col-md-6">
+				<ul class="bullet pl-0">
+					<li> Experienced &amp; Qualified Personnel</li>
+					<li>50% reduction in overhead costs</li>
+					<li>24/7 service with 100% quality assurance</li>
+				</ul>
+			</div>
+			<div class="col-md-6">
+				<div class="quote-message mt-0"><br>
+					Did you know: 50% of leads are qualified but not yet ready to buy  -<span> Hubspot</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+        <!----------------------->
+        <section class="categories-area pb-50">
+			<div class="container">
+				<div class="shadow-new-small" style="padding:20px 20px;">
+				<p style="text-align: justify">
+					When you outsource technical support services to ExpertCallers, you will partner with a technical support company that is extremely skilled in delivering reliable, customized and cost-effective technical support services.
+				</p>
+				</div></div>
+		</section>
+
+ </main>
+
+    {% endblock %}

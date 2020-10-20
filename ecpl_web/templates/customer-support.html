@@ -1,0 +1,341 @@
+
+    {% extends 'base.html' %}
+    {% block title %}Customer support{% endblock %}
+    {% block main %}
+    {% load static %}
+
+    <main>
+        <!--? Hero Start -->
+           <div class="slider-ordertaking">
+            <div class="slider-height2 hero-overly2 d-flex align-items-center" style="max-height:300px;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="text-center">
+                                <h2 style="color: #c19d9d;font-family: fantasy">Customer Support Services</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Hero End -->
+
+        <div class="categories-area pt-100" >
+        <div class="container">
+            <h3 style="text-align:justify;">Your interaction with your customer is incomplete if you cannot bring a difference to their lives. We help you turn conversations into value-added interactions</h3>
+                <br>
+
+            <div class="row align-items-center justify-content-between">
+                <div class="col-lg-7">
+
+                    <p style="text-align: justify">ExpertCallers has wide experience in providing round-the-clock professional customer support outsourcing services to clients around the world. We tap into this experience to help you lift the quality of customer service and set your business apart from others.</p>
+                    <div>
+                        <iframe class="shadow-new-small" width="480" height="360" src="https://www.youtube.com/embed/cQLTTjTjXqo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <p style="text-align: justify">Your specific offering is important to your customer. But how you deliver it matters the most to your business. Our outsourced customer support services, provides you with a chance to deliver your offerings the way your customers want – by being proactive and anticipative of their needs. We have a clear and defined way to ensure every interaction brings about a real and meaningful difference to the problems they face.</p>
+                    <p style="text-align: justify">We develop unique operational standards for every customer support need, implement the standards meticulously, monitor them closely for shortcomings and address them to bring about continuous improvements. This helps us to rise above the norm to deliver the best to your customer.</p>
+                    <br>
+
+                </div>
+                <div class="col-lg-1">
+
+                </div>
+                <div class=" col-lg-4 col-md-4" style="padding:30px">
+                <div class="shadow-new" style="background:#136fa0d6;margin-top: 50px;padding:30px;border-radius: 15px">
+                     {% load crispy_forms_tags %}
+
+                    <h3>Quick Contact</h3>
+                    <form action="addcontact" method="POST" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    {{ form|crispy }}
+
+                    <input type="submit" value="Submit" class="genric-btn primary small">
+                    </form>
+
+                    {% for message in messages %}
+                    <br><h6>{{message}}</h6>
+                    {% endfor %}
+                </div>
+
+                </div>
+            </div>
+            <!--       <a href="about" class="btn-head">More About Us</a> -->
+        </div>
+    </div>
+
+
+        <!-------------------------->
+        <section class="categories-area pt-50 pb-50">
+      <div class="container">
+        <div class="row">
+          <div class="clearfix pb-3">
+            <h2 class="h2-new">We Provide a Range of Offshore Customer Support Services</h2>
+            <h5 class="h2-new">Being an expert customer support company, we are well-versed with handling following types of outsourced customer support services: </h5>
+          </div>
+          <div class="clearfix"></div>
+          <div class="col-md-6 gray-box">
+            <div class="row">
+              <div class="p-3">
+                <div>
+                  <h3>Inbound Support</h3>
+                  <p>
+                    Working as an extension of your company, our expert linguists are trained to offer personalized inbound support services, which mean that your customers will not be able to differentiate whether they are served from off-shore or on-site and your business will not lose another important call.
+                  </p>
+                  <p>
+                    We make sure that you receive real time updates regarding the outcome of each call either through email or SMS. And we also give you the flexibility to either choose our service for handling overflow calls or opt for our after-hours service and catch all the calls that you couldn’t answer.
+                  </p>
+                </div>
+                <div>
+                  <h3>Up-selling and Cross-selling Programs</h3>
+                  <p>
+                    We are an expert in helping companies augment sales through well-crafted <a href="/inbound-call-center/up-selling-cross-selling-services.php">cross-selling and up-selling</a> strategies that has been refined over the years. Our handpicked team of expert operators are available 24 hours a day and 7 days a week, waiting to convert even the smallest opportunity that is presented to them by utilizing these strategies.
+                  </p>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="row">
+              <div class="p-3">
+                <div>
+                  <h3>Outbound Support</h3>
+                  <p>
+                    We can help you achieve your targeted goals and objectives through our outbound customer support services. Over the last 12 years, we have seamlessly executed numerous outbound customer support projects and are prepared to take on new challenges.
+                  </p>
+                  <p>
+                    The thing that differentiates us from standard <strong>customer support companies</strong> is our customer focus. To ensure that focus is never lost, we have made it a point to hire only most talented and skilled professionals with prior experience in outbound customer support. And we support these resources with top of the line infrastructure, supported by cutting-edge IT and telecommunication systems to provide outbound customer support services of the highest quality 24X7.
+                  </p>
+                </div>
+                <div>
+                  <h3>Multi-channel Support</a></h3>
+                  <p>
+                    Whether the customer interacts via phone, e-mail, chat, or even social media, our omni-channel customer support services has the requisites to provide seamless customer experience.  By putting customer experience first, we have created a cohesive, omni-channel customer support system that reduces friction at every stage of the customer journey and helps businesses make data-driven decisions that lead to success.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+        <!------------------------------>
+     <section class="categories-area pt-50 pb-50">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h4><strong>We Can Also Provide</strong></h4>
+            <h4>Helpdesk Support</h4>
+            <p>
+              At ExpertCallers, we offer you the best of the helpdesk support services prevailing in the industry. Our tier 1 administrators make helpdesk support smooth and instantaneous. They are the first responders who monitor the helpdesk at regular intervals of time and ensure every new query or request in handled in the quickest possible. They keep a tab on all the incoming queries so closely that not even a single request goes through the cracks.
+            </p>
+            <h4 class="mb-1"><a href="/chat-support-services.php">Live Chat Support</a></h4>
+            <p>
+              We are prepared to handle all levels of live chat support. The thing that differentiates our services from live chat support provided by other companies is the level of customization that we offer. From giving an opportunity to hand pick operators to creating customized departments to adding your brand images or logo to our live chat support solution, we ensure that your customers experience live chat support in a branded environment.
+            </p>
+            <h4>Email Support</h4>
+            <p>
+              ExpertCallers boasts of a rich experience in offering seamless email support services to global clientele operating across diverse industries. Our email support professionals are well equipped to handle every possible customer support scenario and address email queries in the quickly possible time resulting in increased customer satisfaction.
+            </p>
+            <h4>Phone Support</h4>
+            <p>
+              In addition to being knowledgeable and solution-focused, our phone support agents are friendly, multi-lingual speakers. This helps us to deliver top class <a href="/inbound-call-center/phone-answering-services.php">phone support services</a> that will increase your brand visibility and maximize your revenue. Here’s a look at how our phone support works: Once you sign up with us, you will receive a unique DID number and a customized <a href="/inbound-call-center/ivr-services.php">interactive voice response</a> (IVR) setup that delivers personalized greetings every time your customer dials the customer support number. Once the caller selects appropriate option, he/she will be routed to our friendly phone support agents who quickly handles their support request.
+            </p>
+            <h4>Tier 3 Support</h4>
+            <p>
+              Leveraging our experience in the industry, we offer robust and flexible tier-3 support that is customized as per the unique needs of your business.
+            </p>
+            <h4>Process outsourcing</h4>
+            <p>
+              Business Process Outsourcing (BPO) services provided by ExpertCallers gives you the solutions that you need to scale your service without sacrificing quality. You can outsource every one of those cumbersome day-to-day processes, starting from data entry to client calling to client intake, to our highly qualified, capable team of experts and save time as well as gain peace of mind.
+            </p>
+          </div>
+          <div class="col-md-6">
+            <div class="row" style="margin-top:100px;">
+              <img src="{% static 'other/cs1.jpg' %}" class="shadow-new img-fluid" alt="outsource customer support services">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="row">
+              <img src="{% static 'other/cs2.jpg' %}" class="img-fluid" alt="Customer Support Services">
+            </div>
+          </div>
+          <div class="col-md-6 pt-4">
+            <div class="row">
+              <div class="pl-3 pr-3">
+                <h4 class="pb-1"><strong>Unique Features of Our Customer Support Services</strong></h4>
+                <h4>Technology Agnostic</h4>
+                <p>
+                  Unlike other customer support companies, we don’t believe in the notion of one solution fits all. Hence, we give the liberty to client to select and optimize the systems and tools that best meets their needs.
+                </p>
+                <h4 class="mb-1">40+ Languages Spoken</h4>
+                <p>
+                  Including: English, Mandarin, Spanish, German, French, Arabic, Dutch, Danish, Portuguese, Greek, Russian and Swedish.
+                </p>
+                <h4 class="mb-1">Multichannel Support</h4>
+                <p>
+                  Delivery centers in India, Philippines, Bolivia, Columbia and Argentina provide support across IVR, voice, online chat, email and social media.
+                </p>
+                <h4 class="mb-1">Certifications</h4>
+                <p>
+                  PCI compliant, ISO 9001:2015, COPC certified.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+        <!------------------------------->
+
+        <section class="categories-area">
+      <div class="container">
+        <h2 class="align-center h2-new">Industries We Serve</h2>
+        <br>
+        <div class="row">
+          <div class="col-md-4">
+            <ul class="text-white">
+              <li>Aerospace &amp; Defence</li>
+              <li>Automotive</li>
+              <li>Automobiles</li>
+              <li>Banking &amp; Financial Services</li>
+              <li>Capital Markets</li>
+              <li>Communications</li>
+              <li>Consumer Goods and Services</li>
+              <li>Customs Brokerage</li>
+              <li>Consumer Packaged Goods</li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <ul class="text-white">
+              <li>Energy and Utilities</li>
+              <li>Education</li>
+              <li>Healthcare</li>
+              <li>Logistics</li>
+              <li>Manufacturing</li>
+              <li>Market Research</li>
+              <li>Media and Entertainment</li>
+              <li>Medical Devices</li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <ul class="text-white">
+              <li>Network Equipment Providers</li>
+              <li>Oil &amp; Gas</li>
+              <li>Pharmaceutical &amp; Life Sciences</li>
+              <li>Platforms &amp; Software Products</li>
+              <li>Public Sector / Government</li>
+              <li>Retail &amp; Ecommerce</li>
+              <li>Securities &amp; Capital Markets</li>
+              <li>Telecommunications</li>
+              <li>Securities &amp; Capital Markets</li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+        <!-------------------------------->
+        <section class="categories-area pt-50 pb-50">
+      <div class="container">
+
+        <h2 class="align-center h2-new">We are Different; Here's Why</h2><br>
+          <div class="row">
+        <div class="col-md-4 box">
+
+          <h3>We Chart a Course for Commitment</h3>
+          <p>
+            We educate all our agents about your business needs and develop a shared vision in terms of customer support service quality. This helps us get each one of our employees equally committed to your cause.
+          </p>
+        </div>
+        <div class="col-md-4 box">
+
+          <h3>We Anticipate Your Customer Needs</h3>
+          <p>
+            We define your key customer segments to better understand their needs and expectations. This helps us identify their preferences and pre-empt the services they may need.
+          </p>
+        </div>
+        <div class="col-md-4 box">
+          <div class="img ideas"> </div>
+          <h3>We Help You Foster New Ideas</h3>
+          <p>
+            We train our staff not just to resolve issues but to use interactions to identify product or service level enhancements. We keep a tab on emerging trends to help you catch on it before your competitors do.
+          </p>
+        </div>
+      </div>
+      </div>
+    </section>
+
+        <!--------------------------------->
+
+
+
+		   <div class="categories-area pb-50 pt-50">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-xl-7 col-lg-7 col-md-7">
+                        <h2 class="h2-new" style="font-size: 18px;">Here’s How Companies Have Benefitted by Outsourcing Customer Support Services to Us</h2>
+                        <p>We provided after-hours support to a leading network security and information management company in the US, and reduced their turnaround time to less than 24 hours</p>
+                        <p>We helped a global online medicine retailer, which uses emails as the chief medium of communication with customers, handle over 5000 support requests every day and provide apt response in less than 10 hours</p>
+                        <p>We provided tier-1 customer support to a global e-retailer in 20+ languages</p>
+                    </div>
+                    <div class="col-xl-5 col-lg-5 col-md-5">
+                        <div class="iframe-container">
+                            <iframe width="358" height="200" src="https://www.youtube.com/embed/DAxovcKhOFQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--------------------->
+
+        <section class="categories-area pb-50 pt-50">
+      <div class="container">
+        <div class="col-md-12">
+          <h2 class="h2-new">Why Outsource Customer Support Services to ExpertCallers?</h2>
+          <p>
+            <strong>When you outsource customer support services to a premium offshore customer support company like ExpertCallers, you can reap in following benefits:</strong>
+          </p>
+          <ul>
+            <li>85% Customer Satisfaction score </li>
+            <li>80+% First Call Resolution </li>
+            <li>Industry leading average speed to answer (80% in 60 secs) </li>
+            <li>5% or less call abandonment rate</li>
+          </ul>
+          <p class="mb-0 pt-3">
+            <strong>Other benefits of outsourcing customer support services to us: </strong>
+          </p>
+          <ul>
+            <li>Make it easy for customers to get in touch</li>
+            <li>Ensure customer-focused staff attend to your customer’s needs</li>
+            <li>Proactive and empathetic dealings with customer issues</li>
+            <li>Present information clearly and simply</li>
+            <li>Understand customer experiences</li>
+            <li>Leverage a customer service culture</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+
+        <!----------------------->
+        <section class="categories-area pb-50">
+			<div class="container">
+				<div class="shadow-new-small" style="padding:20px 20px;">
+				<p style="text-align: justify">
+					When you outsource customer support services to ExpertCallers, you will partner with a customer support outsourcing company that is extremely skilled in consistently meeting your business objectives while fostering human interactions and delivering highest level of customer satisfaction.
+				</p>
+				</div></div>
+		</section>
+
+ </main>
+
+    {% endblock %}

@@ -2,7 +2,7 @@
 from django.urls import path
 from .views import index,contact,add_message,aboutus,claim_processing,pi_request,order_taking,certification
 from .views import infra,careers,career_view,add_candidate,all_services,addcontact,virtual,upselling,tollfree,answer800
-from .views import ivrservice,outbound,medicalanswering,phoneanswering
+from .views import ivrservice,outbound,medicalanswering,phoneanswering,socialmedia,csr,customersupport,emailsupport,techsupport
 urlpatterns = [
     path('',index),
     path('contact',contact),
@@ -19,6 +19,11 @@ urlpatterns = [
     path('medical-answering',medicalanswering),
     path('phone-answering',phoneanswering),
     path('outbound',outbound),
+    path('socialmedia',socialmedia),
+    path('csr',csr),
+    path('customer-support',customersupport),
+    path('email-support',emailsupport),
+    path('tech-support',techsupport),
     path('certification',certification),
     path('infra',infra),
     path('careers',careers),

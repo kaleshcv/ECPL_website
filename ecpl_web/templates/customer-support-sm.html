@@ -1,0 +1,243 @@
+
+    {% extends 'base.html' %}
+    {% block title %}Social Media Customer Support Services{% endblock %}
+    {% block main %}
+    {% load static %}
+
+    <main>
+        <!--? Hero Start -->
+           <div class="slider-ordertaking">
+            <div class="slider-height2 hero-overly2 d-flex align-items-center" style="max-height:300px;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="text-center">
+                                <h2 style="color: #c19d9d;font-family: fantasy">Social Media Customer Support Services</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Hero End -->
+
+        <div class="categories-area" >
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-lg-7" style="margin-top:100px;">
+                    <h2 class="h2-new">Enhancing Engagements, Building Stronger Relationships</h2>
+                    <p style="text-align: justify">ExpertCallers has over 12 years of experience in handling support and resolve issues on social media. Over the years, we have meticulously worked with the clients across domains to set up a complete social media support solution that effectively manages public affairs by delivering responsive, real-time support across social media channels.</p>
+                    <p style="text-align: justify">The hallmark of our outsourced social media customer support services is professionalism and cost-effectiveness. Our social media customer services offer you an affordable social media presence, handled by a professional representing your business. Our professionals are highly experienced in the art of dealing with social media customers across demographics. They can either resolve the issues on your behalf or escalate the matter to you or direct the customer to explore self-service options.</p>
+                    <br>
+                </div>
+                <div class="col-lg-1">
+
+                </div>
+                <div class=" col-lg-4 col-md-4" style="padding:30px">
+                <div class="shadow-new" style="background:#136fa0d6;margin-top: 50px;padding:30px;border-radius: 15px">
+                     {% load crispy_forms_tags %}
+
+                    <h3>Quick Contact</h3>
+                    <form action="addcontact" method="POST" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    {{ form|crispy }}
+
+                    <input type="submit" value="Submit" class="genric-btn primary small">
+                    </form>
+
+                    {% for message in messages %}
+                    <br><h6>{{message}}</h6>
+                    {% endfor %}
+                </div>
+
+                </div>
+            </div>
+            <!--       <a href="about" class="btn-head">More About Us</a> -->
+        </div>
+    </div>
+
+
+        <!-------------------------->
+
+        <section class="categories-area pt-100 pb-100">
+			<div class="container">
+				<h2 class="h2-new">We Provide a Range of Outsourced Social Media Customer Support Services</h2><br>
+				<div class="row">
+					<div class="col-md-5">
+						<p>
+							<strong>Our social media customer service encompasses:</strong>
+						</p>
+						<ul>
+							<li>Monitoring</li>
+							<li>Engagement/Response</li>
+							<li>Moderation</li>
+							<li>Analytics</li>
+							<li>24-hour support</li>
+						</ul>
+					</div>
+					<div class="col-md-7">
+						<p>
+							<strong>Leveraging all these capabilities you can:</strong>
+						</p>
+						<ul>
+							<li>Appreciate customers who provided positive feedback on social media</li>
+							<li>Respond to general references to your products or services</li>
+							<li>Handle issues (or outages) that affect users </li>
+							<li>Swift response to service or product requests that are urgent</li>
+							<li>Settle complaints from frustrated customers</li>
+							<li>Respond to direct technical or account-related questions</li>
+							<li>Keep in touch with those who have made comments or reviews about your brand or industry </li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+        <!--------------------------->
+
+        <section class="categories-area">
+			<div class="container">
+				<div>
+					<h2 class="h2-new">Companies Across Industries Outsource Social Media Customer Support Services to ExpertCallers</h2>
+					<p>
+						Being a leading social media customer support company, we provide robust, reliable and efficient social media customer services that can be customized to help companies operating under multiple industries. This includes:
+					</p>
+
+					<div class="row">
+						<div class="col-md-4">
+							<ul>
+								<li>Aerospace &amp; Defence</li>
+								<li>Automotive</li>
+								<li>Automobiles</li>
+								<li>Banking &amp; Financial Services</li>
+								<li>Capital Markets</li>
+								<li>Communications</li>
+								<li>Consumer Goods and Services</li>
+								<li>Customs Brokerage</li>
+								<li>Consumer Packaged Goods</li>
+							</ul>
+						</div>
+						<div class="col-md-4">
+							<ul>
+								<li>Energy and Utilities</li>
+								<li>Education</li>
+								<li>Healthcare</li>
+								<li>Logistics</li>
+								<li>Manufacturing</li>
+								<li>Market Research</li>
+								<li>Media and Entertainment</li>
+								<li>Medical Devices</li>
+							</ul>
+						</div>
+						<div class="col-md-4">
+							<ul>
+								<li>Network Equipment Providers</li>
+								<li>Oil &amp; Gas</li>
+								<li>Pharmaceutical &amp; Life Sciences</li>
+								<li>Platforms &amp; Software Products</li>
+								<li>Public Sector / Government</li>
+								<li>Retail &amp; Ecommerce</li>
+								<li>Securities &amp; Capital Markets</li>
+								<li>Telecommunications</li>
+								<li>Securities &amp; Capital Markets</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+     <!---------------------->
+        <section class="categories-area pt-100 pb-100">
+			<div class="container">
+				<h2 class="align-center h2-new">We are Different; Here's Why</h2><br>
+				<div class="row">
+					<div class="col-md-3 box">
+
+						<h3>Highly Trained Executives</h3>
+						<p>
+							All the social media interactions are handled by executives specially trained in attending social media customer support queries. So, you can be assured about courteous and professional handling.
+						</p>
+					</div>
+					<div class="col-md-3 box">
+
+						<h3>Positive Impact on Bottom Line</h3>
+						<p>
+							Our professional handling will help you provide quicker resolution and increase customer satisfaction. This is bound to have a positive impact on your brand visibility as well as the bottom line.
+						</p>
+					</div>
+					<div class="col-md-3 box">
+
+						<h3>Flexibility and Scalable</h3><br>
+						<p>
+							Our outsourced social medical customer support services are extremely flexible. To meet the changing needs, you can scale up or ramp down agents handling your requirements.
+						</p>
+
+					</div>
+					<div class="col-md-3 box">
+
+						<h3>Prompt and Polite Responses</h3>
+						<p>
+							Our professionals always have patient ears to customer’s queries and complaints. They make sure that they respond to customer queries in the most efficient and polite manner.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+        <!------------------------------>
+
+
+		   <div class="categories-area pb-50 pt-50">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-xl-7 col-lg-7 col-md-7">
+                        <h2 class="h2-new" style="font-size: 18px;">Here's How Companies Have Benefitted by Outsourcing Social Media Customer Support Services to ExpertCallers:</h2>
+                        <p>Our outsourced social media customer support services helped a leading telecom provider to provide seamless customer support to over a million subscribers who were active on social media</p>
+                        <p>We helped a global online medicine retailer to handle over 2000 social media support requests every day and provide apt response without any lag</p>
+                    </div>
+                    <div class="col-xl-5 col-lg-5 col-md-5">
+                        <div class="iframe-container">
+                            <iframe width="358" height="200" src="https://www.youtube.com/embed/DAxovcKhOFQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--------------------->
+
+        <section class="categories-area pt-50 pb-50">
+			<div class="container">
+				<div class="col-md-12">
+					<h2 class="h2-new">Why Outsource Social Media Customer Support Services to ExpertCallers?</h2>
+					<p>
+						<strong>
+							The benefits that you’ll gain when you outsource social media customer support services to an expert social medical customer support company like ExpertCallers are many. This includes:
+						</strong>
+					</p>
+					<div class="col-md-12">
+						<ul class="bullet">
+							<li>30% increase in customer retention</li>
+							<li>Enhanced customer satisfaction</li>
+							<li>ISO 27001 certified and PCI compliant</li>
+							<li>Instantaneous response to customer queries; zero wait time</li>
+							<li>Operational scalability to meet seasonal uplift or spike in sales</li>
+							<li>Complete flexibility</li>
+							<li>Highly cost-effective services</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+        <!----------------------->
+        <section class="categories-area pb-50">
+			<div class="container">
+				<div class="shadow-new-small" style="padding:20px 20px;">
+				<p style="text-align: justify">
+					When you outsource social media customer support services to ExpertCallers, you’ll partner with social media customer support company that is extremely skilled in enhancing engagements with your customers on mobile and social media platforms
+				</p>
+				</div></div>
+		</section>
+
+ </main>
+
+    {% endblock %}

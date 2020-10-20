@@ -1,0 +1,176 @@
+
+    {% extends 'base.html' %}
+    {% block title %}Email support{% endblock %}
+    {% block main %}
+    {% load static %}
+
+    <main>
+        <!--? Hero Start -->
+           <div class="slider-ordertaking">
+            <div class="slider-height2 hero-overly2 d-flex align-items-center" style="max-height:300px;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="text-center">
+                                <h2 style="color: #c19d9d;font-family: fantasy">Email Support Services</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Hero End -->
+
+        <div class="categories-area pt-50" >
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-lg-7">
+                    <h3 style="text-align:justify;">Using Emails to Build Better Relationships</h3>
+                    <p style="text-align: justify">ExpertsCallers has years of experience in helping clients manage their email responses effectively. We leverage this experience to provide a wide range of customizable third-party email support services to support all your customer service needs.</p>
+                    <p style="text-align: justify">Your customer email queries must be handled by a team of trained experts who can help you build better relationship with them. Our team of experts understands how to prioritize emails, resolve them based on the nature of the requests and deliver prompt and personalized support service round-the-clock. This ensures your customers come away delighted, taking you a step closer to having a committed customer for life.</p>
+
+                    <br>
+
+                </div>
+                <div class="col-lg-1">
+
+                </div>
+                <div class=" col-lg-4 col-md-4" style="padding:30px">
+                <div class="shadow-new" style="background:#136fa0d6;margin-top: 50px;padding:30px;border-radius: 15px">
+                     {% load crispy_forms_tags %}
+
+                    <h3>Quick Contact</h3>
+                    <form action="addcontact" method="POST" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    {{ form|crispy }}
+
+                    <input type="submit" value="Submit" class="genric-btn primary small">
+                    </form>
+
+                    {% for message in messages %}
+                    <br><h6>{{message}}</h6>
+                    {% endfor %}
+                </div>
+
+                </div>
+            </div>
+            <!--       <a href="about" class="btn-head">More About Us</a> -->
+        </div>
+    </div>
+        <!------------------------>
+        <section class="categories-area pt-50 pb-50">
+			<div class="container">
+				<div class="row mt-4">
+					<div class="col-lg-12">
+						<ul id="two-eqtab" class="nav nav-tabs" role="tablist">
+							<li class="nav-item col p-0">
+								<a class="nav-link active" style="color:black;" data-toggle="tab" href="#tabs-1" role="tab" aria-selected="true">Outsource Email Support Services in India</a>
+							</li>
+							<li class="nav-item col p-0">
+								<a class="nav-link" style="color:black;" data-toggle="tab" href="#tabs-2" role="tab" aria-selected="false">Why Use Email Support Services?</a>
+							</li>
+							</ul><!-- Tab panes -->
+							<div class="tab-content">
+								<div class="tab-pane active" id="tabs-1" role="tabpanel">
+									<p>Outsourcing your company’s email support services to India can take a huge load off your shoulders so that you can direct your entire focus on growing and developing your business. Email support services companies in India like Expert Callers will take care of everything from keeping track of every complaint and feedback to answering every customer query and maintaining a huge database of their details. </p>
+									<p>Moreover, India is rich in technical talent that is also exceptionally good at written English communication and driven by their courteous culture. As a result, they are able to offer the best possible responses to your customers’ queries and also take the customer relationship to the next level. </p>
+								</div>
+								<div class="tab-pane" id="tabs-2" role="tabpanel">
+									<p>Most people today like to make a phone call or use live chat to communicate with a representative of the company for support. No doubt, these are good modes of communication, but offering phone or chat support can pose a big burden on the company’s finance. The amount of work involved in handling multiple customers through phone calls or live chat can be huge, so the company will be needing a large staff with good communication skills to do these tasks. But with the right mix of call communication and outsourced email support services, many of these problems can be eliminated. Moreover, when you outsource email support services, you can reap some major benefits. </p>
+
+										<p>Emails have a personal touch to them. While reaching out to customers for new promotions or information regarding the service through email, the receiver feels that the company cares about them and wants to solve any issues they may be facing.</p>
+										<p>When you outsource Email support services, they offer easy and convenient communication. With emails, you can reach out to your customers from anywhere in the world quite easily without having to care much about their time zones and availability and dialects.</p>
+										<p>Emails really come in handy when you have to send an update or a memo to hundreds of people in just a simple click. There’s no need for printing anything and no hassles of taking out several copies for everyone. </p>
+										<p>Emails are quite secure when you have to share confidential information. They can be further encrypted, thereby adding an extra layer of security and ensuring that it is accessed only by the person who is supposed to receive it. </p>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+        <!------------------------->
+        <section class="categories-area pt-50 pb-50">
+				<div class="container">
+					<div class="row">
+						<div class="col-12 col-sm-12 col-md-12 col-lg-12">
+							<div class="title-section ">
+								<h2 class="h2-new">How Does Our Email Support Work?</h2>
+							</div>
+						</div>
+					</div>
+					<div class="row mt-5">
+						<div class="col-12 col-sm-12 col-md-6 col-lg-6">
+							<iframe width="100%" height="400" src="https://www.youtube.com/embed/Y8Wp3dafaMQ" srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/DAxovcKhOFQ?autoplay=1><img src=https://i.ytimg.com/vi/DAxovcKhOFQ/maxresdefault.jpg alt='Video Email Support Services'><span>▶</span></a>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" title="Email Support Services"></iframe>
+						</div>
+						<div class="col-12 col-sm-12 col-md-6 col-lg-6">
+							<div class="intro-articles" data-readmore="" aria-expanded="false" id="rmjs-2" style="max-height: none; height: 430px;">
+								<p>At ExpertCallers, we are highly focused on maintaining the quality of our email services. We also ensure that we offer fast and effective responses to customer emails and provide them with the right solutions for better customer relationship management. </p>
+								<p>Here's a quick synopsis of how our email support services work. </p>
+								<p>During the initial onboarding of a client, we create a knowledge base of FAQs and their answers specific to their customers’ needs and requirements. </p>
+								<ul class="list-style-tick text-white">
+									<li>We keep track of our agent’s interactions with customers and use it to continuously update and improve our knowledge base.</li>
+									<li>The received emails are scanned and routed to our agents who will then offer a precise and complete response to customer queries that reduce the need for follow-ups and increases customer satisfaction.</li>
+									<li>We ensure that our agents familiarize themselves thoroughly according to the processes, products, and services of your business.</li>
+									<li>To ensure quick and standardized responses, our agents are well-trained to make proper use of the knowledge base. It can also help them to offer personalized answers to their queries. </li>
+								</ul>
+							</div><a href="#" data-readmore-toggle="rmjs-2" aria-controls="rmjs-2">Read More</a>
+						</div>
+					</div>
+				</div>
+			</section>
+    <!------------------------------>
+
+        <section class="categories-area pt-50 pb-50">
+				<div class="container">
+					<div class="row">
+						<div class="col-12 col-sm-12 col-md-12 col-lg-7 pr-5">
+							<div class="title-section left">
+								<h2 class="h2-new">Why Outsource Email Support Services to ExpertCallers?</h2>
+							</div>
+							<div><strong>When you outsource email support services to an expert email support company such as ExpertCallers, you get access to:</strong></div>
+							<div class="row">
+								<div class="col-lg-6">
+									<ul class="list-style-tick mt-4">
+										<li class="mb-1">Highly trained staff</li>
+										<li class="mb-1">Customized email support packages</li>
+										<li class="mb-1">Cost-effective services</li>
+										<li class="mb-1">24x7x365 support</li>
+										<li class="mb-1">Guaranteed increase in customer satisfaction levels</li>
+									</ul>
+								</div>
+								<div class="col-lg-6">
+									<ul class="list-style-tick mt-4">
+										<li class="mb-1">Improved connectivity and communication</li>
+										<li class="mb-1">Enhanced brand development</li>
+										<li class="mb-1">Fast order fulfillment and response to queries</li>
+										<li class="mb-1">Reduced downtime</li>
+										<li class="mb-1">Better productivity</li>
+									</ul>
+								</div>
+							</div>
+							<p class="mt-4 mb-0 text-white"><a href="/">ExpertCallers</a> has worked with several clients and customers from across the globe. Each of our representatives is trained to have a thorough idea about privacy and organizational integrity. Therefore, when you outsource email support to us, you can rest assured that all the information shared between your customers and our agents is encrypted, secured, and monitored with the latest technologies to ensure zero mistakes in communication.</p>
+						</div>
+						<div class="col-12 col-sm-12 col-md-12 col-lg-5 bring-front mt-4 mt-lg-0">
+
+						</div>
+					</div>
+				</div>
+
+			</section>
+
+
+        <!----------------------->
+        <section class="categories-area pb-50">
+			<div class="container">
+				<div class="shadow-new-small" style="padding:20px 20px;">
+				<p style="text-align: justify">
+					When you outsource customer support services to ExpertCallers, you will partner with a customer support outsourcing company that is extremely skilled in consistently meeting your business objectives while fostering human interactions and delivering highest level of customer satisfaction.
+				</p>
+				</div></div>
+		</section>
+
+ </main>
+
+    {% endblock %}
